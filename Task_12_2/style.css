@@ -19,6 +19,8 @@ body{
     max-width: 960px;
     margin: 0 auto;
     padding: 20px;
+    position: relative;
+    z-index: 0;
 }
 .wrapper:after{
     content: "";
@@ -47,6 +49,10 @@ body{
     height: 50px;
     width: 50px;
 }*/ 
+.services{
+    max-height: 150px;
+    overflow: hidden;
+}
 .services:after{
  content: "";
  display: block;
@@ -63,11 +69,83 @@ body{
     margin: 1%;
     padding: 1%;
     height: 140px;
+    position: relative;
 
+}
+.services:nth-child(1){
+    top:5px
+    
+}
+.service:nth-child(2){
+    top: 15px;
+}
+.service:nth-child(3){
+    top: 25px;
 }
 .content{
     padding: 10px;
-    background:#ccc;
     clear: left;
-    margin-top: 50px;
+    margin-top: 20px 1%;
+    /*position: relative;
+    left: 50px;
+    bottom: -50px;
+    top: 400px;*/
+}
+section, aside{
+    float: left;
+    width: 46%;
+    margin: 1%;
+    padding: 1%;
+    margin-top: 1%;
+    background-color: #f2f2f2;
+
+}
+.columns:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.content p{
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 50px;
+    column-gap: 50px;
+    -webkit-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
+    text-align: justify;
+}
+#banner{
+    max-width: 100%;
+    overflow: hidden;
+    margin: 1%;
+    position: relative;
+    z-index: 2;
+}
+#banner h2{
+    position: absolute;
+    top: 30px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+nav{
+    background: #333;
+    padding: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+nav ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+nav li{
+    list-style-type: none;
+    margin: 0 10px;
+    color: #fff;
+    float: right;
 }
