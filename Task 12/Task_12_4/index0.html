@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Net Ninja - CSS Flexbox</title>
+        <link rel="stylesheet" type="text/css" href="style0.css">
+        <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <!--<div class="flex-container">
+            <div class="box one"></div>
+            <div class="box two"></div>
+            <div class="box three"></div>
+            </div>-->
+           <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Store</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+           <ul class="social">
+            <li><a href="" class="fb">Facebook</a></li>
+            <li><a href="" class="tw">Twitter</a></li>
+           </ul>
+           </nav>
+
+           <div style="margin: 20px;">
+            <span>Layout: </span>
+            <a href="#" class="stack">Stack</a>
+            <a href="#" class="grid">Grid</a>
+            </div>
+           <section id="blocks">
+            <article>
+                <h2>Protogonist</h2>
+                <p>The protogonist is likely a pretty familiar concept for most of us: this is the main character,
+                    the big cheese, the star of the show. Most of the actions centers around them, and they are the 
+                    one we're ment to care about the most.
+                    In stories written with the first person point of view, the protogonist is usually the narrator
+                    can also be some close to the MC or someone completely removed.
+                </p>
+            </article>
+            <article>
+                <h2>Antagonist</h2>
+                <p>If you're an antogonist, you antagonise - it's what you do. Specifically, you undermine, thwart, battle, 
+                    or otherwise oppose one character: the protogonist.
+                    Most of time, the protogonist is good and the antagonist is evil, and such is the source of their conflict.
+                    This is not always the case- especially if the protogonist is an anti-hero who lacks typical heroic attributes,
+                    or the antagonist is an anti-villian who has noble characteristics.
+                </p>
+            </article>
+            <article>
+                <h2>Deuterogonist</h2>
+                <p>Most stories have a primary protoginist and a secondary deuterogonist. This is a character who'
+                    not exactly in the spotlight, but pretty close to it.
+                    The Deuterogonist's comic book equivalent would probably be the sidekick. they're often seen
+                    in the company of the protogonist giving advice, plotting against their rivals, and generally
+                    lending a helping hand
+                </p>
+            </article>
+            <article>
+                <h2>Tertiary Characters</h2>
+                <p>The reason that tertiary characters are'nt called "tertagonists" is because they are'nt important enough
+                    to really agonise anything or anyone. They flit in and out of the MC's life, perhaps only appearing in one or two scenes 
+                    throughtout the book.
+                </p>
+            </article>
+            <article>
+                <h2>Love Interest</h2>
+                <p>Most novel contain romance in one from or another. It might be the main plot, a subplot, 
+                    or just a blip on the narrative radar - but no matter how it features, there has to be some sort
+                    of love interest involved. This love interest is typically a deuterogonist, but not exclusively.
+                </p>
+            </article>
+            <article>
+                <h2>Confidant</h2>
+                <p>The one's even harder to pin down, especially since many stories focus so much on their MC's love 
+                    interest that other relationships get left out in the cold. However, the confidant can still be one 
+                    of the most profound relationships the protogonist has in a novel.
+                </p>
+            </article>
+           </section>
+        </div>
+        <script>
+            $("a.stack").on("click", function(){
+                $("article").addClass("stack");
+            });
+            $("a.grid").on("click", function(){
+                $("article").removeClass("stack");
+            });
+        </script>
+    </body>
+</html>

@@ -182,7 +182,7 @@ footer a{
 
 /*Media Queries*/
 /* tablets*/
-@media  screen and (max-width:768px){
+@media  screen and (max-width:600px){
 
    /* footer{
         background: red;
@@ -219,7 +219,7 @@ footer a{
     }
 
 /*mobiles*/
-@media screen and (max-width:600px){
+@media screen and (max-width:480px){
     .burger-nav{
         display: block;
         height: 40px;
@@ -275,4 +275,3 @@ footer a{
         left: -40%;
     }
     }
-
