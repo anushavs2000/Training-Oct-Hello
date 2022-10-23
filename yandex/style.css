@@ -1,0 +1,13 @@
+.en{
+    font-size: 85%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    text-align: right;
+}
+img{
+    width: 15px;
+    height: 15px;
+    border-radius:2px;
+}
