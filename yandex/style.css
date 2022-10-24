@@ -6,8 +6,74 @@
     cursor: pointer;
     text-align: right;
 }
-img{
+.login img{
     width: 15px;
     height: 15px;
     border-radius:2px;
+} 
+body{
+    font: arial;
+    background: #fff;
+    margin: 0;
+}
+.layout{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 20px 30px;
+    min-height: 500px;
+}
+.line{
+    white-space: nowrap;
+    margin: 0 auto;
+    min-width: 755px;
+}
+.bar{
+    position: relative;
+    left: auto;
+    right: auto;
+    z-index: 1;
+}
+.inline{
+    display: inline-block;
+    vertical-align: top;
+    max-height: 99999px;
+}
+.left{
+    line-height: 15px;
+}
+.center{
+    text-align: center;
+    line-height: 15px;
+}
+.right{
+    line-height: 15px;
+    text-align: right;
+    width: 100%;
+}
+.down{
+    margin-right: 25px;
+}
+.drop{
+    display: inline;
+}
+.switch{
+    font-size: 85%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+}
+.select img{
+    width: 90px;
+    height: 90px;
+    margin: 0 10px;
+    vertical-align: top;
+}
+
+.select{
+    margin-top: 23%;
+    margin-left: 10%;
 }
