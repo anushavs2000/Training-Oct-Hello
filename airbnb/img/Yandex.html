@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://192.168.1.3:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Yandex</title>
+        <link rel="icon" href="http://192.168.1.3:5500/img/icon1.png">
+        <link rel="stylesheet" text="text/css" href="./Yandex_files/style.css">
+    </head>
+    <body>
+        <nav>
+            <a class="main-nav"></a>
+        <ul>
+            
+            <li><img src="./Yandex_files/log.svg">
+                <a href="http://192.168.1.3:5500/index.html#login">Log in</a></li>
+                <li><a href="http://192.168.1.3:5500/index.html#en">EN</a></li>
+        </ul>
+        </nav>
+        <div class="selector">
+            <div class="select">
+                <a href="http://192.168.1.3:5500/index.html"></a>
+                <img src="./Yandex_files/games.svg">
+                <p>Games</p>
+            </div>
+            <div class="select">
+                <a href="http://192.168.1.3:5500/index.html"></a>
+                <img src="./Yandex_files/images.svg">
+                <p>Images</p>
+            </div>
+            <div class="select">
+                <a href="http://192.168.1.3:5500/index.html"></a>
+                <img src="./Yandex_files/video.svg">
+                <p>Video</p>
+            </div>
+            <div class="select">
+                <a herf=""></a>
+                <img src="./Yandex_files/mail.svg">
+                <p>Mail</p>
+            </div>
+            <div class="select">
+                <a href="http://192.168.1.3:5500/index.html"></a>
+                <img src="./Yandex_files/maps.svg">
+                <p>Maps</p>
+            </div>
+            <div class="select">
+                <a href="http://192.168.1.3:5500/index.html"></a>
+                <img src="./Yandex_files/appmetrica.svg">
+                <p>AppMetrica</p>
+            </div>
+            <div class="select">
+                <a hre=""></a>
+                <img src="./Yandex_files/translate.svg">
+                <p>Translate</p>
+            </div>
+            <div class="select">
+                <a href="http://192.168.1.3:5500/index.html"></a>
+                <img src="./Yandex_files/browser.svg">
+                <p>Browser</p>
+            </div>
+            </div>
+                <div class="search">
+                    <img src="./Yandex_files/yandex.svg">
+                    <form>
+                        
+                        <input type="text" placeholder="Finds Everything">
+                        <img src="./Yandex_files/download.svg">
+                
+                        <button type="submit">Search</button>
+                        
+                    </form>
+                </div>
+                <div class="countries">
+
+                    <div class="yandex">
+                        <h4>Yandex in</h4>
+                    </div>
+                    <div class="yandex">
+                        <p><img src="./Yandex_files/russia.svg">
+                        Russia</p>
+                </div>
+                <div class="yandex">
+                    <p><img src="./Yandex_files/belarus.svg">
+                    Belarus</p>
+                </div>
+                <div class="yandex">
+                   <p> <img src="./Yandex_files/k.svg">
+                    Kazakhstan</p>
+                </div>
+                <div class="yandex">
+                    <p><img src="./Yandex_files/uzbekistan.svg">
+                    Uzbeskistan</p>
+                </div>
+                <div class="yandex">
+                    <p><img src="./Yandex_files/turkiye.svg">
+                    Turkiye</p>
+                </div>
+                </div>
+                <footer>
+                    <div>Technologies</div>
+                    <div>About Yandex</div>
+                    <div> Terms of Services</div>
+                    <div>Privacy Policy</div>
+                    <div>Contact us</div>
+                    <div>Copyright Notice</div>
+                    <div><img src="./Yandex_files/copyright.png">Yandex</div>
+                </footer>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

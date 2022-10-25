@@ -11,6 +11,9 @@
     height: 15px;
     border-radius:2px;
 } 
+.inline:hover{
+    color: #c00;
+}
 body{
     font: arial;
     background: #fff;
@@ -38,8 +41,10 @@ body{
 }
 .inline{
     display: inline-block;
-    vertical-align: top;
-    max-height: 99999px;
+}
+.login{
+    text-decoration: none;
+    color:#000;
 }
 .left{
     line-height: 15px;
@@ -76,4 +81,123 @@ body{
 .select{
     margin-top: 23%;
     margin-left: 10%;
+}
+.tabs{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+.tabs a{
+    display: inline-block;
+    list-style-type: none;
+    color:#000;
+    text-decoration: none;
+    margin:20px;
+    text-align: center;
+}
+h4{
+    font-weight: normal;
+}
+
+.tabs a:hover{
+    position: relative;
+    top: -6px;
+    color: #c00;
+    cursor: pointer;
+    
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin:20px;
+    gap:20px;
+}
+form{
+    background: #ffcc00;
+    width:1000px;
+    height:40px;
+    display: flex;
+    border-radius:50px;
+}
+form input{
+    flex:1;
+    border: 3px solid #ffcc00;
+    border-radius:10px 0 0 10px;
+    border-right: none;
+}
+form button{
+    background: #ffcc00;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+form img{
+    width:5%;
+    height:30%;
+    background-color: #fff;
+
+}
+.country{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-top: 400px;
+    
+
+}
+.y{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    color: grey;
+    margin: 5px;
+    bottom: 3px;
+    align-items: center;
+    left: 32%;
+    font-size:0.8em;
+}
+footer a{
+    color: grey;
+    text-decoration: none;
+    margin: 10px;
+    align-items: center;
+}
+.country p:hover{
+    color: #c00;
+    cursor: pointer;
+}
+footer a:hover{
+    color: #c00;
+    cursor: pointer;
+}
+svg{
+    background-color: #fff;
+    height: 34px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+    border: 3px solid #ffcc00;
+    border-left: none;
+    border-color: #ffcc00;
+    cursor: pointer;
+
+}
+button:hover{
+    background: rgb(245, 196, 0);
+}
+svg:hover{
+    background: rgb(241, 239, 239);
+    cursor:pointer;
 }
