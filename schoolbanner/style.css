@@ -69,12 +69,12 @@ label{
     font-size: large;
 }
 
-@media screen and (max-width: 1400px){
+@media only screen and (max-width: 1400px){
     .main{
         background-size: 1300px 800px;
     }
 }
-@media screen and (max-width: 900px){
+@media only screen and (max-width: 900px){
     .class{
         display: block;
         
@@ -93,7 +93,7 @@ label{
         padding: 50px;
     }
 }
-@media screen and (max-width: 660px){
+@media only screen and (max-width: 660px){
     footer{
         position: relative;
         display: flex;
@@ -110,6 +110,20 @@ label{
         display: flex;
         flex-direction: column;
     }
-
-
+    textarea{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    input[type=submit]{
+        cursor: pointer;
+        box-sizing: border-box;
+        width: 56px;
+        height: 41px;
+    }
+    .submit{
+        padding: 2px 100px;
+    }
+    body{
+        padding: 0;
+    }
 }
