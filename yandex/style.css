@@ -1,19 +1,3 @@
-.en{
-    font-size: 85%;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #000;
-    cursor: pointer;
-    text-align: right;
-}
-.login img{
-    width: 15px;
-    height: 15px;
-    border-radius:2px;
-} 
-.inline:hover{
-    color: #c00;
-}
 body{
     font: arial;
     background: #fff;
@@ -30,7 +14,6 @@ body{
 }
 .line{
     white-space: nowrap;
-    margin: 0 auto;
     min-width: 755px;
 }
 .bar{
@@ -41,10 +24,11 @@ body{
 }
 .inline{
     display: inline-block;
+    vertical-align: top;
+    font: 0.8em arial;
 }
-.login{
-    text-decoration: none;
-    color:#000;
+.inline:hover{
+    color: #c00;
 }
 .left{
     line-height: 15px;
@@ -70,8 +54,23 @@ body{
     text-transform: uppercase;
     color: #000;
     cursor: pointer;
+    text-align: right;
+    display: inline-block;
 }
-.select img{
+.login img{
+    width: 15px;
+    height: 15px;
+    border-radius:2px;
+    margin: 0 10px;
+    vertical-align: top;
+} 
+.login{
+    text-decoration: none;
+    color:#000;
+    font: 1.3em Arial,Helvetica,sans-serif;
+}
+
+/* .select img{
     width: 90px;
     height: 90px;
     margin: 0 10px;
@@ -80,22 +79,34 @@ body{
 
 .select{
     margin-top: 23%;
-    margin-left: 10%;
-}
+    margin-left: 10%; 
+}*/
 .tabs{
     display: flex;
     flex-flow: row;
     justify-content: center;
-    align-items: center;
-    margin-top: 10%;
+    margin-top: 10%; 
+    margin-left: 70px;
+    padding-bottom: 30px;
+    vertical-align:middle;
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+    text-align: center;
+    white-space: nowrap;
 }
 .tabs a{
-    display: inline-block;
-    list-style-type: none;
+    display: block;
+    padding: 0 22px;
+    height: 81px;
+    position:relative;
+    cursor: pointer;
     color:#000;
     text-decoration: none;
-    margin:20px;
-    text-align: center;
+    outline: none;
+    padding bottom:100px;
+
+    
 }
 h4{
     font-weight: normal;
@@ -103,10 +114,12 @@ h4{
 
 .tabs a:hover{
     position: relative;
-    top: -6px;
     color: #c00;
     cursor: pointer;
     
+}
+.tabs a:hover img{
+    transform: translateY(-4px);
 }
 .search{
     display: flex;
@@ -118,7 +131,7 @@ h4{
 }
 form{
     background: #ffcc00;
-    width:1000px;
+    width:900px;
     height:40px;
     display: flex;
     border-radius:50px;
