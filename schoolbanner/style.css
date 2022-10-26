@@ -25,22 +25,27 @@ img{
 input[type=text]{
     box-sizing: border-box;
     width: 100%;
+    background: #fff;
 }
 input[type=number]{
     box-sizing: border-box;
     width: 100%;
+    background: #fff;
 }
 input[type=email]{
     box-sizing: border-box;
     width: 100%;
+    background: #fff;
 }
 input[type=tell]{
     box-sizing: border-box;
     width: 100%;
+    background: #fff;
 }
 input[type=date]{
     box-sizing: border-box;
     width: 100%;
+    background: #fff;
 }
 footer{
     display: flex;
@@ -67,6 +72,7 @@ input[type=submit]{
 }
 label{
     font-size: large;
+    font-weight: bolder;
 }
 
 @media only screen and (max-width: 1400px){
