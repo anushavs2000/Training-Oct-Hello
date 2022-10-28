@@ -1,7 +1,7 @@
-
-div{
-    display: block;
+body{
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neuo, sans-serif;
 }
+
 .search{
     background: #fff;
     border: 0.5px solid rgba(0,0,0,0.08);
@@ -10,24 +10,31 @@ div{
     padding: 14px 24px 0 24px;
     border-radius: 1000px;
     display: flex;
+    margin-top: 13px;
+    margin-left: 11px;
 }
 .whereto{ 
     align-items: center;
     display: flex;
     min-width: 100px;
     width: 100%;
+    justify-content: space-between;
+    margin-left: -6px;
+    margin-top: -2px;
 }
 .button{
     display: flex !important;
     margin: 0px !important;
     padding: 0px !important;
-    text-align: center;
+    padding-right: 2px;
+    text-align: left;
     background: transparent;
     cursor: pointer;
     position: relative;
     border-width: 1px;
     border: none;
-    padding-right: 13px;
+    white-space: nowrap;
+    margin-right: 8%;
 
 }
 .where{
@@ -37,12 +44,19 @@ div{
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
+    text-align: inherit;
 }
 .whereany{
     text-align: left;
     padding: 0 0 9px 0;
 }
+.whereanysub{
+    width:173px;
+    height: 20px;
+}
 .any{
+    width: 50px;
+    height: 16px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -50,10 +64,23 @@ div{
     color: grey;
     font-family: inherit;
     font-size: 12px;
-    line-height: 16px;
+}
+.anywhere{
+    width:50px;
+    height:16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.an{
+    width: 12.98px;
+    color: grey;
+    font-weight: lighter;
+    
 }
 .sicon{
-    padding: 5px 7px 6px 0;
+    padding: 5px 15px 6px 0;
 }
 button.filter{
     height: 30px;
@@ -67,41 +94,485 @@ button.filter{
     display: grid;
     grid-auto-flow:column;
     grid-gap: 16px;
-    
-    
+        
 }
 .search1{
     display: none;
 }
 
+        /*-------------tabs------------------*/
 
-
+.tabicons{
+    display:flex;
+    overflow: scroll;
+    /* width: 100%; */
+    gap: 25px;
+    top: 1;
+    padding: 20px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.tabicons img{
+    width: 24px;
+    height: 24px;
+    
+}
+.tinyhomes{
+    display: flex;
+    flex-flow: column;
+    white-space: nowrap;
+    text-align:center;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight:600;
+    font-family: inherit;
+    width:100%;
+    opacity: .6;
+    align-items: center;
+}
+.tinyhomes:hover{
+    color: black;
+    opacity: 1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+.nationalparks{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    font-family: inherit;
+    opacity: .6;
+}
+.nationalparks:hover{
+    color: black;
+    opacity: 1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+.pool{
+    display: flex;
+    flex-flow: column;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .6;
+}
+.pool:hover{
+    color: black;
+    opacity: 1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+.beaches{
+    display: flex;
+    flex-flow: column;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .6;
+}
+.beaches:hover{
+    color: black;
+    opacity: 1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+.countryside{
+    display: flex;
+    flex-flow: column;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .6;
+}
+.countryside:hover{
+    color: black;
+    opacity: 1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+.omg{
+    display: flex;
+    flex-flow: column;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .6;
+}
+.omg:hover{
+    color: black;
+    opacity: 1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black; 
+}
+.amazingviews{
+    display: flex;
+    flex-flow: column;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 12px;
+    opacity: .6;
+    font-weight: 600;
+}
+.amazingviews:hover{
+    color: black;
+    opacity: 1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+.tropical{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    white-space:nowrap;
+    font-size: 12px;
+    font-weight:600;
+    opacity: .6;
+}
+.tropical:hover{
+    color:black;
+    opacity:1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+.farms{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .6;
+}
+.farms:hover{
+    color: black;
+    opacity: 1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+.houseboats{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .6;
+}
+.houseboats:hover{
+    color: black;
+    opacity: 1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+.cabins{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .6;
+}
+.cabins:hover{
+    color:black;
+    opacity: 1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+.treehouse{
+    display: flex;
+    flex-flow: column;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .6;
+    align-items: center;
+}
+.treehouse:hover{
+    color: black;
+    opacity: 1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+.sharedhomes{
+    display:flex;
+    flex-flow:column;
+    align-items:center;
+    white-space:nowrap;
+    font-size:12px;
+    opacity: .6;
+    font-weight: 600;
+}
+.sharedhomes:hover{
+    color: black;
+    opacity: 1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+.creativespaces{
+    display: flex;
+    flex-flow: column;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .6;
+}
+.creativespaces:hover{
+    color: black;
+    opacity: 1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+.island{
+    display: flex;
+    flex-flow: column;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .6;
+}
+.island:hover{
+    color: black;
+    opacity: 1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+.lakefront{
+    display: flex;
+    flex-flow:column;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .6;
+}
+.lakefront:hover{
+    color: black;
+    opacity: 1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+.lake{
+    display: flex;
+    flex-flow: column;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .6;
+}
+.lake:hover{
+    color: black;
+    opacity: 1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;   
+}
+.iconiccities{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    white-space:nowrap;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .6;
+}
+.iconiccities:hover{
+    color: black;
+    opacity: 1.2;
+    padding-bottom:15px;
+    border-bottom: 2px solid black;
+}
+.castles{
+    display: flex;
+    flex-flow: column;
+    align-items:center;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .6;
+}
+.castles:hover{
+    color: black;
+    opacity: 1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+.mansions{
+    display: flex;
+    flex-flow:column;
+    align-items:center;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: .6;
+}
+.mansions:hover{
+    color: black;
+    opacity: 1.2;
+    padding-bottom: 15px;
+    border-bottom: 2px solid;
+}
+.galle{
+    width: 272px;
+    height: 258.39px;
+}
 @media screen and (min-width:768px) {
+    
+    .search{
+        display: none;
+    }
+    
+    .search1{
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 80px;
+    }
+    .heading{
+        display: flex;
+        width: 100%;
+        height: 80px;
+        padding: 0px 40px;
+        border-bottom:1px solid #dddddd;
+        justify-content: space-around; 
+    }
+    button{
+        display: flex;
+        justify-content: center;
+    }
+    .airbnbicon{
+        display: inline-flex;
+        align-items: center;
+    }
+    .airbnbicon1{
+        display: none;
+    }
+    svg .airbnb{
+        width: 46px;
+        height: 64px;
+    }
+    .any{
+        width: 400px;
+        height:80px;
+        padding: 0 24px;
+        display: inline-flex;
+        align-items: center;
+    }
+    .add{
+        width: 352px;
+        height: 48px;
+        background-color:#ffffff;
+        border: 1px solid #dddddd;
+        border-radius: 40px;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
+        box-shadow: 0 4px 12px rgb(0 0 0 / 5%);
+        display: inline-flex;
+        align-items: center;
+    }
+    .content1{
+        padding: 0px 16px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .content2{
+        padding: 0px 16px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .content3{
+        padding: 0px 16px;
+        color: #717171;
+    }
+    .bar{
+        font-size: 20px;
+        color: #717171;
+        font-weight:inherit;
+    }
+    .searchicon{
+        background: #ff385c;
+        padding: 10px;
+        margin: 7px 7px 7px 0;
+        border-radius: 50%;
+    }
+    .headright{
+        width: 257px;
+        height: 80px;
+        display: inline-flex;
+        align-items: center;
+    }
+    .become{
+        width: 127.31px;
+        font-family: inherit;
+        font-weight: 600;
+    } 
+    .browser{
+        width:46px;
+    }
+    .usericon{
+        display: inline-flex;
+        /* justify-content: center; */
+        align-items: center;
+        background-color: #ffffff;
+        /* padding: 5px 5px 5px 12px; */
+        padding-left: 12px;
+        border:1px solid #dddddd;
+        border-radius:25px ;
+        width: 77px;
+        height: 42px;
+        gap:24px;
+    }
+    .log{
+        width: 28.69px;
+        height: 28.69px;
+    }
+}
+@media screen and (min-width: 1024px){
     .search{
         display: none;
     }
     .search1{
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-     svg .airbnb{
-        width: 64px;
-        height: 46px;
+    .airbnb{
+        width: 271.91px;
     }
-    .head{
-        padding: 20px 20px 20px 40px;
-        
+    .any{
+        width: 400.2px;
     }
-    .add{
-    display: flex;
-    margin: 0px;
-    text-align: center;
-    background: transparent;
-    cursor: pointer;
-    background: #fff;
-    border: 0.5px solid rgba(0,0,0,0.08);
-    box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
-    transform: translate3d(0,0,0);
-    padding: 14px 24px 0 24px;
-    border-radius: 1000px;
+    .headright{
+        width: 271.91px;
+    }
+    .airbnbicon{
+        display: none;
+        z-index: 5;
+    }
+    .airbnbicon1{
+        display: inline-flex;
+        align-items: center;
+        width: 279.91px;
+    }
+    .headright{
+     
+        display: inline-flex;
+        align-items: center;
+        justify-content: right;
+    }
+    .heading{
+        padding: 0px 40px;
     }
 }
