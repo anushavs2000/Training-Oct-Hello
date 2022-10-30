@@ -660,7 +660,7 @@ body{
     }
     .airbnbicon{
         display: none;
-        z-index: 5;
+        z-index: 6;
     }
     .airbnbicon1{
         display: inline-flex;
@@ -675,5 +675,6 @@ body{
     }
     .heading{
         padding: 0px 40px;
+        
     }
 }
