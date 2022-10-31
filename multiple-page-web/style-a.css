@@ -1,0 +1,30 @@
+@font-face{
+    font-family:multiweb;
+    src: url(assets/GTZirkon-Book.woff2);
+}
+.menu-bar{
+    font-family: multiweb;
+    display: flex;
+    justify-content: space-between;
+    background: #ffe8dc;
+    margin: 0;
+    padding: 0 20px;
+}
+.name{
+    font-weight: lighter;
+    font-family: multiweb;
+    font-size:1.2em;
+}
+.contact-a{
+    font-size: 30px;
+    padding-top: 100px;
+    margin-bottom: 0;
+}
+.contact p{
+    font-size: smaller;
+    margin-top: 4px;
+}
+.email::after{
+    content:"*";
+    color: red;
+}
