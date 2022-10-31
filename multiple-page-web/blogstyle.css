@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    font-family: multiweb;
+}
+@font-face{
+    font-family:multiweb;
+    src: url(assets/GTZirkon-Book.woff2);
+}
+.menu-bar{
+    font-family: multiweb;
+    display: flex;
+    justify-content: space-between;
+    background: #ffe8dc;
+    margin: 0;
+    padding: 20px 20px;
+    height: 200px;
+}
+.name{
+    font-weight: lighter;
+    font-family: multiweb;
+    font-size:1.2em;
+}
+.blog-posts{
+    padding-top: 201px;
+    font-size:26px
+}
+.first-content h6{
+    font-weight: lighter;
+    margin: 61px 10px 16px 10px;
+    color: #b5b5b5;
+}
+.first-content h6:hover{
+    color: #07691c;
+}
+.first-content h2{
+font-size: 21px;
+font-weight: 500;
+padding-bottom: 15px;
+
+}
+.second-content h6{
+    font-weight: lighter;
+    margin: 61px 10px 16px 10px;
+    color: #b5b5b5;
+}
+.second-content h6:hover{
+    color: #07691c;
+}
+.second-content h2{
+    font-size: 21px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.third-content h6{
+    font-weight: lighter;
+    margin: 61px 10px 16px 10px;
+    color: #b5b5b5;
+}
+.third-content h6:hover{
+    color: #07691c;
+}
+.third-content h2{
+    font-size: 21px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.fourth-content h2{
+    font-size: 21px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    
+}
+.fourth-content h6{
+    font-weight: lighter;
+    margin: 61px 10px 16px 10px;
+    color: #b5b5b5;
+}
+.fourth-content h6:hover{
+    color: #07691c;
+}
+.first-content h2{
+    font-size: 21px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.fifth-content h6{
+    font-weight: lighter;
+    margin: 61px 10px 16px 10px;
+    color: #b5b5b5;
+}
+.fifth-content h6:hover{
+    color: #07691c;
+}
+.fifth-content h2{
+    font-size: 21px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.fifth-content h6:hover{
+    color: #07691c;
+}
+.sixth-content h6{
+    font-weight: lighter;
+    margin: 61px 10px 16px 10px;
+    color: #b5b5b5;
+}
+.sixth-content h2{
+    font-size: 21px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
