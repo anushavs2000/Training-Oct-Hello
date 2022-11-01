@@ -1,0 +1,125 @@
+*{
+    margin:0;
+}
+@font-face{
+    font-family:multiweb;
+    src: url(assets/GTZirkon-Book.woff2);
+}
+.menu-bar{
+    font-family: multiweb;
+    display: flex;
+    justify-content: space-between;
+    background: #ffe8dc;
+    margin: 0;
+    padding: 0 20px;
+}
+.name{
+    font-weight: lighter;
+    font-family: multiweb;
+    font-size:1.2em;
+}
+.contact-a{
+    font-size: 30px;
+    padding-top: 100px;
+    margin-bottom: 0;
+}
+.contact p{
+    font-size: smaller;
+    margin-top: 4px;
+}
+.email::after{
+    content:"*";
+    color: red;
+}
+.message::after{
+    content:"*";
+    color: red;
+}
+input{
+    width:100%;
+    background:rgb(223, 236, 250); 
+    border: transparent;
+
+}
+textarea{
+    width: 100%;
+    background:rgba(223, 236,250) ;
+    border: transparent;
+}
+.mail-and-message{
+    padding-left: 20px;
+}
+.email{
+    padding-top: 36px;
+    padding-bottom: 9px;
+    font-family: multiweb;
+}
+.message{
+    padding: 27px 0 11px 0;
+    font-family: multiweb;
+}
+.send-message{
+    background: black;
+    color: white;
+    width: 113px;
+    margin-left: 20px;
+    height: 37px;
+    
+}
+.send-message p{
+    padding: 6px 0 0 9px;
+}
+.additional{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.add-a a{
+    display: block;
+    line-height: 30px;
+    text-decoration: none;
+    color: black;
+    font-family: multiweb;
+}
+.add-b a{
+    display: block;
+    line-height:30px;
+    text-decoration: none;
+    color:black;
+    font-family: multiweb;
+}
+.add-a .privacy a{
+    color: #b5b5b5;
+}
+footer{
+    padding-top: 30px;
+    bottom: 0;
+}
+footer a{
+    height: 18px;
+    display: block;
+    text-decoration: none;
+    color:#b5b5b5;
+    padding:5px 0 5px 30px;
+    font-size: 12px;
+    font-family: multiweb;
+}
+.additional{
+    padding-top: 37px;
+}
+@media screen and (min-width:1024px){
+    .menu-bar{
+        padding: 0 200px;
+    }
+    .mail-and-message{
+        padding: 0 198px;
+    }
+    .send-message{
+        margin-left: 198px;
+    }
+    footer{
+        padding: 279px 165px 0 209px;
+    
+
+    }
+}

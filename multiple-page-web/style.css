@@ -1,0 +1,167 @@
+@font-face{
+    font-family:multiweb;
+    src: url(assets/GTZirkon-Book.woff2)
+}
+.pages a{
+    text-decoration: none;
+    color:grey;
+    font-family: multiweb;
+}
+.pages{
+    display:flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: flex-end;
+    font-family: multiweb;
+}
+.mail a{
+    color: #07691c;
+}
+.details{
+    width: 100%;
+    margin: 18px;
+    font-weight:lighter;
+    font-family: multiweb;
+    background: #ffe8dc;
+    padding: 0;
+}
+.details img{
+    width: 242px;
+    height:397px;
+    padding-left: 27px;
+}
+.details{
+    height: 100%;
+    width: 100%;
+    padding-left: 9px;
+    background: #ffe8dc;
+}
+.name{
+    font-size: 49px;
+}
+.name p{
+    margin-left:-30px;
+    margin-top: 0;
+    padding-top: 23px;
+}
+.occupation p{
+    font-family: multiweb;
+    font-size: 18px;
+    color: #07691c;
+    padding-left: 27px;
+}
+.from p{
+    padding-left: 27px;
+}
+.recent-posts{
+    padding: 20px 27px 0 27px;
+}
+.recent-posts h3{
+    font-weight: lighter;
+}
+.recent-posts p{
+    font-size: 12px;
+}
+.additional{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.add-a a{
+    display: block;
+    line-height: 30px;
+    text-decoration: none;
+    color: black;
+    font-family: multiweb;
+}
+.add-b a{
+    display: block;
+    line-height:30px;
+    text-decoration: none;
+    color:black;
+    font-family: multiweb;
+}
+.add-a .privacy a{
+    color: #b5b5b5;
+}
+footer{
+    padding-top: 30px;
+    bottom: 0;
+}
+footer a{
+    height: 18px;
+    display: block;
+    text-decoration: none;
+    color:#b5b5b5;
+    padding:5px 0 5px 30px;
+    font-size: 12px;
+    font-family: multiweb;
+}
+.recent-posts-text{
+    display: none;
+}
+.dates{
+    display: none;
+}
+@media screen and (min-width:1024px){
+    .contentpage{
+        margin-left: 300px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 173px;
+
+    }
+    .additional{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 38px;
+    }
+    .occupation p{
+        transform: rotate(90deg);
+        padding: 0;
+        margin-top:-129px;
+        width: 560px;
+    }
+    .recent-posts-a{
+        display: flex;
+        flex-direction:row;
+    }
+    .recent-posts{
+        display: none;
+    }
+    .recent-posts-text{
+        display:flex;
+        flex-direction: column;
+    }
+    .recent-posts-text{
+      
+        padding-top: 58px;
+    }
+    .recent-posts-text h3{
+        font-weight: lighter;
+
+    }
+    .recent-posts-texts p{
+        font-size: 12px;
+    }
+    .dates{
+        display: flex;
+        flex-direction: column;
+        padding-left: 27px; 
+    }
+    .from p{
+        margin-top: 107px;
+        display: flex;
+        justify-content: center;
+        margin-left: 70px;
+        margin-bottom: 98px;
+    }
+    .pages{
+        display: flex;
+        justify-content: center;
+    }
+}
