@@ -1,6 +1,9 @@
 *{
     margin: 0;
-    font-family: multiweb;
+    font-family: multiweb;  
+}
+.content{
+    padding: 15px;
 }
 @font-face{
     font-family:multiweb;
@@ -108,5 +111,63 @@ padding-bottom: 15px;
     font-size: 21px;
     font-weight: 500;
     padding-bottom: 15px;
+}
+.content-tag{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    background: #ffe8dc;
+    border-radius: 100px;
+
+}
+.content-tag-a p{
+    display: flex;
+    flex-direction: row;
+    background: #ffe8dc;
+}
+.numbers{
+    padding: 44px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+.additional{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.add-a a{
+    display: block;
+    line-height: 30px;
+    text-decoration: none;
+    color: black;
+    font-family: multiweb;
+}
+.add-b a{
+    display: block;
+    line-height:30px;
+    text-decoration: none;
+    color:black;
+    font-family: multiweb;
+}
+.add-a .privacy a{
+    color: #b5b5b5;
+}
+footer{
+    padding-top: 30px;
+    bottom: 0;
+}
+footer a{
+    height: 18px;
+    display: block;
+    text-decoration: none;
+    color:#b5b5b5;
+    padding:5px 0 5px 30px;
+    font-size: 12px;
+    font-family: multiweb;
+}
+.additional{
+    padding-top: 37px;
 }
 
