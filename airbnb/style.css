@@ -1,3 +1,7 @@
+*{
+    margin: 8;
+    padding: 0px;
+}
 body{
   font-family: airbnb; 
   margin-top:8px;
@@ -5,6 +9,9 @@ body{
 @font-face{
     font-family:airbnb;
     src:url(img/font/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2);
+}
+.search1{
+    display: noone;
 }
 .layout{
     width:100%;
@@ -25,35 +32,9 @@ body{
     right: 0;
     width: 1;
 }
-.containersub1{
-    width: auto;
-    height: 54px;
-    position: unset;
-    z-index: unset;
-}
-.containersub2{
-    width: 3;
-    height:54px;
-    padding:0;
-    border: 0;
-    margin: 0;
-    /* position: relative; */
-    z-index: 1;
-    /* display: block; */
-    margin-right: 2;
-    margin-right: ;
-}
-.containersub3{
-    /* width: 272px; */
-    height: 56px;
-    /* padding: 14px 24px 0 24px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: flex-start;
-    width: 9;
-}
-.containersub4{
+
+
+.container-sub-a{
     justify-content: space-between;
     display: flex;
     background: #fff;
@@ -69,9 +50,9 @@ body{
     align-items: stretch;
     width: 9;
     position: r;
-    margin-right: 1;
+    margin:1px;
 }
-.containersub5{
+.container-sub-b{
     display: flex;
     align-items: center;
     /* min-width: 227px; */
@@ -98,7 +79,7 @@ body{
     width: 100%;
     /* min-width:227px; */
 }
-.searchbuttonsub{
+.searchbutton-sub{
     padding: 0 16px 0 20px;
 }
 .whereto{
@@ -111,7 +92,7 @@ body{
     min-width: 0;
     margin-right: auto;
 }
-.wheretosub2{
+.whereto-a{
     /* width: 68.375px; */
     height: 20px;
     display:flex;
@@ -124,43 +105,43 @@ body{
 }
 .any{
     display: flex;
-    min-width: 0;
+    min-width: 50px;
     color:#717171;
     font-size: 12px;
     line-height: 16px;
     font-family: airbnb;
 }
-.anysub1{
+.any-a{
     display: flex;
-    min-width: 50px;
+    min-width: 20px;
 }
-.anysubspan{
+.anywhere{
     overflow:hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 } 
-.dot1{
+.anyweek{
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.any-guests{
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.dot{
     padding: 0 5px 0 5px;
 }
 .filter{
     display: flex;
     width: 56px;
     height: 54px;
-    /* margin-left: auto; */
-}
-.filterbutton{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    width: 56px;
-    height: 54px;
-    position: relative;
-    border-radius: 0px;
-    border: 0px solid black;
-    background: transparent;
-    justify-content: center;
 }
-.filtersub1{
+.filter-a{
     border: 1px solid #dddddd;
     border-radius: 25px;
     max-resolution: 0 10px;
@@ -188,11 +169,10 @@ body{
     overflow: scroll;
     /* width: 100%; */
     gap: 25px;
-    top: 1;
-    padding:0;
+    padding:20px 0 20px 0;
     height: 40px;
-    border-bottom: 1px solid rgb(156, 151, 151);
-    
+    border-bottom: 1px solid #dddddd;
+
 }
 ::-webkit-scrollbar{
     display: none;
@@ -210,28 +190,25 @@ body{
     font-size: 12px;
     line-height: 16px;
     font-weight:600;
-    font-family: inherit;
-    width:100%;
     opacity: .6;
-    align-items: center;
+    height: 43px;
 }
 .tinyhomes:hover{
     color: black;
     opacity: 1.2;
     padding-bottom: 15px;
     border-bottom: 2px solid black;
+    
 }
 .nationalparks{
-    width: 100%;
     display: flex;
     flex-flow: column;
-    align-items: center;
     white-space: nowrap;
+    text-align: center;
     font-size: 12px;
     font-weight: 600;
-    line-height: 16px;
-    font-family: inherit;
     opacity: .6;
+    height: 43px;
 }
 .nationalparks:hover{
     color: black;
@@ -247,6 +224,7 @@ body{
     font-size: 12px;
     font-weight: 600;
     opacity: .6;
+    height: 43px;
 }
 .pool:hover{
     color: black;
@@ -262,6 +240,7 @@ body{
     font-size: 12px;
     font-weight: 600;
     opacity: .6;
+    height: 43px;
 }
 .beaches:hover{
     color: black;
@@ -277,6 +256,7 @@ body{
     font-size: 12px;
     font-weight: 600;
     opacity: .6;
+    height: 43px;
 }
 .countryside:hover{
     color: black;
@@ -292,6 +272,7 @@ body{
     font-size: 12px;
     font-weight: 600;
     opacity: .6;
+    height: 43px;
 }
 .omg:hover{
     color: black;
@@ -307,6 +288,7 @@ body{
     font-size: 12px;
     opacity: .6;
     font-weight: 600;
+    height: 43px;
 }
 .amazingviews:hover{
     color: black;
@@ -322,6 +304,7 @@ body{
     font-size: 12px;
     font-weight:600;
     opacity: .6;
+    height: 43px;
 }
 .tropical:hover{
     color:black;
@@ -337,6 +320,7 @@ body{
     font-size: 12px;
     font-weight: 600;
     opacity: .6;
+    height: 43px;
 }
 .farms:hover{
     color: black;
@@ -352,6 +336,7 @@ body{
     font-size: 12px;
     font-weight: 600;
     opacity: .6;
+    height: 43px;
 }
 .houseboats:hover{
     color: black;
@@ -367,6 +352,7 @@ body{
     font-size: 12px;
     font-weight: 600;
     opacity: .6;
+    height: 43px;
 }
 .cabins:hover{
     color:black;
@@ -382,6 +368,7 @@ body{
     font-weight: 600;
     opacity: .6;
     align-items: center;
+    height: 43px;
 }
 .treehouse:hover{
     color: black;
@@ -397,6 +384,7 @@ body{
     font-size:12px;
     opacity: .6;
     font-weight: 600;
+    height: 43px;
 }
 .sharedhomes:hover{
     color: black;
@@ -412,6 +400,7 @@ body{
     font-size: 12px;
     font-weight: 600;
     opacity: .6;
+    height: 43px;
 }
 .creativespaces:hover{
     color: black;
@@ -427,6 +416,7 @@ body{
     font-size: 12px;
     font-weight: 600;
     opacity: .6;
+    height: 43px;
 }
 .island:hover{
     color: black;
@@ -442,6 +432,7 @@ body{
     font-size: 12px;
     font-weight: 600;
     opacity: .6;
+    height: 43px;
 }
 .lakefront:hover{
     color: black;
@@ -457,6 +448,7 @@ body{
     font-size: 12px;
     font-weight: 600;
     opacity: .6;
+    height: 43px;
 }
 .lake:hover{
     color: black;
@@ -472,6 +464,7 @@ body{
     font-size: 12px;
     font-weight: 600;
     opacity: .6;
+    height: 43px;
 }
 .iconiccities:hover{
     color: black;
@@ -487,6 +480,7 @@ body{
     font-size: 12px;
     font-weight: 600;
     opacity: .6;
+    height: 43px;
 }
 .castles:hover{
     color: black;
@@ -502,6 +496,7 @@ body{
     font-size: 12px;
     font-weight: 600;
     opacity: .6;
+    height:43px;
 }
 .mansions:hover{
     color: black;
@@ -509,10 +504,43 @@ body{
     padding-bottom: 15px;
     border-bottom: 2px solid;
 }
-.galle{
-    width: 272px;
-    height: 258.39px;
+
+/* -------------CONTENT--------- */
+
+.content{
+    padding: 0 24px;
+    margin: 24px 0 24px 0;
 }
+.nashik{
+    width: 80vw;
+    height: 80vw;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    
+}
+.nashik img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    bottom:0;
+    border-radius: 10px;
+}
+.nashik svg{
+    position: absolute;
+    top:20px;
+    right:20px;
+}
+.nashik-text{
+    line-height: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* -----Media Screen ---- */
+
 @media screen and (min-width:375px){
     .anysub1{
         display: flex;
@@ -525,26 +553,26 @@ body{
     }
 } 
 @media screen and (min-width:768px){
-
-    .containersub3{
+    .container{
         display: none;
     }
-    .container{
-        height:80px;
+    .container-sub-a{
+        display: none;
     }
+    
     .search1{
         display: flex;
+        justify-content: space-between;
         position: relative;
         width: 100%;
         height: 80px;
+        border-bottom: 1px solid #dddddd;
     }
     .heading{
         display: flex;
-        width: 100%;
         height: 80px;
         padding: 0px 40px;
-        border-bottom:1px solid #dddddd;
-        justify-content: space-around; 
+        padding-left: 40px;
     }
     button{
         display: flex;
@@ -567,15 +595,15 @@ body{
         padding: 0 24px;
         display: inline-flex;
         align-items: center;
+        justify-content: center;
     }
     .add{
-        width: 352px;
         height: 48px;
         background-color:#ffffff;
         border: 1px solid #dddddd;
         border-radius: 40px;
         box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
-        box-shadow: 0 4px 12px rgb(0 0 0 / 5%);
+        box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
         display: inline-flex;
         align-items: center;
     }
@@ -646,17 +674,18 @@ body{
     }
     .search1{
         display: flex;
-        flex-direction: column;
+        flex-direction:row;
+        width: 100%;
+        justify-content: space-between;
         align-items: center;
     }
-    .airbnb{
-        width: 271.91px;
+    .heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .any{
         width: 400.2px;
-    }
-    .headright{
-        width: 271.91px;
     }
     .airbnbicon{
         display: none;
@@ -665,16 +694,13 @@ body{
     .airbnbicon1{
         display: inline-flex;
         align-items: center;
-        width: 279.91px;
+        /* width: 279.91px; */
     }
-    .headright{
+    .head-right{
      
         display: inline-flex;
         align-items: center;
         justify-content: right;
     }
-    .heading{
-        padding: 0px 40px;
-        
-    }
+    
 }
