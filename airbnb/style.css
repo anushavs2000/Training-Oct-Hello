@@ -1,7 +1,9 @@
 * {
     padding: 0px;
 }
-
+body{
+    background-color: r;
+}
 @font-face {
     font-family: airbnb-medium;
     src: url(img/font/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2);
@@ -34,20 +36,7 @@
     right: 0;
 }
 
-.container {
-
-    height: 54px;
-    display: flex;
-    flex-direction: column;
-    position: sticky;
-    z-index: 1;
-    box-sizing: content-box;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 12px 12px 12px 0;
-}
+.container {height: 54px;display: flex;flex-direction: column;position: f;z-index: 1;box-sizing: content-box;top: 0;bottom: 0;left: 0;right: 0;padding: 10px 12px 10px 12px;margin: 2px 0;}
 
 
 .container-sub-a {
@@ -173,7 +162,6 @@
 .filter-a {
     border: 1px solid #dddddd;
     border-radius: 25px;
-    max-resolution: 0 10px;
     width: 34px;
     height: 34px;
     display: flex;
@@ -194,13 +182,17 @@
 }
 
 /*-------------tabs------------------*/
-
+.maintabs{
+    height: 67px;
+    background: #ffffff;
+}
 .tabicons {
     display: flex;
     overflow: scroll;
+    overflow-y: hidden;
     width: 100%;
     gap: 25px;
-    padding: 19px 0 20px 0;
+    padding: 6px 0 20px 20px;
     height: 41px;
     border-bottom: 1px solid #dddddd;
     align-items: center;
@@ -222,17 +214,19 @@
     align-items: center;
     white-space: nowrap;
     text-align: center;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
+}
+.tinyhomes span{
+    padding-top: 3px;
 }
 
 .tinyhomes:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 
 }
@@ -243,17 +237,20 @@
     align-items: center;
     white-space: nowrap;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
     flex-direction: column;
+    padding: 18px 0;
+}
+.nationalparks span{
+    padding-top: 3px;
 }
 
 .nationalparks:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
 
@@ -262,16 +259,19 @@
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
+}
+.pool span{
+    padding-top: 3px;
 }
 
 .pool:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
 
@@ -280,16 +280,19 @@
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
+}
+.beaches span{
+    padding-top: 3px;
 }
 
 .beaches:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
 
@@ -298,16 +301,19 @@
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
+}
+.countryside span{
+    padding-top: 3px;
 }
 
 .countryside:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
 
@@ -316,16 +322,19 @@
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
+}
+.omg span{
+    padding-top: 3px;
 }
 
 .omg:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
 
@@ -334,16 +343,19 @@
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     opacity: .6;
     font-weight: 600;
     height: 43px;
+    padding: 18px 0;
+    border-bottom:2px solid transparent;
 }
-
+.amazingviews span{
+    padding-top: 3px;
+}
 .amazingviews:hover {
     color: black;
-    opacity: 1.2;
-    padding-bottom: 15px;
+    opacity: 1;
     border-bottom: 2px solid black;
 }
 
@@ -352,16 +364,19 @@
     flex-flow: column;
     align-items: center;
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
+}
+.tropical span{
+    padding-top: 3px;
 }
 
 .tropical:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
 
@@ -370,16 +385,18 @@
     flex-flow: column;
     align-items: center;
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
 }
-
+.farms span{
+    padding-top: 3px;
+}
 .farms:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
 
@@ -388,16 +405,18 @@
     flex-flow: column;
     align-items: center;
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
 }
-
+.houseboats span{
+    padding-top: 3px;
+}
 .houseboats:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
 
@@ -406,16 +425,18 @@
     flex-flow: column;
     align-items: center;
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
 }
-
+.cabins span{
+    padding-top: 3px;
+}
 .cabins:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
 
@@ -423,17 +444,20 @@
     display: flex;
     flex-flow: column;
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     align-items: center;
     height: 43px;
+    padding: 18px 0;
+}
+.treehouse span{
+    padding-top: 3px;
 }
 
 .treehouse:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
 
@@ -442,16 +466,18 @@
     flex-flow: column;
     align-items: center;
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 14px;
     opacity: .6;
     font-weight: 600;
     height: 43px;
+    padding: 18px 0;
 }
-
+.sharedhomes span{
+    padding-top: 3px;
+}
 .sharedhomes:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
 
@@ -460,16 +486,18 @@
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
 }
-
+.creativespaces span{
+    padding-top: 3px;
+}
 .creativespaces:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
 
@@ -478,16 +506,18 @@
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
 }
-
+.island span{
+    padding-top: 3px;
+}
 .island:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
 
@@ -496,16 +526,18 @@
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
 }
-
+.lakefront span{
+    padding-top: 3px;
+}
 .lakefront:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
 
@@ -514,16 +546,19 @@
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
+}
+.lake span{
+    padding-top: 3px;
 }
 
 .lake:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
 
@@ -532,16 +567,19 @@
     flex-flow: column;
     align-items: center;
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
+}
+.iconiccities span{
+    padding-top: 3px;
 }
 
 .iconiccities:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
 
@@ -550,16 +588,19 @@
     flex-flow: column;
     align-items: center;
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
+}
+.castles span{
+    padding-top: 3px;
 }
 
 .castles:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
 
@@ -568,34 +609,35 @@
     flex-flow: column;
     align-items: center;
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 50px 18px 0;
 }
-
+.mansions span{
+    padding-top: 3px;
+}
 .mansions:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid;
 }
 
 /* -------------CONTENT--------- */
 
 .content {
-    /* padding: 0 24px; */
     margin: 24px 0 24px 0;
-    padding: 149px 24px 0 24px;
+    padding: 143px 24px 0 24px;
+    
 }
 
 .add-content {
-    width: 80vw;
+    width: 79vw;
     height: 80vw;
     position: relative;
     top: 0;
     bottom: 0;
-
 }
 
 .add-content img {
@@ -619,7 +661,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding-bottom: 10px;
+    padding-bottom: 26px;
     letter-spacing: .5px;
 }
 
@@ -636,12 +678,24 @@
     color: #222222;
     font-family: airbnb-book;
 }
+.rating{
+    padding-top: 4px;
+}
+.filter-tab{
+    display: none;
+}
+.content-a{
+    display: none;
+}
 
 /* -----Media Screen ---- */
 
 @media screen and (min-width:375px) {
     .content-text {
-        width: 95%;
+        width: 100%;
+    }
+    .add-content{
+        width: 83vw;
     }
 }
 
@@ -649,13 +703,15 @@
     .content {
         padding: 149px 34px 0 34px;
     }
+    .add-content{
+        width: 85vw;
+    }
 }
 
 @media screen and (min-width:768px) {
     .container {
         display: none;
     }
-
     .container-sub-a {
         display: none;
     }
@@ -667,7 +723,6 @@
         width: 100%;
         height: 80px;
         border-bottom: 1px solid #dddddd;
-
     }
 
     .heading {
@@ -685,7 +740,7 @@
     .airbnbicon {
         display: inline-flex;
         align-items: center;
-        padding-left: 15px;
+        padding-left: 36px;
     }
 
     .airbnbicon1 {
@@ -717,6 +772,12 @@
         box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
         display: inline-flex;
         align-items: center;
+    }
+    .content{
+        padding-top: 193px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
     }
 
     .content1 {
@@ -754,6 +815,7 @@
         height: 80px;
         display: inline-flex;
         align-items: center;
+        padding-right: 30px;
     }
 
     .become {
@@ -791,15 +853,142 @@
     .tabicons {
         margin-top: 10px;
         height: 40px;
+        padding-left: 37px;
+        padding-top: 37px;
 
     }
 
     .content-text {
-        width: 90%;
+        width: 100%;
     }
-}
+    .image-icon{
+        display: flex;
+    }
+    .add-content{
+        height: 46vw;
+        width: 45vw;
+    }
+    .image-icon{
+        gap: 22px;
+    }
+    .add-content{
+        height: 41.5vw;
+    }
+    .maintabs{
+        height: 105px;
+        background-color: #ffffff;
+    }
+    .tabicons{
+        border: none;
+    }
 
-@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1024px){
+    .search1{
+        display: flex;
+    }
+    .maintabs{
+        display: flex;
+    }
+    .filter-tab{
+        display: flex;
+        flex-direction: row;
+        gap:25px;
+        height: 47px;
+        padding-top: 51px;
+        padding-left: 17px;
+        width: 246px;
+    }
+    .scroll{
+        width:30px;
+        height:30px;
+        border-radius: 1000px;
+        border: 1px solid grey;
+        background: #ffffff;
+        padding-top: 2px;
+    }
+    .scroll svg{
+        padding-top: 6px;
+    }
+    .filter-icon{
+        width: 98px;
+        height:38px;
+        display:flex;
+        justify-content: space-around;
+        background: #ffffff;
+        border: 1px solid grey;
+        border-radius: 9px;
+        padding-top: 8px;
+    }
+    .content{
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+    }
+    .add-content{
+        width:28vw;
+        height: 28vw;
+    }
+    .first-content{
+        width:28vw;
+    }
+    .heading{
+        display: flex;
+        justify-content:space-between ;
+        width:65%;
+    }
+} 
+
+@media screen and (min-width: 1440px) {
+    .airbnbicon1{
+        padding-left: 80px;
+    }
+    .heading{
+        width:64%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .add-content{
+        width:20vw;
+        height: 20vw;
+    }
+    .first-content{
+        width:20vw;
+    }
+    .add{
+        font-size: 15px;
+    }
+    .content1{
+        font-size:15px;
+    }
+    .content2{
+        font-size:15px;
+    }
+    .headright{
+        width:288px;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .browser{
+        width:33px;
+    }
+    .usericon{
+        width:74px;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap:13px;
+    }
+    .user-icon-a{
+        padding-left: 11px;
+    }
+    .log{
+        width:29px;
+    }
+    .content-a{
+        display: none;
+    }
     .search {
         display: none;
     }
@@ -814,8 +1003,8 @@
 
     .heading {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+
     }
 
     .any {
@@ -830,14 +1019,14 @@
     .airbnbicon1 {
         display: inline-flex;
         align-items: center;
-        /* width: 279.91px; */
     }
 
     .head-right {
-
+        width: 288px;
         display: inline-flex;
         align-items: center;
         justify-content: right;
     }
+
 
 }
