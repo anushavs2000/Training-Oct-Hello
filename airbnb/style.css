@@ -1,47 +1,52 @@
-*{
-    margin: 8;
+* {
     padding: 0px;
 }
 body{
-  font-family: airbnb; 
-  margin-top:8px;
+    background-color: r;
 }
-@font-face{
-    font-family:airbnb;
-    src:url(img/font/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2);
+@font-face {
+    font-family: airbnb-medium;
+    src: url(img/font/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2);
 }
-.search1{
+
+
+@font-face {
+    font-family: airbnb-bold;
+    src: url(img/font/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2);
+}
+
+@font-face {
+    font-family: airbnb-book;
+    src: url(img/font/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2);
+}
+
+.search1 {
     display: noone;
 }
-.layout{
-    width:100%;
+
+.layout {
+    width: 100%;
     display: flex;
     flex-direction: column;
-}
-.container{
-    width: 1;
-    height: 54px;
-    display: flex;
-    flex-direction: column;
-    position: sticky;
+    position: fixed;
     z-index: 1;
-    box-sizing: content-box;
+    background: #ffffff;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
-    width: 1;
 }
 
+.container {height: 54px;display: flex;flex-direction: column;position: f;z-index: 1;box-sizing: content-box;top: 0;bottom: 0;left: 0;right: 0;padding: 10px 12px 10px 12px;margin: 2px 0;}
 
-.container-sub-a{
+
+.container-sub-a {
     justify-content: space-between;
     display: flex;
     background: #fff;
-    border: 0.5px solid rgba(0,0,0,0.08);
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
     border-radius: 1000px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
     /* min-height: 56px; */
     /* min-width: 285px; */
     box-sizing: border-box;
@@ -50,9 +55,10 @@ body{
     align-items: stretch;
     width: 9;
     position: r;
-    margin:1px;
+    margin: 1px;
 }
-.container-sub-b{
+
+.container-sub-b {
     display: flex;
     align-items: center;
     /* min-width: 227px; */
@@ -61,7 +67,8 @@ body{
     flex-direction: row;
     margin-right: 2;
 }
-.searchbutton{
+
+.searchbutton {
     -webkit-box-align: center;
     display: flex !important;
     align-items: center;
@@ -71,20 +78,22 @@ body{
     background: transparent;
     position: relative;
     border-width: 1px;
-    border-style:solid;
+    border-style: solid;
     outline: none;
     border: none;
     white-space: nowrap;
     height: 100%;
-    width: 100%;
+    width: 99%;
     /* min-width:227px; */
 }
-.searchbutton-sub{
+
+.searchbutton-sub {
     padding: 0 16px 0 20px;
 }
-.whereto{
+
+.whereto {
     /* width:173px; */
-    height:36px;
+    height: 36px;
     padding-left: 2px;
     display: flex;
     flex-direction: column;
@@ -92,48 +101,56 @@ body{
     min-width: 0;
     margin-right: auto;
 }
-.whereto-a{
+
+.whereto-a {
     /* width: 68.375px; */
     height: 20px;
-    display:flex;
+    display: flex;
     font-family: airbnb;
     font-size: 14px;
-    font-weight:600;
+    font-weight: 600;
     line-height: 20px;
-    color:#222222;
+    color: #222222;
     font-family: inherit;
 }
-.any{
+
+.any {
     display: flex;
     min-width: 50px;
-    color:#717171;
+    color: #717171;
     font-size: 12px;
     line-height: 16px;
     font-family: airbnb;
 }
-.any-a{
+
+.any-a {
     display: flex;
     min-width: 20px;
 }
-.anywhere{
-    overflow:hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-} 
-.anyweek{
-    overflow:hidden;
+
+.anywhere {
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.any-guests{
-    overflow:hidden;
+
+.anyweek {
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.dot{
+
+.any-guests {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dot {
     padding: 0 5px 0 5px;
 }
-.filter{
+
+.filter {
     display: flex;
     width: 56px;
     height: 54px;
@@ -141,426 +158,565 @@ body{
     justify-content: center;
     align-items: center;
 }
-.filter-a{
+
+.filter-a {
     border: 1px solid #dddddd;
     border-radius: 25px;
-    max-resolution: 0 10px;
     width: 34px;
     height: 34px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.tabs{
+
+.tabs {
     margin: 0;
     display: grid;
-    grid-auto-flow:column;
+    grid-auto-flow: column;
     grid-gap: 16px;
-        
+
 }
-.search1{
+
+.search1 {
     display: none;
 }
 
-        /*-------------tabs------------------*/
-
-.tabicons{
-    display:flex;
+/*-------------tabs------------------*/
+.maintabs{
+    height: 67px;
+    background: #ffffff;
+}
+.tabicons {
+    display: flex;
     overflow: scroll;
-    /* width: 100%; */
+    overflow-y: hidden;
+    width: 100%;
     gap: 25px;
-    padding:20px 0 20px 0;
-    height: 40px;
+    padding: 6px 0 20px 20px;
+    height: 41px;
     border-bottom: 1px solid #dddddd;
-
+    align-items: center;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     display: none;
 }
-.tabicons img{
+
+.tabicons img {
     width: 24px;
     height: 24px;
-    
+
 }
-.tinyhomes{
+
+.tinyhomes {
     display: flex;
     flex-flow: column;
-    white-space: nowrap;
-    text-align:center;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight:600;
-    opacity: .6;
-    height: 43px;
-}
-.tinyhomes:hover{
-    color: black;
-    opacity: 1.2;
-    padding-bottom: 15px;
-    border-bottom: 2px solid black;
-    
-}
-.nationalparks{
-    display: flex;
-    flex-flow: column;
+    align-items: center;
     white-space: nowrap;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
 }
-.nationalparks:hover{
+.tinyhomes span{
+    padding-top: 3px;
+}
+
+.tinyhomes:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
+
 }
-.pool{
-    display: flex;
-    flex-flow: column;
-    white-space: nowrap;
-    align-items: center;
-    font-size: 12px;
-    font-weight: 600;
-    opacity: .6;
-    height: 43px;
-}
-.pool:hover{
-    color: black;
-    opacity: 1.2;
-    padding-bottom: 15px;
-    border-bottom: 2px solid black;
-}
-.beaches{
-    display: flex;
-    flex-flow: column;
-    white-space: nowrap;
-    align-items: center;
-    font-size: 12px;
-    font-weight: 600;
-    opacity: .6;
-    height: 43px;
-}
-.beaches:hover{
-    color: black;
-    opacity: 1.2;
-    padding-bottom: 15px;
-    border-bottom: 2px solid black;
-}
-.countryside{
-    display: flex;
-    flex-flow: column;
-    white-space: nowrap;
-    align-items: center;
-    font-size: 12px;
-    font-weight: 600;
-    opacity: .6;
-    height: 43px;
-}
-.countryside:hover{
-    color: black;
-    opacity: 1.2;
-    padding-bottom: 15px;
-    border-bottom: 2px solid black;
-}
-.omg{
-    display: flex;
-    flex-flow: column;
-    white-space: nowrap;
-    align-items: center;
-    font-size: 12px;
-    font-weight: 600;
-    opacity: .6;
-    height: 43px;
-}
-.omg:hover{
-    color: black;
-    opacity: 1.2;
-    padding-bottom: 15px;
-    border-bottom: 2px solid black; 
-}
-.amazingviews{
-    display: flex;
-    flex-flow: column;
-    white-space: nowrap;
-    align-items: center;
-    font-size: 12px;
-    opacity: .6;
-    font-weight: 600;
-    height: 43px;
-}
-.amazingviews:hover{
-    color: black;
-    opacity: 1.2;
-    padding-bottom: 15px;
-    border-bottom: 2px solid black;
-}
-.tropical{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    white-space:nowrap;
-    font-size: 12px;
-    font-weight:600;
-    opacity: .6;
-    height: 43px;
-}
-.tropical:hover{
-    color:black;
-    opacity:1.2;
-    padding-bottom: 15px;
-    border-bottom: 2px solid black;
-}
-.farms{
+
+.nationalparks {
     display: flex;
     flex-flow: column;
     align-items: center;
     white-space: nowrap;
-    font-size: 12px;
+    text-align: center;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    flex-direction: column;
+    padding: 18px 0;
 }
-.farms:hover{
+.nationalparks span{
+    padding-top: 3px;
+}
+
+.nationalparks:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
-.houseboats{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    white-space: nowrap;
-    font-size: 12px;
-    font-weight: 600;
-    opacity: .6;
-    height: 43px;
-}
-.houseboats:hover{
-    color: black;
-    opacity: 1.2;
-    padding-bottom: 15px;
-    border-bottom: 2px solid black;
-}
-.cabins{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    white-space: nowrap;
-    font-size: 12px;
-    font-weight: 600;
-    opacity: .6;
-    height: 43px;
-}
-.cabins:hover{
-    color:black;
-    opacity: 1.2;
-    padding-bottom: 15px;
-    border-bottom: 2px solid black;
-}
-.treehouse{
-    display: flex;
-    flex-flow: column;
-    white-space: nowrap;
-    font-size: 12px;
-    font-weight: 600;
-    opacity: .6;
-    align-items: center;
-    height: 43px;
-}
-.treehouse:hover{
-    color: black;
-    opacity: 1.2;
-    padding-bottom: 15px;
-    border-bottom: 2px solid black;
-}
-.sharedhomes{
-    display:flex;
-    flex-flow:column;
-    align-items:center;
-    white-space:nowrap;
-    font-size:12px;
-    opacity: .6;
-    font-weight: 600;
-    height: 43px;
-}
-.sharedhomes:hover{
-    color: black;
-    opacity: 1.2;
-    padding-bottom: 15px;
-    border-bottom: 2px solid black;
-}
-.creativespaces{
+
+.pool {
     display: flex;
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
 }
-.creativespaces:hover{
+.pool span{
+    padding-top: 3px;
+}
+
+.pool:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
-.island{
+
+.beaches {
     display: flex;
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
 }
-.island:hover{
+.beaches span{
+    padding-top: 3px;
+}
+
+.beaches:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
-.lakefront{
-    display: flex;
-    flex-flow:column;
-    white-space: nowrap;
-    align-items: center;
-    font-size: 12px;
-    font-weight: 600;
-    opacity: .6;
-    height: 43px;
-}
-.lakefront:hover{
-    color: black;
-    opacity: 1.2;
-    padding-bottom: 15px;
-    border-bottom: 2px solid black;
-}
-.lake{
+
+.countryside {
     display: flex;
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
 }
-.lake:hover{
+.countryside span{
+    padding-top: 3px;
+}
+
+.countryside:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
-    border-bottom: 2px solid black;   
+    border-bottom: 2px solid black;
 }
-.iconiccities{
+
+.omg {
+    display: flex;
+    flex-flow: column;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .6;
+    height: 43px;
+    padding: 18px 0;
+}
+.omg span{
+    padding-top: 3px;
+}
+
+.omg:hover {
+    color: black;
+    opacity: 1.2;
+    border-bottom: 2px solid black;
+}
+
+.amazingviews {
+    display: flex;
+    flex-flow: column;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 14px;
+    opacity: .6;
+    font-weight: 600;
+    height: 43px;
+    padding: 18px 0;
+    border-bottom:2px solid transparent;
+}
+.amazingviews span{
+    padding-top: 3px;
+}
+.amazingviews:hover {
+    color: black;
+    opacity: 1;
+    border-bottom: 2px solid black;
+}
+
+.tropical {
     display: flex;
     flex-flow: column;
     align-items: center;
-    white-space:nowrap;
-    font-size: 12px;
+    white-space: nowrap;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
 }
-.iconiccities:hover{
+.tropical span{
+    padding-top: 3px;
+}
+
+.tropical:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom:15px;
     border-bottom: 2px solid black;
 }
-.castles{
+
+.farms {
     display: flex;
     flex-flow: column;
-    align-items:center;
+    align-items: center;
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
+    padding: 18px 0;
 }
-.castles:hover{
+.farms span{
+    padding-top: 3px;
+}
+.farms:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
     border-bottom: 2px solid black;
 }
-.mansions{
+
+.houseboats {
     display: flex;
-    flex-flow:column;
-    align-items:center;
+    flex-flow: column;
+    align-items: center;
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     opacity: .6;
-    height:43px;
+    height: 43px;
+    padding: 18px 0;
 }
-.mansions:hover{
+.houseboats span{
+    padding-top: 3px;
+}
+.houseboats:hover {
     color: black;
     opacity: 1.2;
-    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
+.cabins {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .6;
+    height: 43px;
+    padding: 18px 0;
+}
+.cabins span{
+    padding-top: 3px;
+}
+.cabins:hover {
+    color: black;
+    opacity: 1.2;
+    border-bottom: 2px solid black;
+}
+
+.treehouse {
+    display: flex;
+    flex-flow: column;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .6;
+    align-items: center;
+    height: 43px;
+    padding: 18px 0;
+}
+.treehouse span{
+    padding-top: 3px;
+}
+
+.treehouse:hover {
+    color: black;
+    opacity: 1.2;
+    border-bottom: 2px solid black;
+}
+
+.sharedhomes {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 14px;
+    opacity: .6;
+    font-weight: 600;
+    height: 43px;
+    padding: 18px 0;
+}
+.sharedhomes span{
+    padding-top: 3px;
+}
+.sharedhomes:hover {
+    color: black;
+    opacity: 1.2;
+    border-bottom: 2px solid black;
+}
+
+.creativespaces {
+    display: flex;
+    flex-flow: column;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .6;
+    height: 43px;
+    padding: 18px 0;
+}
+.creativespaces span{
+    padding-top: 3px;
+}
+.creativespaces:hover {
+    color: black;
+    opacity: 1.2;
+    border-bottom: 2px solid black;
+}
+
+.island {
+    display: flex;
+    flex-flow: column;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .6;
+    height: 43px;
+    padding: 18px 0;
+}
+.island span{
+    padding-top: 3px;
+}
+.island:hover {
+    color: black;
+    opacity: 1.2;
+    border-bottom: 2px solid black;
+}
+
+.lakefront {
+    display: flex;
+    flex-flow: column;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .6;
+    height: 43px;
+    padding: 18px 0;
+}
+.lakefront span{
+    padding-top: 3px;
+}
+.lakefront:hover {
+    color: black;
+    opacity: 1.2;
+    border-bottom: 2px solid black;
+}
+
+.lake {
+    display: flex;
+    flex-flow: column;
+    white-space: nowrap;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .6;
+    height: 43px;
+    padding: 18px 0;
+}
+.lake span{
+    padding-top: 3px;
+}
+
+.lake:hover {
+    color: black;
+    opacity: 1.2;
+    border-bottom: 2px solid black;
+}
+
+.iconiccities {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .6;
+    height: 43px;
+    padding: 18px 0;
+}
+.iconiccities span{
+    padding-top: 3px;
+}
+
+.iconiccities:hover {
+    color: black;
+    opacity: 1.2;
+    border-bottom: 2px solid black;
+}
+
+.castles {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .6;
+    height: 43px;
+    padding: 18px 0;
+}
+.castles span{
+    padding-top: 3px;
+}
+
+.castles:hover {
+    color: black;
+    opacity: 1.2;
+    border-bottom: 2px solid black;
+}
+
+.mansions {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .6;
+    height: 43px;
+    padding: 18px 50px 18px 0;
+}
+.mansions span{
+    padding-top: 3px;
+}
+.mansions:hover {
+    color: black;
+    opacity: 1.2;
     border-bottom: 2px solid;
 }
 
 /* -------------CONTENT--------- */
 
-.content{
-    padding: 0 24px;
+.content {
     margin: 24px 0 24px 0;
+    padding: 143px 24px 0 24px;
+    
 }
-.nashik{
-    width: 80vw;
+
+.add-content {
+    width: 79vw;
     height: 80vw;
     position: relative;
     top: 0;
     bottom: 0;
-    
 }
-.nashik img{
+
+.add-content img {
     width: 100%;
     height: 100%;
     position: absolute;
-    top:0;
-    bottom:0;
+    top: 0;
+    bottom: 0;
     border-radius: 10px;
 }
-.nashik svg{
+
+.add-content svg {
     position: absolute;
-    top:20px;
-    right:20px;
+    top: 20px;
+    right: 20px;
 }
-.nashik-text{
+
+.content-text {
     line-height: 5px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 26px;
+    letter-spacing: .5px;
 }
 
+.content-text-a h4 {
+    font-family: airbnb-book;
+}
+
+.content-text-a p {
+    color: #717171;
+    font-family: airbnb-book;
+}
+
+.cost p {
+    color: #222222;
+    font-family: airbnb-book;
+}
+.rating{
+    padding-top: 4px;
+}
+.filter-tab{
+    display: none;
+}
+.content-a{
+    display: none;
+}
 
 /* -----Media Screen ---- */
 
-@media screen and (min-width:375px){
-    .anysub1{
-        display: flex;
-        min-width: 50px;
+@media screen and (min-width:375px) {
+    .content-text {
+        width: 100%;
     }
-    .anysubspan{
-        overflow:hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+    .add-content{
+        width: 83vw;
     }
-} 
-@media screen and (min-width:768px){
-    .container{
+}
+
+@media screen and (min-width: 425px) {
+    .content {
+        padding: 149px 34px 0 34px;
+    }
+    .add-content{
+        width: 85vw;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container {
         display: none;
     }
-    .container-sub-a{
+    .container-sub-a {
         display: none;
     }
-    
-    .search1{
+
+    .search1 {
         display: flex;
         justify-content: space-between;
         position: relative;
@@ -568,38 +724,48 @@ body{
         height: 80px;
         border-bottom: 1px solid #dddddd;
     }
-    .heading{
+
+    .heading {
         display: flex;
         height: 80px;
-        padding: 0px 40px;
-        padding-left: 40px;
+        padding-right: 0;
+        padding-left: 0;
     }
-    button{
+
+    button {
         display: flex;
         justify-content: center;
     }
-    .airbnbicon{
+
+    .airbnbicon {
         display: inline-flex;
         align-items: center;
+        padding-left: 36px;
     }
-    .airbnbicon1{
+
+    .airbnbicon1 {
         display: none;
     }
-    svg .airbnb{
+
+    svg .airbnb {
         width: 46px;
         height: 64px;
     }
-    .any{
+
+    .any {
         width: 400px;
-        height:80px;
+        height: 80px;
         padding: 0 24px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
     }
-    .add{
+
+    .add {
         height: 48px;
-        background-color:#ffffff;
+        background-color: #ffffff;
         border: 1px solid #dddddd;
         border-radius: 40px;
         box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
@@ -607,100 +773,260 @@ body{
         display: inline-flex;
         align-items: center;
     }
-    .content1{
+    .content{
+        padding-top: 193px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+
+    .content1 {
         padding: 0px 16px;
         font-size: 14px;
         font-weight: 600;
     }
-    .content2{
+
+    .content2 {
         padding: 0px 16px;
         font-size: 14px;
         font-weight: 600;
     }
-    .content3{
+
+    .content3 {
         padding: 0px 16px;
         color: #717171;
     }
-    .bar{
+
+    .bar {
         font-size: 20px;
         color: #717171;
-        font-weight:inherit;
+        font-weight: inherit;
     }
-    .searchicon{
+
+    .searchicon {
         background: #ff385c;
         padding: 10px;
         margin: 7px 7px 7px 0;
         border-radius: 50%;
     }
-    .headright{
+
+    .headright {
         width: 257px;
         height: 80px;
         display: inline-flex;
         align-items: center;
+        padding-right: 30px;
     }
-    .become{
+
+    .become {
         width: 127.31px;
         font-family: inherit;
         font-weight: 600;
-    } 
-    .browser{
-        width:46px;
     }
-    .usericon{
+
+    .browser {
+        width: 46px;
+    }
+
+    .usericon {
         display: inline-flex;
         align-items: center;
         background-color: #ffffff;
-        /* padding: 5px 5px 5px 12px; */
-        padding-left: 12px;
-        border:1px solid #dddddd;
-        border-radius:25px ;
+        padding-right: 0;
+        padding-left: 0;
+        border: 1px solid #dddddd;
+        border-radius: 25px;
         width: 77px;
         height: 42px;
-        gap:24px;
+        gap: 24px;
     }
-    .log{
+
+    .usericon-a {
+        padding-left: 4px;
+    }
+
+    .log {
         width: 28.69px;
         height: 28.69px;
     }
-    .tabicons{
+
+    .tabicons {
         margin-top: 10px;
         height: 40px;
-    
+        padding-left: 37px;
+        padding-top: 37px;
+
     }
+
+    .content-text {
+        width: 100%;
+    }
+    .image-icon{
+        display: flex;
+    }
+    .add-content{
+        height: 46vw;
+        width: 45vw;
+    }
+    .image-icon{
+        gap: 22px;
+    }
+    .add-content{
+        height: 41.5vw;
+    }
+    .maintabs{
+        height: 105px;
+        background-color: #ffffff;
+    }
+    .tabicons{
+        border: none;
+    }
+
 }
 @media screen and (min-width: 1024px){
-    .search{
-        display: none;
-    }
     .search1{
         display: flex;
-        flex-direction:row;
+    }
+    .maintabs{
+        display: flex;
+    }
+    .filter-tab{
+        display: flex;
+        flex-direction: row;
+        gap:25px;
+        height: 47px;
+        padding-top: 51px;
+        padding-left: 17px;
+        width: 246px;
+    }
+    .scroll{
+        width:30px;
+        height:30px;
+        border-radius: 1000px;
+        border: 1px solid grey;
+        background: #ffffff;
+        padding-top: 2px;
+    }
+    .scroll svg{
+        padding-top: 6px;
+    }
+    .filter-icon{
+        width: 98px;
+        height:38px;
+        display:flex;
+        justify-content: space-around;
+        background: #ffffff;
+        border: 1px solid grey;
+        border-radius: 9px;
+        padding-top: 8px;
+    }
+    .content{
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+    }
+    .add-content{
+        width:28vw;
+        height: 28vw;
+    }
+    .first-content{
+        width:28vw;
+    }
+    .heading{
+        display: flex;
+        justify-content:space-between ;
+        width:65%;
+    }
+} 
+
+@media screen and (min-width: 1440px) {
+    .airbnbicon1{
+        padding-left: 80px;
+    }
+    .heading{
+        width:64%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .add-content{
+        width:20vw;
+        height: 20vw;
+    }
+    .first-content{
+        width:20vw;
+    }
+    .add{
+        font-size: 15px;
+    }
+    .content1{
+        font-size:15px;
+    }
+    .content2{
+        font-size:15px;
+    }
+    .headright{
+        width:288px;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .browser{
+        width:33px;
+    }
+    .usericon{
+        width:74px;
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap:13px;
+    }
+    .user-icon-a{
+        padding-left: 11px;
+    }
+    .log{
+        width:29px;
+    }
+    .content-a{
+        display: none;
+    }
+    .search {
+        display: none;
+    }
+
+    .search1 {
+        display: flex;
+        flex-direction: row;
         width: 100%;
         justify-content: space-between;
         align-items: center;
     }
-    .heading{
+
+    .heading {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+
     }
-    .any{
+
+    .any {
         width: 400.2px;
     }
-    .airbnbicon{
+
+    .airbnbicon {
         display: none;
         z-index: 6;
     }
-    .airbnbicon1{
+
+    .airbnbicon1 {
         display: inline-flex;
         align-items: center;
-        /* width: 279.91px; */
     }
-    .head-right{
-     
+
+    .head-right {
+        width: 288px;
         display: inline-flex;
         align-items: center;
         justify-content: right;
     }
-    
+
+
 }
