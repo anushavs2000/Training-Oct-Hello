@@ -660,7 +660,7 @@ body{
 .content {
     font-family: sans-serif;
     margin: 24px 0 24px 0;
-    padding: 143px 24px 0 24px;
+    padding: 143px 24px 33px 24px;
     
 }
 
@@ -719,6 +719,53 @@ body{
     display: none;
 }
 .content-a{
+    display: none;
+}
+.show-map{
+    background: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 19px;
+    height: 38px;
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+    left: 38%;
+    bottom:90px;
+}
+.show-map p{
+    color:#ffffff;
+    font-size:13px;
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap:7%;
+    position: fixed;
+    background-color: #ffffff;
+    bottom: 0;
+    z-index: 1;
+    border-top: 1px solid #ded6d6;
+}
+.explore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:11px ;
+    font-size: 11px;
+}
+.wishlist-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 11px;
+    font-size: 11px;
+    color: #717171;
+}
+.footer-content-tablet{
     display: none;
 }
 
@@ -1052,6 +1099,12 @@ body{
         border-radius: 9px;
         padding-top: 12px;
     }
+    .footer-content{
+        display: none;
+    }
+    .footer-content-tablet{
+        display: flex;
+    }
 
 
 }
@@ -1062,44 +1115,16 @@ body{
     .maintabs{
         display: flex;
     }
-    .filter-tab{
-        display: flex;
-        flex-direction: row;
-        gap:25px;
-        height: 47px;
-        padding-top: 51px;
-        padding-left: 17px;
-        width: 246px;
-    }
-    .scroll{
-        width:30px;
-        height:30px;
-        border-radius: 1000px;
-        border: 1px solid grey;
-        background: #ffffff;
-        padding-top: 2px;
-    }
-    .scroll svg{
-        padding-top: 6px;
-    }
-    .filter-icon{
-        width: 98px;
-        height:38px;
-        display:flex;
-        justify-content: space-around;
-        background: #ffffff;
-        border: 1px solid grey;
-        border-radius: 9px;
-        padding-top: 8px;
-    }
+   
+   
     .content{
         padding: 193px 39px;
         display: grid;
         grid-template-columns:repeat(3,1fr);
     }
     .add-content{
-        width:43vw;
-        height: 41.5vw;
+        width:29.2vw;
+        height: 27.9vw;
     }
     .first-content{
         width:28vw;
@@ -1107,13 +1132,19 @@ body{
     .heading{
         display: flex;
         justify-content:space-between ;
-        width:65%;
+        width:69.5%;
+    }
+    .filter-icon{
+        gap: 10px;
+    }
+    .filter-tab{
+        gap:35px;
     }
 } 
 
 @media screen and (min-width: 1440px) {
     .airbnbicon1{
-        padding-left: 80px;
+        padding-left: 76px;
     }
     .heading{
         width:64%;
@@ -1121,7 +1152,7 @@ body{
         justify-content: space-between;
     }
     .add-content{
-        width:20vw;
+        width:21vw;
         height: 20vw;
     }
     .first-content{
@@ -1142,6 +1173,7 @@ body{
     .content{
         display: grid;
         grid-template-columns: repeat(4,1fr);
+        padding: 0 40px 0 31px;
     }
     .browser{
         width:33px;
@@ -1150,6 +1182,7 @@ body{
         width:74px;
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-wrap: nowrap;
         gap:13px;
     }
@@ -1177,11 +1210,11 @@ body{
     .heading {
         display: flex;
         justify-content: space-between;
-
+        width: 69%;
     }
 
     .any {
-        width: 400.2px;
+        width:54.5%;
     }
 
     .airbnbicon {
@@ -1194,12 +1227,26 @@ body{
         align-items: center;
     }
 
-    .head-right {
+    .headright {
         width: 288px;
         display: inline-flex;
         align-items: center;
         justify-content: right;
+        padding-right: 83px;
     }
-
-
+    .filter-tab{
+        padding-right: 23px;
+        display: flex;
+        justify-content: center;
+    }
+    .maintabs{
+        padding-left: 33px;
+        padding-right: 43px;
+    }
+    .tabicons{
+        gap: 25px;
+    }
+    .content{
+        padding: 178px 80px 0 70px;
+    }
 }
