@@ -768,6 +768,9 @@ body{
 .footer-content-tablet{
     display: none;
 }
+.show-map-tablet{
+    display: none;
+}
 
 /* -----Media Screen ---- */
 
@@ -1103,8 +1106,64 @@ body{
         display: none;
     }
     .footer-content-tablet{
-        display: flex;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+        background: #ffffff;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+        padding-left: 28px ;
+        height:60px;
+        border-top: 1px solid #ded6d6;
+
     }
+    .copyright{
+        padding-top: 10px;
+    }
+    .copyright a{
+        text-decoration: none;
+        color:black;
+        opacity: .8;
+        font-size: 14px;
+        padding:0 6px 0 5px;
+    }
+    .support-resources{
+        display: flex;
+        justify-content:space-around;
+        white-space: nowrap;
+        padding-right: 29px;
+        padding-top: 20px;
+    }
+    .support-resources a{
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+        opacity: .9;
+    }
+    .show-map{
+        display: none;
+    }
+    .show-map-tablet{
+        display: flex;
+        background: #222222;
+        justify-content: center;
+        align-items: center;
+        border-radius: 19px;
+        height: 38px;
+        width: 100px;
+        position: fixed;
+        z-index: 2;
+        left: 38%;
+        bottom:99px;
+    }
+    .show-map-tablet p{
+        color: #ffffff;
+    }
+
+    }
+
 
 
 }
