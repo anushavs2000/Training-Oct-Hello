@@ -1,5 +1,6 @@
 * {
     padding: 0px;
+    font-family: sans-serif;
 }
 body{
     background-color: r;
@@ -36,7 +37,18 @@ body{
     right: 0;
 }
 
-.container {height: 54px;display: flex;flex-direction: column;position: f;z-index: 1;box-sizing: content-box;top: 0;bottom: 0;left: 0;right: 0;padding: 10px 12px 10px 12px;margin: 2px 0;}
+.container {
+    height: 54px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    box-sizing: content-box;
+    top: 0;
+    bottom: 0;
+    left: 0;right: 0;
+    padding: 10px 13px 10px 21px;
+    margin: 2px 0;
+}
 
 
 .container-sub-a {
@@ -61,8 +73,7 @@ body{
 .container-sub-b {
     display: flex;
     align-items: center;
-    /* min-width: 227px; */
-    width: 100%;
+    width: 80%;
     box-sizing: border-box;
     flex-direction: row;
     margin-right: 2;
@@ -115,6 +126,7 @@ body{
 }
 
 .any {
+    width: 100%;
     display: flex;
     min-width: 50px;
     color: #717171;
@@ -124,6 +136,7 @@ body{
 }
 
 .any-a {
+    width: 45%;
     display: flex;
     min-width: 20px;
 }
@@ -151,7 +164,6 @@ body{
 }
 
 .filter {
-    display: flex;
     width: 56px;
     height: 54px;
     display: flex;
@@ -204,8 +216,7 @@ body{
 
 .tabicons img {
     width: 24px;
-    height: 24px;
-
+    height: 24p
 }
 
 .tinyhomes {
@@ -214,14 +225,15 @@ body{
     align-items: center;
     white-space: nowrap;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
     padding: 18px 0;
+    border-bottom:2px solid transparent;
 }
 .tinyhomes span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 
 .tinyhomes:hover {
@@ -237,15 +249,16 @@ body{
     align-items: center;
     white-space: nowrap;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
     flex-direction: column;
     padding: 18px 0;
+    border-bottom:2px solid transparent;
 }
 .nationalparks span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 
 .nationalparks:hover {
@@ -259,14 +272,15 @@ body{
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
     padding: 18px 0;
+    border-bottom:2px solid transparent;
 }
 .pool span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 
 .pool:hover {
@@ -280,14 +294,15 @@ body{
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
     padding: 18px 0;
+    border-bottom:2px solid transparent;
 }
 .beaches span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 
 .beaches:hover {
@@ -301,14 +316,15 @@ body{
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
     padding: 18px 0;
+    border-bottom:2px solid transparent;
 }
 .countryside span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 
 .countryside:hover {
@@ -322,14 +338,15 @@ body{
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
     padding: 18px 0;
+    border-bottom:2px solid transparent;
 }
 .omg span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 
 .omg:hover {
@@ -343,7 +360,7 @@ body{
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     opacity: .6;
     font-weight: 600;
     height: 43px;
@@ -351,7 +368,7 @@ body{
     border-bottom:2px solid transparent;
 }
 .amazingviews span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 .amazingviews:hover {
     color: black;
@@ -364,14 +381,15 @@ body{
     flex-flow: column;
     align-items: center;
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
     padding: 18px 0;
+    border-bottom:2px solid transparent;
 }
 .tropical span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 
 .tropical:hover {
@@ -385,14 +403,15 @@ body{
     flex-flow: column;
     align-items: center;
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
     padding: 18px 0;
+    border-bottom:2px solid transparent;
 }
 .farms span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 .farms:hover {
     color: black;
@@ -405,14 +424,15 @@ body{
     flex-flow: column;
     align-items: center;
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
     padding: 18px 0;
+    border-bottom:2px solid transparent;
 }
 .houseboats span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 .houseboats:hover {
     color: black;
@@ -425,14 +445,15 @@ body{
     flex-flow: column;
     align-items: center;
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
     padding: 18px 0;
+    border-bottom:2px solid transparent;
 }
 .cabins span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 .cabins:hover {
     color: black;
@@ -444,15 +465,16 @@ body{
     display: flex;
     flex-flow: column;
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     opacity: .6;
     align-items: center;
     height: 43px;
     padding: 18px 0;
+    border-bottom:2px solid transparent;
 }
 .treehouse span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 
 .treehouse:hover {
@@ -466,14 +488,15 @@ body{
     flex-flow: column;
     align-items: center;
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 12px;
     opacity: .6;
     font-weight: 600;
     height: 43px;
     padding: 18px 0;
+    border-bottom:2px solid transparent;
 }
 .sharedhomes span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 .sharedhomes:hover {
     color: black;
@@ -486,14 +509,15 @@ body{
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
     padding: 18px 0;
+    border-bottom:2px solid transparent;
 }
 .creativespaces span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 .creativespaces:hover {
     color: black;
@@ -506,14 +530,15 @@ body{
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
     padding: 18px 0;
+    border-bottom:2px solid transparent;
 }
 .island span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 .island:hover {
     color: black;
@@ -526,14 +551,15 @@ body{
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
     padding: 18px 0;
+    border-bottom:2px solid transparent;
 }
 .lakefront span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 .lakefront:hover {
     color: black;
@@ -546,14 +572,15 @@ body{
     flex-flow: column;
     white-space: nowrap;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
     padding: 18px 0;
+    border-bottom:2px solid transparent;
 }
 .lake span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 
 .lake:hover {
@@ -567,14 +594,15 @@ body{
     flex-flow: column;
     align-items: center;
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
     padding: 18px 0;
+    border-bottom:2px solid transparent;
 }
 .iconiccities span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 
 .iconiccities:hover {
@@ -588,14 +616,16 @@ body{
     flex-flow: column;
     align-items: center;
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
     padding: 18px 0;
+    border-bottom:2px solid transparent;
+    
 }
 .castles span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 
 .castles:hover {
@@ -609,14 +639,15 @@ body{
     flex-flow: column;
     align-items: center;
     white-space: nowrap;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     opacity: .6;
     height: 43px;
     padding: 18px 50px 18px 0;
+    border-bottom:2px solid transparent;
 }
 .mansions span{
-    padding-top: 3px;
+    padding-top: 4px;
 }
 .mansions:hover {
     color: black;
@@ -627,13 +658,14 @@ body{
 /* -------------CONTENT--------- */
 
 .content {
+    font-family: sans-serif;
     margin: 24px 0 24px 0;
-    padding: 143px 24px 0 24px;
+    padding: 143px 24px 33px 24px;
     
 }
 
 .add-content {
-    width: 79vw;
+    width: 100%;
     height: 80vw;
     position: relative;
     top: 0;
@@ -651,8 +683,8 @@ body{
 
 .add-content svg {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 15px;
+    right: 15px;
 }
 
 .content-text {
@@ -663,6 +695,7 @@ body{
     width: 100%;
     padding-bottom: 26px;
     letter-spacing: .5px;
+    font-size: 14px;
 }
 
 .content-text-a h4 {
@@ -676,7 +709,8 @@ body{
 
 .cost p {
     color: #222222;
-    font-family: airbnb-book;
+    font-size: 15px;
+    padding-top: 7px;
 }
 .rating{
     padding-top: 4px;
@@ -685,6 +719,56 @@ body{
     display: none;
 }
 .content-a{
+    display: none;
+}
+.show-map{
+    background: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 19px;
+    height: 38px;
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+    left: 38%;
+    bottom:90px;
+}
+.show-map p{
+    color:#ffffff;
+    font-size:13px;
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap:7%;
+    position: fixed;
+    background-color: #ffffff;
+    bottom: 0;
+    z-index: 1;
+    border-top: 1px solid #ded6d6;
+}
+.explore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:11px ;
+    font-size: 11px;
+}
+.wishlist-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 11px;
+    font-size: 11px;
+    color: #717171;
+}
+.footer-content-tablet{
+    display: none;
+}
+.show-map-tablet{
     display: none;
 }
 
@@ -729,7 +813,7 @@ body{
         display: flex;
         height: 80px;
         padding-right: 0;
-        padding-left: 0;
+        padding-left: 4px;
     }
 
     button {
@@ -768,35 +852,44 @@ body{
         background-color: #ffffff;
         border: 1px solid #dddddd;
         border-radius: 40px;
-        box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
-        box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+        box-shadow: 0 2px 10px rgb(0 0 0 / 10%);
         display: inline-flex;
         align-items: center;
+        padding: 4px 8px;
+        
     }
+    
     .content{
         padding-top: 193px;
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        grid-gap: 20px;
+        grid-column-gap: 22px;
     }
 
     .content1 {
-        padding: 0px 16px;
+        padding: 0px 17px;
         font-size: 14px;
         font-weight: 600;
+        opacity: .8;
+        border-right: 1px solid rgb(0 0 0 / 20%);
     }
 
     .content2 {
-        padding: 0px 16px;
+        padding: 0px 17px;
         font-size: 14px;
         font-weight: 600;
+        opacity: .8;
+        border-right: 1px solid rgb(0 0 0 / 20%);
     }
 
     .content3 {
-        padding: 0px 16px;
+        padding: 0px 17px;
+        font-size: 14px;
         color: #717171;
     }
-
+    .search-icon-svg{
+        width: 33px;
+    }
     .bar {
         font-size: 20px;
         color: #717171;
@@ -820,29 +913,33 @@ body{
 
     .become {
         width: 127.31px;
-        font-family: inherit;
+        font-family: sans-serif;
         font-weight: 600;
+        padding-left: 14px;
+        font-size: 14px; 
+        opacity: .8;
     }
 
     .browser {
-        width: 46px;
+        width: 50px;
     }
 
     .usericon {
         display: inline-flex;
         align-items: center;
         background-color: #ffffff;
-        padding-right: 0;
-        padding-left: 0;
         border: 1px solid #dddddd;
         border-radius: 25px;
         width: 77px;
         height: 42px;
-        gap: 24px;
+        gap: 18px;
     }
 
     .usericon-a {
         padding-left: 4px;
+    }
+    .user-icon-a svg{
+        padding-left: 8px;
     }
 
     .log {
@@ -865,8 +962,8 @@ body{
         display: flex;
     }
     .add-content{
-        height: 46vw;
-        width: 45vw;
+        height: 41.2vw;
+        width: 43.2vw;
     }
     .image-icon{
         gap: 22px;
@@ -880,10 +977,88 @@ body{
     }
     .tabicons{
         border: none;
+        padding: 26px 0 22px 37px;
     }
-
-}
-@media screen and (min-width: 1024px){
+    .tinyhomes span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .nationalparks span{
+        font-size: 13px;
+        padding-top: 10px
+    }
+    .pool span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .beaches span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .countryside span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .omg span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .amazingviews span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .tropical span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .farms span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .houseboats span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .cabins span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .treehouse span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .sharedhomes span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .creativespaces span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .island span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .lake span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .lakefront span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .iconiccities span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .castles span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
+    .mansions span{
+        font-size: 13px;
+        padding-top: 10px;
+    }
     .search1{
         display: flex;
     }
@@ -895,38 +1070,121 @@ body{
         flex-direction: row;
         gap:25px;
         height: 47px;
-        padding-top: 51px;
-        padding-left: 17px;
         width: 246px;
+        padding: 38px 5px 0 17px;
     }
     .scroll{
         width:30px;
         height:30px;
         border-radius: 1000px;
-        border: 1px solid grey;
+        border: 1px solid #dddddd;
         background: #ffffff;
         padding-top: 2px;
+    }
+    .scroll-tab{
+        padding-top: 6px;
+    }
+    .filter-icon{
+        height: 43px;
+        padding-top: 12px;
     }
     .scroll svg{
         padding-top: 6px;
     }
     .filter-icon{
-        width: 98px;
-        height:38px;
+        width: 87px;
+        height:42px;
         display:flex;
-        justify-content: space-around;
+        justify-content: center;
+        grid-area: 9px;
         background: #ffffff;
-        border: 1px solid grey;
+        border: 1px solid #dddddd;
         border-radius: 9px;
-        padding-top: 8px;
+        padding-top: 12px;
     }
+    .footer-content{
+        display: none;
+    }
+    .footer-content-tablet{
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+        background: #ffffff;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+        padding-left: 28px ;
+        height:60px;
+        border-top: 1px solid #ded6d6;
+        width: 100%;
+
+    }
+    .copyright{
+        padding-top: 10px;
+    }
+    .copyright a{
+        text-decoration: none;
+        color:black;
+        opacity: .8;
+        font-size: 14px;
+        padding:0 6px 0 5px;
+    }
+    .support-resources{
+        display: flex;
+        justify-content:space-around;
+        white-space: nowrap;
+        padding-right: 29px;
+        padding-top: 20px;
+    }
+    .support-resources a{
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+        opacity: .9;
+    }
+    .show-map{
+        display: none;
+    }
+    .show-map-tablet{
+        display: flex;
+        background: #222222;
+        justify-content: center;
+        align-items: center;
+        border-radius: 19px;
+        height: 38px;
+        width: 100px;
+        position: fixed;
+        z-index: 2;
+        left: 38%;
+        bottom:99px;
+    }
+    .show-map-tablet p{
+        color: #ffffff;
+    }
+
+    }
+
+
+
+}
+@media screen and (min-width: 1024px){
+    .search1{
+        display: flex;
+    }
+    .maintabs{
+        display: flex;
+    }
+   
+   
     .content{
+        padding: 193px 39px;
         display: grid;
         grid-template-columns:repeat(3,1fr);
     }
     .add-content{
-        width:28vw;
-        height: 28vw;
+        width:29.2vw;
+        height: 27.9vw;
     }
     .first-content{
         width:28vw;
@@ -934,13 +1192,19 @@ body{
     .heading{
         display: flex;
         justify-content:space-between ;
-        width:65%;
+        width:69.5%;
+    }
+    .filter-icon{
+        gap: 10px;
+    }
+    .filter-tab{
+        gap:35px;
     }
 } 
 
 @media screen and (min-width: 1440px) {
     .airbnbicon1{
-        padding-left: 80px;
+        padding-left: 76px;
     }
     .heading{
         width:64%;
@@ -948,7 +1212,7 @@ body{
         justify-content: space-between;
     }
     .add-content{
-        width:20vw;
+        width:21vw;
         height: 20vw;
     }
     .first-content{
@@ -969,6 +1233,7 @@ body{
     .content{
         display: grid;
         grid-template-columns: repeat(4,1fr);
+        padding: 0 40px 0 31px;
     }
     .browser{
         width:33px;
@@ -977,6 +1242,7 @@ body{
         width:74px;
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-wrap: nowrap;
         gap:13px;
     }
@@ -1004,11 +1270,11 @@ body{
     .heading {
         display: flex;
         justify-content: space-between;
-
+        width: 69%;
     }
 
     .any {
-        width: 400.2px;
+        width:54.5%;
     }
 
     .airbnbicon {
@@ -1021,12 +1287,42 @@ body{
         align-items: center;
     }
 
-    .head-right {
+    .headright {
         width: 288px;
         display: inline-flex;
         align-items: center;
         justify-content: right;
+        padding-right: 83px;
     }
-
-
+    .filter-tab{
+        padding-right: 23px;
+        display: flex;
+        justify-content: center;
+    }
+    .maintabs{
+        padding-left: 33px;
+        padding-right: 43px;
+    }
+    .tabicons{
+        gap: 25px;
+    }
+    .content{
+        padding: 178px 80px 0 70px;
+    }
 }
+    @media screen and (min-width:1600px){
+        .content{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+        }
+        .first-content{
+            width: 19rem;
+        }
+        .add-content{
+            width: 19.8rem;
+            height: 18.5rem;
+        }
+        .content{
+            padding-right: 89px;
+        }
+    }
