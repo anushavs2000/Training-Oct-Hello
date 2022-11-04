@@ -1,0 +1,71 @@
+@font-face {
+    font-family:doordash_bold;
+    src: url(assets/font/TTNorms-Bold.woff2);
+}
+@font-face {
+    font-family:doordash_extra_bold;
+    src: url(assets/font/TTNorms-ExtraBold.woff2);
+}
+@font-face {
+    font-family:doordash_medium;
+    src: url(assets/font/TTNorms-Medium.woff2);
+}
+@font-face {
+    font-family:doordash_regular;
+    src: url(assets/font/TTNorms-Regular.woff2);
+}
+body{
+    margin: 0;
+}
+.menu_bar{
+    /* background:url(assets/banner.jpg) */
+}
+.sign_in_and_sign_up{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top:16px;
+    height: 40px;
+    padding-right: 24px;
+}
+.sign_in_and_sign_up a{
+    text-decoration: none;
+    font-family: doordash_bold;
+}
+.sign_in{
+    display: flex;
+    align-items: center;
+    background: blue;
+    cursor: pointer;
+}
+.sign_in a{
+    color: #ffffff;
+    padding: 0 16px;
+}
+.sign_up{
+    display: flex;
+    align-items: center;
+    background: yellow;
+    border-radius: 1000px;
+    cursor: pointer;
+}
+.sign_up a{
+    color:black;
+    padding: 0 16px;
+}
+.nav_bar{
+    padding: 40px 0 96px 0;
+    background: #ea9090;
+}
+.doordash_icon{
+    display: flex;
+    justify-content: center;
+}
+.menu-bar-heading{
+    display: flex;
+}
+.menu_bar_heading span{
+    font-family: doordash_extra_bold;
+    font-size: 32px;
+    text-align: center;
+}
