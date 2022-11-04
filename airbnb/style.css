@@ -1405,15 +1405,15 @@
         }
         .support-resources{
             width:18%;
-            padding-right: 131px;
-            gap: 10%;
+            padding-right: 92px;
+            gap: 5%;
         }
         .headright{
             padding-right:4.8% ;
         }
         .show-map-tablet{
-            left:47%;
-            bottom: 5%;
+            left:46%;
+            bottom: 9%;
         }
 
     }  
