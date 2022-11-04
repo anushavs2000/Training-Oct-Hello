@@ -61,8 +61,7 @@ body{
     display: flex;
     justify-content: center;
 }
-.menu_bar_heading{
-    margin:16px 0;
+.menu-bar-heading{
     display: flex;
 }
 .menu_bar_heading span{
