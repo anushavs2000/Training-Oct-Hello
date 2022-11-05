@@ -21,8 +21,7 @@ body{
     background:url(assets/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x:center;
-    
+    background-position-x:center; 
 }
 .sign_in_and_sign_up{
     display: flex;
@@ -31,6 +30,10 @@ body{
     padding-top:16px;
     height: 40px;
     padding-right: 24px;
+}
+.login_icon{
+    display: flex;
+    flex-direction: row;
 }
 .sign_in_and_sign_up a{
     text-decoration: none;
@@ -132,6 +135,12 @@ body{
     font-weight: 500;
     font-family: doordash_medium;
 }
+.location_icon{
+    display: none;
+}
+.doordash_icon_head{
+    display: none;
+}
 @media screen and (min-width:425px){
     .search{
         width:64.5%;
@@ -150,11 +159,58 @@ body{
         display: contents;
     }
     .search{
-        width:52%;
+        width:52.5%;
         border-radius: 23px;
+        display: flex;
+        justify-content: space-around;
     }
-    .location svg{
-        margin-right: 4px;
+    .search_icon_input{
+        display: flex;
+        gap: 9px;
+    }
+}
+    @media screen and (min-width:1024px){
+    .menu_bar{
+        height: 582px;
+    }
+    .first_svg{
+        margin: 0 1px 0 0;
+    }
+    .second_svg{
+        margin: 3px 0 0 0;
+    }
+    .doordash_icon{
+        display: none;
+    }
+    .login_icon{
+        display: flex;
+    }
+    .sign_in_and_sign_up{
+        display: flex;
+        gap: 208px;
+    }
+    .doordash_icon_head{
+        display: flex;
+        gap:11px;
+    }
+    .menu_bar_heading span{
+        font-size: 64px;
+        line-height: 76px;
+        width:88%;
+        padding-top:26px
+    }
+    .search_bar{
+        padding-top: 3px;
+    }
+    .search{
+        width:40%
+    }
+    .search_arrow{
+        padding-right: 0;
+        padding-top: 4px;
+    }
+    .location_icon svg{
+        margin-left: -5px;
     }
 } 
 
