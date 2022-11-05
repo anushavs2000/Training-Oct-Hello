@@ -18,13 +18,17 @@ body{
     margin: 0;
 }
 .menu_bar{
-    /* background:url(assets/banner.jpg) */
+    background:url(assets/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x:center;
+    
 }
 .sign_in_and_sign_up{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-top:16px;
+    padding-top:16px;
     height: 40px;
     padding-right: 24px;
 }
@@ -35,7 +39,7 @@ body{
 .sign_in{
     display: flex;
     align-items: center;
-    background: blue;
+    /* background: blue; */
     cursor: pointer;
 }
 .sign_in a{
@@ -45,7 +49,7 @@ body{
 .sign_up{
     display: flex;
     align-items: center;
-    background: yellow;
+    background: white;
     border-radius: 1000px;
     cursor: pointer;
 }
@@ -55,7 +59,7 @@ body{
 }
 .nav_bar{
     padding: 40px 0 96px 0;
-    background: #ea9090;
+    /* background: #ea9090; */
 }
 .doordash_icon{
     display: flex;
@@ -66,14 +70,59 @@ body{
     padding: 16px 0;
 }
 .menu_bar_heading span{
-    font-family: doordash_extra_bold;
+    font-family: doordash_bold;
     font-size: 32px;
+    font-weight: 700;
     text-align: center;
     color: #ffffff;
+    letter-spacing: -0.04ch;
+    line-height: 40px;
+}
+.search_bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
 }
 .search{
     display: flex;
+    align-items: center;
     background: #ffffff;
-    justify-content: center;
-    width: 70%;
+    justify-content: space-evenly;
+    width:74%;
+    margin-top: 12px;
+    height: 48px;
+    border-radius:17px;
+    
 }
+.search input{
+    border:transparent;
+    font-family: doordash_medium;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.search_bar_text{
+    width: 60%;
+}
+.search_icon_input{
+    display: flex;
+    width: 83%;
+}
+.search_icon{
+    padding: 0 4px 0 13px;
+}
+.search_arrow{
+    padding-right: 10px;
+}
+.search_bar a{
+    margin:16px;
+    color: rgb(255, 255,255);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: doordash_medium;
+}
+
