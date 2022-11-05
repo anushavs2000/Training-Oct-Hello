@@ -35,6 +35,7 @@ body{
 .sign_in_and_sign_up a{
     text-decoration: none;
     font-family: doordash_bold;
+    letter-spacing: -0.04ch;
 }
 .sign_in{
     display: flex;
@@ -45,16 +46,19 @@ body{
 .sign_in a{
     color: #ffffff;
     padding: 0 16px;
+    font-size: 18px;
 }
 .sign_up{
+
     display: flex;
     align-items: center;
     background: white;
     border-radius: 1000px;
     cursor: pointer;
+    width: 87.55px;
 }
 .sign_up a{
-    color:black;
+    color:rgb(73, 73, 73);
     padding: 0 16px;
 }
 .nav_bar{
@@ -67,7 +71,9 @@ body{
 }
 .menu_bar_heading{
     display: flex;
+    justify-content: center;
     padding: 16px 0;
+    
 }
 .menu_bar_heading span{
     font-family: doordash_bold;
@@ -77,6 +83,7 @@ body{
     color: #ffffff;
     letter-spacing: -0.04ch;
     line-height: 40px;
+    width: 363px;
 }
 .search_bar{
     width: 100%;
@@ -94,7 +101,7 @@ body{
     width:74%;
     margin-top: 12px;
     height: 48px;
-    border-radius:17px;
+    border-radius:18px;
     
 }
 .search input{
@@ -125,4 +132,29 @@ body{
     font-weight: 500;
     font-family: doordash_medium;
 }
+@media screen and (min-width:425px){
+    .search{
+        width:64.5%;
+    }
+}
+@media screen and (min-width:768px){
+    .nav_bar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .search_icon{
+        display: none;
+    }
+    .location_icon{
+        display: contents;
+    }
+    .search{
+        width:52%;
+        border-radius: 23px;
+    }
+    .location svg{
+        margin-right: 4px;
+    }
+} 
 
