@@ -45,6 +45,7 @@
     left: 0;right: 0;
     padding: 10px 13px 10px 21px;
     margin: 2px 0;
+    width: 88%;
 }
 
 
@@ -150,7 +151,7 @@
     white-space: nowrap;
 }
 
-.any-guests {
+.any-guests{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
