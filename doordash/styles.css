@@ -58,11 +58,12 @@ body{
     background: white;
     border-radius: 1000px;
     cursor: pointer;
-    width: 87.55px;
+    width: 90.55px;
 }
 .sign_up a{
     color:rgb(73, 73, 73);
     padding: 0 16px;
+    letter-spacing: -0.004ch;
 }
 .nav_bar{
     padding: 40px 0 96px 0;
@@ -117,6 +118,10 @@ body{
 .search_bar_text{
     width: 60%;
 }
+.search_bar_text input{
+    padding: 3px 2px 1px 2px;
+    width: 135%;
+}
 .search_icon_input{
     display: flex;
     width: 83%;
@@ -141,9 +146,72 @@ body{
 .doordash_icon_head{
     display: none;
 }
+.search_arrow_lap{
+    display: none;;
+}
+
+/*  ------------NAV-BAR-SUB------------------- */
+
+    .nav_bar_sub{
+        font-family: doordash_bold;
+        font-weight: 500;
+        padding: 24px 0;
+        margin: 0 16px;
+        letter-spacing: -0.04ch;
+        width: 334px;
+        height: 148px;
+    }
+    .get{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:42px;
+        padding: 8px 4px;
+        line-height: 14px;
+        line-height: 21px;
+    }
+    .get_app{
+        background:rgb(217, 20, 0);
+        height: 40px;
+        border-radius: 1000px;
+        cursor: pointer;
+    }
+    .get_app span{
+        color: #ffffff;
+        padding: 0 16px;
+        display: flex;
+        padding-top: 10px;
+    }
+    .merchant{
+        display: flex;
+        justify-content: space-between;
+        gap: 11px;
+    }
+    .login_merchant{
+        display: flex;
+    }
+    .login_merchant span{
+        padding-top: 3px;
+    }
+    .doordash_experience{
+        width: 161px;
+    }
+
+@media  screen and (min-width:375px){
+    .search{
+        width: 74%;
+    }
+    .menu_bar_heading span{
+        width: 334px;
+    }
+}
 @media screen and (min-width:425px){
     .search{
         width:64.5%;
+    }
+    .search_icon{
+        padding-left: 7px;
+        padding-top: 4px;
     }
 }
 @media screen and (min-width:768px){
@@ -159,7 +227,7 @@ body{
         display: contents;
     }
     .search{
-        width:52.5%;
+        width:53.5%;
         border-radius: 23px;
         display: flex;
         justify-content: space-around;
@@ -168,10 +236,22 @@ body{
         display: flex;
         gap: 9px;
     }
+    .search_arrow{
+        padding-right: 1px;
+        padding-top: 4px;
+    }
 }
-    @media screen and (min-width:1024px){
+@media screen and (min-width:1024px){
     .menu_bar{
         height: 582px;
+    }
+    .nav_bar{
+        display: flex;
+        align-items: center;
+    }
+    .doordash_icon_head{
+        margin-top: -24px;
+        gap: 11px;
     }
     .first_svg{
         margin: 0 1px 0 0;
@@ -187,23 +267,34 @@ body{
     }
     .sign_in_and_sign_up{
         display: flex;
-        gap: 208px;
+        gap: 20.5%;
+    }
+    .menu_bar{
+        position: relative;
+    }
+    .sign_in_and_sign_up{
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .doordash_icon_head{
         display: flex;
-        gap:11px;
+    }
+    .menu_bar_heading{
+        padding-top: 70px;
     }
     .menu_bar_heading span{
         font-size: 64px;
         line-height: 76px;
-        width:88%;
+        width:668px;
         padding-top:26px
     }
     .search_bar{
         padding-top: 3px;
     }
     .search{
-        width:40%
+        width:408px;
     }
     .search_arrow{
         padding-right: 0;
@@ -213,4 +304,43 @@ body{
         margin-left: -5px;
     }
 } 
+@media screen and (min-width:1440px){
+    .sign_in_and_sign_up{
+        gap: 29%;
+    }
+    .menu_bar_heading span{
+        width: 668px;
+    }
+
+    .search_arrow{
+        display:none;
+    }
+    .search_arrow_lap{
+        display: flex;
+        background: red;
+        width: 40px;
+        height:40px;
+        border-radius: 30px;
+        margin-right: -4px;
+    }
+    .search_arrow_lap svg{
+        padding: 7px 0 0 8px;
+    }
+}
+    @media screen and (min-width:1920px){
+    .sign_in_and_sign_up{
+        gap: 34.5%;
+    }
+    .menu_bar_heading span{
+        width:33%;
+        padding-top: 25px;
+        line-height: 75px;
+    }
+    .search{
+        width:21.2%;
+        margin-top: 14px;
+    }
+
+}
+
 
