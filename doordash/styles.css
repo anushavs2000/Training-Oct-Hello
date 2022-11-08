@@ -63,7 +63,7 @@ body {
 .sign_up a {
   color: rgb(73, 73, 73);
   padding: 0 16px;
-  letter-spacing: -0.004ch;-.001px
+  letter-spacing: -0.004ch;
 }
 .nav_bar {
   padding: 40px 0 96px 0;
@@ -152,46 +152,65 @@ body {
 .nav_bar_sub {
   font-family: doordash_bold;
   font-weight: 500;
-  padding: 24px 0;
-  margin: 0 16px;
+  font-size: 16px;
   letter-spacing: -0.04ch;
-  width: 334px;
-  height: 148px;
+  display: flex;
+  flex-direction: column;
 }
-.get {
+.get{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 42px;
-  padding: 8px 4px;
-  line-height: 14px;
-  line-height: 21px;
+  justify-content: center;
+  line-height: 22px;
+  gap: 49px;
+  padding-top: 32px;
+  padding-bottom: 18px;
 }
 .get_app {
-  background: rgb(217, 20, 0);
+  background: rgb(235, 23, 0);
   height: 40px;
   border-radius: 1000px;
   cursor: pointer;
+  width: 120.56px;
+  letter-spacing: 0ch;
 }
 .get_app span {
   color: #ffffff;
-  padding: 0 16px;
+  padding: 9px 16px 0 16px;
   display: flex;
-  padding-top: 10px;
+  padding-top: 9px;
 }
 .merchant {
   display: flex;
-  justify-content: space-between;
-  gap: 11px;
+  justify-content: center;
+  gap: 23px;
 }
 .login_merchant {
   display: flex;
 }
-.login_merchant span {
-  padding-top: 3px;
+.doordash_experience{
+  width:155px;
 }
-.doordash_experience {
-  width: 161px;
+.merchant_option{
+  margin-top: -2px;
+}
+.login_merchant{
+  gap: 5px;
+  height: 40px;
+}
+
+/* -------CONTENT------- */
+
+.content{
+  display: flex;
+}
+.content_image img{
+  width: 88px;
+  height: 88px;
+}
+.content_text h2{
+  font-size: 32px;
+  font-family: doordash_bold;
 }
 
 
@@ -233,6 +252,8 @@ body {
   .search_bar input{
     padding:5px 0 0 4.5px;
   }
+  .search_arrow5px 7px 0 3px;
+
 }
 @media screen and (min-width: 768px) {
   .nav_bar {
@@ -247,7 +268,7 @@ body {
     display: contents;
   }
   .search {
-    width: 53.5%;
+    width: 53%;
     border-radius: 23px;
     display: flex;
     justify-content: space-around;
@@ -260,7 +281,19 @@ body {
     padding-right: 1px;
     padding-top: 4px;
   }
+  .location_icon{
+    width: 24px;
+    height: 24px;
+  }
+  .location_icon svg{
+    margin: 0 0 0 -5px;
+  }
+  .search_bar_text input{
+    padding: 1px 0 0 0;
+    margin-left: -1px;
+  }
 }
+
 @media screen and (min-width: 960px) {
   .menu_bar {
     height: 582px;
@@ -312,13 +345,13 @@ body {
   }
   .search_bar {
     padding-top: 3px;
+    margin-top: 1px;
   }
   .search {
     width: 408px;
   }
   .search_arrow {
-    padding-right: 0;
-    padding-top: 4px;
+    padding:4px 1px 0 1px;
   }
   .location_icon svg {
     margin-left: -5px;
@@ -331,20 +364,22 @@ body {
   .menu_bar_heading span {
     width: 668px;
   }
-
+  .search_icon_input{
+    padding-left: 4px;
+  }
   .search_arrow {
     display: none;
   }
   .search_arrow_lap {
     display: flex;
-    background: red;
+    background: rgb(235, 23, 0);
     width: 40px;
     height: 40px;
     border-radius: 30px;
-    margin-right: -4px;
+    margin-right: -3px;
   }
   .search_arrow_lap svg {
-    padding: 7px 0 0 8px;
+    padding: 8px 0 0 8px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -359,5 +394,10 @@ body {
   .search {
     width: 21.2%;
     margin-top: 14px;
+  }
+}
+@media screen and (min-width:1920px) {
+  .menu_bar_heading span{
+    width: 63%;
   }
 }
