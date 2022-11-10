@@ -556,10 +556,15 @@ body {
   }
   .second_part{
     top:98px;
+    display: flex;
+    flex-direction: row;
   }
   .second_part_text{
     margin-top:0;
-    padding-left: 0px;
+    padding-left: 64px;
+    box-sizing: border-box;
+    width: 36%;
+  
   }
   .second_section{
     display: flex;
@@ -737,6 +742,10 @@ body {
   .second_part_text{
     padding-top: 115px;
   }
+  .second_part_text{
+    padding-left: 64px;
+    width: 36%;
+  }
 }
 @media screen and (min-width:1180px) {
   .content{
@@ -798,51 +807,69 @@ body {
     letter-spacing: 0ch;
     line-height: 47px;
   }
+  .first_part{
+    padding-bottom: 55px;
+  }
+  .first_part_text{
+    margin-left: 0px;
+    width: 407px;
+    box-sizing: border-box;
+  }
+  .first_part_text span{
+    font-size: 18px;
+  }
+  .first_part_image{
+    top: 0;
+    bottom: 0;
+    max-width: 712px;
+    width: 65vw;
+    max-height: 513px;
+    height: 44vw;
+  }
+  .second_part_image{
+    max-width: 712px;
+    max-height: 513px;
+    width: 65vw;
+    height: 44vw;
+  }
+  .second_part_text{
+    width: 41%;
+    box-sizing: border-box;
+  }
+  .second_part_text h2{
+    font-size: 40px;
+    font-family: doordash_medium;
+    font-weight: 700px;
+    letter-spacing: 0ch;
+    line-height: 47px;
+  }
+  .second_part_text span{
+    font-size: 18px;
+  }
+  .section{
+    padding-bottom: 108px;
+  }
+  .second_section{
+    gap: 6vw;
+  }
+  .first_container_sub{
+    width: 1184px;
+  }
+  .first_container{
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+  .second_part{
+    width: 1184px;
+  }
+  .second_container{
+    display: flex;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1440px) {
-  .sign_in_and_sign_up {
-    gap: 29%;
-  }
-  .menu_bar_heading span {
-    width: 668px;
-  }
-  .search_icon_input{
-    padding-left: 4px;
-  }
   .nav_bar_sub{
-    padding-bottom: 110px;
-  }
-  .main_section{
-    display: flex;
-    align-items: center;
-  }
-  .content{
-    width: 328px;
-    height: 350px;
-    padding: 16px;
-    margin: 0 17px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .sign_in_and_sign_up {
-    gap: 34.5%;
-  }
-  .menu_bar{
-    width: 100%;
-  }
-  .menu_bar_heading{
-    width: 100%;
-  }
-  .menu_bar_heading span {
-    width: 33%;
-    padding-top: 25px;
-    line-height: 75px;
-  }
-  .search {
-    width: 21.2%;
-    margin-top: 14px;
-  }
-  .nav_bar_sub{
-    padding-bottom:116 px;
+    padding-bottom: 106px;
   }
 }
