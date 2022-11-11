@@ -1,0 +1,1175 @@
+@font-face {
+  font-family: doordash_bold;
+  src: url(assets/font/TTNorms-Bold.woff2);
+}
+@font-face {
+  font-family: doordash_extra_bold;
+  src: url(assets/font/TTNorms-ExtraBold.woff2);
+}
+@font-face {
+  font-family: doordash_medium;
+  src: url(assets/font/TTNorms-Medium.woff2);
+}
+@font-face {
+  font-family: doordash_regular;
+  src: url(assets/font/TTNorms-Regular.woff2);
+}
+body {
+  margin: 0;
+}
+.menu_bar {
+  background: url(assets/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.sign_in_and_sign_up {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 16px;
+  height: 40px;
+  padding-right: 24px;
+}
+.login_icon {
+  display: flex;
+  flex-direction: row;
+}
+.sign_in_and_sign_up a {
+  text-decoration: none;
+  font-family: doordash_bold;
+  letter-spacing: -0.04ch;
+}
+.sign_in {
+  display: flex;
+  align-items: center;
+  /* background: blue; */
+  cursor: pointer;
+}
+.sign_in a {
+  color: #ffffff;
+  padding: 0 16px;
+  font-size: 18px;
+  letter-spacing: -0.04ch;
+}
+.sign_up {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 1000px;
+  cursor: pointer;
+  width: 90.55px;
+}
+.sign_up a {
+  color: rgb(73, 73, 73);
+  padding: 0 16px;
+  letter-spacing: -0.004ch;
+}
+.nav_bar {
+  padding: 40px 0 96px 0;
+  /* background: #ea9090; */
+}
+.doordash_icon {
+  display: flex;
+  justify-content: center;
+}
+.menu_bar_heading {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+}
+.menu_bar_heading span {
+  font-family: doordash_bold;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: -0.04ch;
+  line-height: 40px;
+  width: 363px;
+}
+.search_bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.search {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  justify-content: space-evenly;
+  width: 86.5%;
+  margin-top: 12px;
+  height: 48px;
+  border-radius: 20px;
+}
+.search input {
+  border: transparent;
+  font-family: doordash_medium;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+.search_bar_text {
+  width: 60%;
+}
+.search_bar_text input {
+  padding: 5px 0 0 3.8px;
+  width: 118%;
+}
+.search_icon_input {
+  display: flex;
+  width: 83%;
+}
+.search_icon {
+  padding: 4px 4px 0 8px;
+}
+.search_arrow {
+  padding: 5px 8px 0 2px;
+}
+.search_bar a {
+  margin: 16px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  font-family: doordash_medium;
+}
+.location_icon {
+  display: none;
+}
+.location_icon svg{
+  transform: translateX(3px)
+}
+.doordash_icon_head {
+  display: none;
+}
+.search_arrow_lap {
+  display: none;
+}
+
+/*  ------------NAV-BAR-SUB------------------- */
+
+.nav_bar_sub {
+  font-family: doordash_bold;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.04ch;
+  display: flex;
+  flex-direction: column;
+  color: rgb(25, 25, 25);
+  padding-bottom: 49.5px;
+}
+.get{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 22px;
+  gap: 39px;
+  padding-top: 32px;
+  padding-bottom: 18px;
+}
+.get_app {
+  background: rgb(235, 23, 0);
+  height: 40px;
+  border-radius: 1000px;
+  cursor: pointer;
+  width: 120.56px;
+  letter-spacing: 0ch;
+}
+.get button{
+  border: transparent;
+  background:rgb(255, 255, 255);
+}
+button .get_app span {
+  color: #ffffff;
+  padding: 9px 16px 0 16px;
+  display: flex;
+  padding-top: 9px;
+  font-size: 16px;
+  font-weight: 700px;
+  line-height: 18px;
+  letter-spacing: 0ch;
+  font-family: doordash_bold;
+}
+.merchant {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+}
+.login_merchant {
+  display: flex;
+}
+.doordash_experience{
+  width:155px;
+}
+.merchant_option{
+  margin-top: -2px;
+}
+.login_merchant{
+  gap: 5px;
+  height: 40px;
+}
+
+/* -------CONTENT------- */
+
+.content{
+  display: flex;
+  justify-content: center;
+  padding: 28px 16px 0 24px;
+  width: 87%;
+}
+.content h2{
+  margin: 0;
+}
+.content_image{
+  margin-right: 32px;
+}
+.content_image img{
+  width: 88px;
+  height: 88px;
+}
+.content_text h2{
+  font-size: 32px;
+  font-family: doordash_bold;
+  line-height: 40px;
+  color: rgb(25, 25, 25);
+  letter-spacing: -0.04ch;
+}
+.content_text h3{
+  font-family: doordash_medium;
+  line-height: 24px;
+  margin: 0;
+  letter-spacing: 0ch;
+  font-size: 18px;
+  color: rgb(25, 25, 25);
+  font-weight: 500;
+} 
+.link{
+  display: flex;
+  padding-top: 10px;
+  padding-top: 12px;
+}
+.link span{
+  color : rgb(235, 23, 0);
+  letter-spacing: -0.02ch;
+  font-size: 14px;
+  font-family: doordash_medium;
+  line-height: 20px;
+  font-weight: 600;
+}
+.arrow_svg svg{
+  width: 11px;
+  padding-top: 2px;
+  padding-left: 7px;
+}
+.main_section{
+  margin-bottom: 146px;
+}
+
+/* -------  CONTENT SECTION 2 ----- */
+
+.second_section{
+  background: rgb(255, 240, 237);
+  padding-bottom: 48px;
+}
+.first_part{
+  position: relative;
+}
+.first_part_image{
+  position: absolute;
+  top: -109px;
+  right: 0;
+}
+.first_part_image img{
+  width: 82.937vw;
+}
+.first_part_text{
+  padding-top: 37.5%;
+  padding-left: 4.3%;
+  width: 72%;
+}
+.first_part_text h2{
+  font-family: doordash_bold;
+  letter-spacing: -0.04ch;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin: 0 0 8px 0;
+  padding: 0;
+  color: rgb(25, 25, 25);
+}
+.first_part_text span{
+  font-family: doordash_medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0ch;
+  color: rgb(25, 25, 25);
+}
+.btn_app{
+  border: transparent;
+  min-height: 32px;
+  background: rgb(235, 23, 0);
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+}
+.btn_app span{
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.02ch;
+  padding: 0 6px;
+}
+.second_part{
+  display: flex;
+  flex-direction: column;
+}
+.second_part_image{
+  top: 0;
+  left: 0;
+}
+.second_part_image img{
+  width: 82.937vw;
+}
+.second_part_text{
+  padding-top: 18px;
+  padding-left: 4.3%;
+  width: 72%;
+  box-sizing: border-box;
+}
+.second_part_text h2{
+  font-family: doordash_bold;
+  letter-spacing: -0.04ch;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  margin: 0 0 8px 0;
+  padding: 0;
+  color: rgb(25, 25, 25);
+}
+.second_part_text span{
+  font-family: doordash_medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0ch;
+  color: rgb(25, 25, 25);
+}
+.button{
+  padding-top: 15px;
+  padding-bottom: 48px;
+}
+.second_part .button span{
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.02ch;
+  padding: 0 2px;
+}
+.text_two{
+   display: none;
+}
+
+/* ----------FOOTER------------ */
+footer{
+  background-color: rgb(25, 25, 25);
+}
+.footer{
+  display: flex;
+  justify-content:center;
+}
+.footer_content{
+  max-width: 1120px;
+  padding: 0 20px;
+  margin: 0 12px;
+  width: 100%;
+}
+.footer_section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #ffffff;
+}
+.links_cities{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+  width: 50%;
+}
+.links_cities h2{
+  font-size: 16px;
+  margin:0 0 8px 0;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0ch;
+  font-family: doordash_medium;
+}
+.links_cities a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-top: 8px;
+  font-family: doordash_medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0ch;
+  color: rgb(196, 196, 196);
+  box-sizing: border-box;
+}
+.links_cuisines{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+}
+.links_cuisines h2{
+  font-size: 15px;
+  margin:0 0 8px 0;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0ch;
+  font-family: doordash_medium;
+}
+.links_cuisines a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-top: 8px;
+  font-family: doordash_medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0ch;
+  color: rgb(196, 196, 196);
+  box-sizing: border-box;
+}
+.cities{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.cuisine{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.doordash_links{
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 1112px;
+}
+.link_icon_svg{
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link_icon_svg a{
+  background: rgb(73, 73, 73);
+  opacity: 0.7;
+  margin-top: 12px;
+  width: 162px;
+  border-radius: 8px;
+}
+.doordash_links_divisions{
+  padding-top: 32px;
+}
+.doordash_links_divisions h2{
+  color: rgb(255, 255, 255);
+  font-family: doordash_medium;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0ch;
+  line-height: 22px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.doordash_links_divisions  a{
+  margin-top: 8px;
+  text-decoration: none;
+  font-family: doordash_medium;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(196, 196, 196);
+  display: block;
+  text-align: center;
+}
+.authorship_information{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 32px 0;
+}
+.authorship_information a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+  margin: 0 12px;
+  width: 100%;
+}
+.information_link{
+  margin-top: 12px;
+  text-align: center;
+  margin: 0 12px;
+  padding: 0 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.information_link a.info_svg{
+  margin: 0;
+}
+.information_link a{
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 18px;
+  color: rgb(196, 196, 196);
+  opacity:0.9;
+  font-family:doordash_regular;
+  margin: 0 0 0 16px;
+}
+.social_media_icons a{
+  margin: 0 0 0 12px;
+}
+@media screen and (min-width: 375px) {
+  .search {
+    width: 73.5%;
+  }
+  .menu_bar_heading span {
+    width: 334px;
+  }
+  .sign_in{
+    padding-bottom: 1px;
+  }
+  .sign_up{
+    padding-bottom: 1px;
+  }
+  .search_icon{
+    padding: 4px 4px 0 8px;
+  }
+  .search_bar_text input{
+    padding: 5px 0 0 3.8px;
+  }
+  .search_arrow{
+    padding: 5px 8px 0 2px;
+  }
+  .get_app{
+    transform:translateX(5px);
+  }
+  .search_bar_text{
+    transform: translateX(3px);
+  }
+  
+}
+@media screen and (min-width: 425px) {
+  .search {
+    width: 64.5%;
+  }
+  .search_icon {
+    padding-left: 7px;
+    padding-top: 4px;
+  }
+  .sign_in a{
+    letter-spacing: -0.036ch;
+  }
+  .search_bar input{
+    padding:5px 0 0 4.5px;
+  }
+  .search_arrow{
+    padding: 5px 7px 0 3px;
+  }
+  .nav_bar_sub{
+    padding-bottom: 53px;
+  }
+  .content{
+    padding: 28px 16px 0 28px;
+  }
+  .first_part_image img{
+    width: 84.9419vw;
+    height: 100%;
+    max-height: 290px;
+  }
+  .first_part_text{
+   padding-left: 16px;
+   margin-left: 12.5px;
+  }
+  .first_part_image{
+    top: -145px;
+  }
+  .first_part_text{
+    padding-top: 9rem;
+  }
+  .second_part_text{
+    padding-left: 16px;
+    margin-left: 12.5px;
+  }
+  .second_part_image{
+    width: 84.9419vw;
+  }
+  .second_part_image img{
+    width:100%;
+  }
+  .section{
+    margin-bottom: 205px;
+  }
+
+}
+@media screen and (min-width: 564px) {
+  .first_part_image{
+    max-width: 500px;
+  }
+  .first_part_image img{
+    width: 100%;
+  }
+  .second_part_image{
+    max-width: 500px;
+  }
+  .second_part img{
+    width: 100%;
+  }
+  .first_part_text{
+    padding-top: 13rem;
+    padding-left: 6rem;
+  }
+  .second_part_text{
+    padding-top: 3rem;
+    padding-left: 4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav_bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .search_icon {
+    display: none;
+  }
+  .location_icon {
+    display: contents;
+  }
+  .search {
+    width: 53%;
+    border-radius: 23px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .search_icon_input {
+    display: flex;
+    gap: 9px;
+    transform: translateX(-3px);
+  }
+  .search_arrow {
+    padding-right: 1px;
+    padding-top: 4px;
+  }
+  .location_icon{
+    width: 24px;
+    height: 24px;
+  }
+  .location_icon svg{
+    margin: 0 0 0 -5px;
+  }
+  .search_bar_text input{
+    padding: 1px 0 0 0;
+    margin-left: -1px;
+  }
+  .content{
+    padding-left: 49px;
+    padding-top:0px;
+  }
+  .content_text{
+    width: 250px;
+  }
+  .content_image{
+    margin-right: 64px;
+  }
+  .content_image img{
+    width: 124px;
+    height: 124px;
+  }
+  .nav_bar_sub{
+    padding-bottom: 44px;
+  }
+  .section{
+    margin-bottom: 25px;
+  }
+  .first_part{
+    background: #ffffff;
+  }
+  .first_part_image{
+    top: 30px;
+    max-width: 500px;
+    max-height: 500px;
+    width: 55.5vw;
+    height: 40vw;
+  }
+  .first_part_image img{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .first_part_text{
+    max-width: 200px;
+    padding: 41px 0 27px 0;
+    margin-left: 64px;
+  }
+  .second_part_image{
+    max-width: 500px;
+    max-height: 500px;
+    width: 55.5vw;
+    height: 40vw;
+  }
+  .second_part_image img{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  .second_part_text{
+   margin: 0;
+   padding: 0;
+   width: 27%;
+  }
+  .second_section{
+    padding-bottom: 245px;
+  }
+  .second_part{
+    top:98px;
+    display: flex;
+    flex-direction: row;
+  }
+  .second_part_text{
+    margin-top:0;
+    padding-left: 64px;
+    box-sizing: border-box;
+    width: 36%;
+  
+  }
+  .second_section{
+    display: flex;
+    flex-direction: column;
+    gap: 102px;
+    padding-bottom: 103px;
+  }
+  .second_part_content{
+    display: flex;
+    gap: 64px;
+  }
+  .footer_section{
+    display: flex;
+    flex-direction: column;
+  }
+  .links_cities{
+    width: 100%;
+  }
+  .links_cities h2{
+    width: 100%;
+  }
+  .cities_divisions{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    justify-items: start;
+  }
+  .cities{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .links_cuisines{
+    width: 100%;
+  }
+  .links_cuisines h2{
+    width: 100%;
+  }
+  .cuisine_divisions{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    width: 100%;
+  }
+  .cuisine{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .link_card{
+    display: flex;
+    justify-content: space-between;
+  }
+  .doordash_links_divisions h2{
+    text-align: left;
+  }
+  .doordash_links_divisions a{
+    text-align: left;
+  }
+  .authorship_information{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px;
+  }
+  .social_media_icons{
+    display: flex;
+  }
+  .information_link{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  .section{
+    margin-bottom: 29px;
+  }
+  .cards{
+    padding-top: 27px;
+  }
+}
+@media screen and (min-width: 860px) {
+  .second_part_text{
+    width: 38%;
+    padding-left: 59px;
+    padding-top: 86px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .menu_bar {
+    height: 582px;
+  }
+  .nav_bar {
+    display: flex;
+    align-items: center;
+  }
+  .doordash_icon_head {
+    margin-top: -24px;
+    gap: 11px;
+  }
+  .first_svg {
+    margin: 0 1px 0 0;
+  }
+  .second_svg {
+    margin: 3px 0 0 0;
+  }
+  .doordash_icon {
+    display: none;
+  }
+  .login_icon {
+    display: flex;
+  }
+  .sign_in_and_sign_up {
+    display: flex;
+    gap: 20.5%;
+  }
+  .menu_bar {
+    position: relative;
+  }
+  .sign_in_and_sign_up {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .doordash_icon_head {
+    display: flex;
+  }
+  .menu_bar_heading {
+    padding-top: 70px;
+  }
+  .menu_bar_heading span {
+    font-size: 64px;
+    line-height: 76px;
+    width: 668px;
+    padding-top: 26px;
+  }
+  .search_bar {
+    padding-top: 3px;
+    margin-top: 1px;
+  }
+  .search {
+    width: 408px;
+  }
+  .search_arrow {
+    padding:4px 1px 0 1px;
+  }
+  .location_icon svg {
+    margin-left: -5px;
+  }
+  .content{
+    padding-left: 64px;
+  }
+  .content_image{
+    margin-right: 64px;
+  }
+  .nav_bar_sub{
+    padding-bottom: 40px;
+  }
+  .first_part_image{
+    max-width: 800px;
+    max-height: 800px;
+    width: 57.9vw;
+    height: 41.7vw;
+  }
+  .first_part_image img{
+    width: 100%;
+    height: 100%;
+  }
+  .second_part_image{
+    max-width: 800px;
+    max-height: 800px;
+    width: 57.9vw;
+    height: 41.7vw;
+    padding-top: 70px;
+  }
+  .second_part_image img{
+    width: 100%;
+    height: 100%;
+  }
+  .text_one{
+    display: none;
+  }
+  .text_two{
+    display: contents;
+  }
+  .first_part_text{
+    padding-top: 75px;
+    max-width: 253px;
+  }
+  .second_part_text{
+    padding-left:64px;
+    width:35%;
+    padding-top: 140px;
+  }
+  .second_section{
+    padding-bottom: 100px;
+  }
+  .footer_section{
+    display: flex;
+    flex-direction: row;
+  }
+  .doordash_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .link_card{
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content{
+    padding-left: 45px;
+  }
+  .content_image{
+    margin-right: 64px;
+  }
+  .main_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .first_part_text{
+    padding-top: 116px;
+    width: 30%;
+    max-width: 500px;
+
+  }
+  .first_part_image{
+    height: 42vw;
+    width: 58.4vw;
+    max-width: 600px;
+  }
+  .second_part_image{
+    height: 40vw;
+    width: 58.4vw;
+    padding-top: 2.5rem;
+    max-width: 600px;
+  }
+  .btn_app span{
+    padding: 8px 13px;
+  }
+  .second_part .btn_app{
+    padding: 8px 13px;
+  }
+  .second_part{
+    padding-left:0;
+  }
+  .second_part{
+    padding-top:0;
+  }
+  .second_section{
+    gap:116px;
+  }
+  .second_part_text{
+    padding-top: 115px;
+  }
+  .second_part_text{
+    padding-left: 64px;
+    width: 36%;
+  }
+}
+@media screen and (min-width:1180px) {
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .section{
+    display: flex;
+    justify-content: center;
+  }
+  .content_text h2{
+    text-align: center;
+  }
+  .content_text h3{
+    text-align: center;
+  }
+  .content_image{
+    display: flex;
+    justify-content: center;
+  }
+  .link{
+    display: flex;
+    justify-content: center;
+  }
+  .link span{
+    font-size: 18px;
+  }
+  .search_arrow {
+    display: none;
+  }
+  .search_arrow_lap {
+    display: flex;
+    background: rgb(235, 23, 0);
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    margin-right: -3px;
+  }
+  .search_arrow_lap svg {
+    padding: 8px 0 0 8px;
+  }
+  .nav_bar_sub{
+    padding-bottom: 85px;
+  }
+  .content_image img{
+    width: 154px;
+    height: 154px;
+  }
+  .second_section{
+    gap : 16vw;
+  }
+}
+@media  screen and (min-width:1184px) {
+  .text_two h2{
+    font-size: 40px;
+    font-family: doordash_medium;
+    font-weight: 700;
+    letter-spacing: 0ch;
+    line-height: 47px;
+  }
+  .first_part{
+    padding-bottom: 55px;
+  }
+  .first_part_text{
+    margin-left: 0px;
+    width: 407px;
+    box-sizing: border-box;
+  }
+  .first_part_text span{
+    font-size: 18px;
+  }
+  .first_part_image{
+    top: 0;
+    bottom: 0;
+    max-width: 712px;
+    width: 65vw;
+    max-height: 513px;
+    height: 44vw;
+  }
+  .second_part_image{
+    max-width: 712px;
+    max-height: 513px;
+    width: 65vw;
+    height: 44vw;
+  }
+  .second_part_text{
+    width: 41%;
+    box-sizing: border-box;
+  }
+  .second_part_text h2{
+    font-size: 40px;
+    font-family: doordash_medium;
+    font-weight: 700px;
+    letter-spacing: 0ch;
+    line-height: 47px;
+  }
+  .second_part_text span{
+    font-size: 18px;
+  }
+  .section{
+    padding-bottom: 108px;
+  }
+  .second_section{
+    gap: 6vw;
+  }
+  .first_container_sub{
+    width: 1184px;
+  }
+  .first_container{
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+  }
+  .second_part{
+    width: 1184px;
+  }
+  .second_container{
+    display: flex;
+    justify-content: center;
+  }
+  .main_section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1184px;
+    width: 1184px;
+    margin-left: -90px;
+    margin-top: 5px;
+  }
+  .card_text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .card_image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .content_image{
+    margin: 0;
+  }
+  .cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .authorship_information{
+    width: 1124px;
+  }
+  .links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .nav_bar_sub{
+    padding-bottom: 106px;
+  }
+}
+@media screen and (max-width: 320px) {
+
+}
