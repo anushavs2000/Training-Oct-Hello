@@ -140,6 +140,9 @@ body {
 .location_icon {
   display: none;
 }
+.location_icon svg{
+  transform: translateX(3px)
+}
 .doordash_icon_head {
   display: none;
 }
@@ -164,7 +167,7 @@ body {
   align-items: center;
   justify-content: center;
   line-height: 22px;
-  gap: 49px;
+  gap: 39px;
   padding-top: 32px;
   padding-bottom: 18px;
 }
@@ -176,11 +179,20 @@ body {
   width: 120.56px;
   letter-spacing: 0ch;
 }
-.get_app span {
+.get button{
+  border: transparent;
+  background:rgb(255, 255, 255);
+}
+button .get_app span {
   color: #ffffff;
   padding: 9px 16px 0 16px;
   display: flex;
   padding-top: 9px;
+  font-size: 16px;
+  font-weight: 700px;
+  line-height: 18px;
+  letter-spacing: 0ch;
+  font-family: doordash_bold;
 }
 .merchant {
   display: flex;
@@ -253,8 +265,8 @@ body {
   padding-top: 2px;
   padding-left: 7px;
 }
-.section{
-  margin-bottom: 170px;
+.main_section{
+  margin-bottom: 146px;
 }
 
 /* -------  CONTENT SECTION 2 ----- */
@@ -360,6 +372,169 @@ body {
    display: none;
 }
 
+/* ----------FOOTER------------ */
+footer{
+  background-color: rgb(25, 25, 25);
+}
+.footer{
+  display: flex;
+  justify-content:center;
+}
+.footer_content{
+  max-width: 1120px;
+  padding: 0 20px;
+  margin: 0 12px;
+  width: 100%;
+}
+.footer_section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #ffffff;
+}
+.links_cities{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+  width: 50%;
+}
+.links_cities h2{
+  font-size: 16px;
+  margin:0 0 8px 0;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0ch;
+  font-family: doordash_medium;
+}
+.links_cities a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-top: 8px;
+  font-family: doordash_medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0ch;
+  color: rgb(196, 196, 196);
+  box-sizing: border-box;
+}
+.links_cuisines{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 0;
+}
+.links_cuisines h2{
+  font-size: 15px;
+  margin:0 0 8px 0;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0ch;
+  font-family: doordash_medium;
+}
+.links_cuisines a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin-top: 8px;
+  font-family: doordash_medium;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0ch;
+  color: rgb(196, 196, 196);
+  box-sizing: border-box;
+}
+.cities{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.cuisine{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.doordash_links{
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 1112px;
+}
+.link_icon_svg{
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link_icon_svg a{
+  background: rgb(73, 73, 73);
+  opacity: 0.7;
+  margin-top: 12px;
+  width: 162px;
+  border-radius: 8px;
+}
+.doordash_links_divisions{
+  padding-top: 32px;
+}
+.doordash_links_divisions h2{
+  color: rgb(255, 255, 255);
+  font-family: doordash_medium;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0ch;
+  line-height: 22px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.doordash_links_divisions  a{
+  margin-top: 8px;
+  text-decoration: none;
+  font-family: doordash_medium;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(196, 196, 196);
+  display: block;
+  text-align: center;
+}
+.authorship_information{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding: 32px 0;
+}
+.authorship_information a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+  margin: 0 12px;
+  width: 100%;
+}
+.information_link{
+  margin-top: 12px;
+  text-align: center;
+  margin: 0 12px;
+  padding: 0 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.information_link a.info_svg{
+  margin: 0;
+}
+.information_link a{
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 18px;
+  color: rgb(196, 196, 196);
+  opacity:0.9;
+  font-family:doordash_regular;
+  margin: 0 0 0 16px;
+}
+.social_media_icons a{
+  margin: 0 0 0 12px;
+}
 @media screen and (min-width: 375px) {
   .search {
     width: 73.5%;
@@ -381,6 +556,12 @@ body {
   }
   .search_arrow{
     padding: 5px 8px 0 2px;
+  }
+  .get_app{
+    transform:translateX(5px);
+  }
+  .search_bar_text{
+    transform: translateX(3px);
   }
   
 }
@@ -480,6 +661,7 @@ body {
   .search_icon_input {
     display: flex;
     gap: 9px;
+    transform: translateX(-3px);
   }
   .search_arrow {
     padding-right: 1px;
@@ -498,6 +680,7 @@ body {
   }
   .content{
     padding-left: 49px;
+    padding-top:0px;
   }
   .content_text{
     width: 250px;
@@ -575,6 +758,74 @@ body {
   .second_part_content{
     display: flex;
     gap: 64px;
+  }
+  .footer_section{
+    display: flex;
+    flex-direction: column;
+  }
+  .links_cities{
+    width: 100%;
+  }
+  .links_cities h2{
+    width: 100%;
+  }
+  .cities_divisions{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    justify-items: start;
+  }
+  .cities{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .links_cuisines{
+    width: 100%;
+  }
+  .links_cuisines h2{
+    width: 100%;
+  }
+  .cuisine_divisions{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    width: 100%;
+  }
+  .cuisine{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .link_card{
+    display: flex;
+    justify-content: space-between;
+  }
+  .doordash_links_divisions h2{
+    text-align: left;
+  }
+  .doordash_links_divisions a{
+    text-align: left;
+  }
+  .authorship_information{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px;
+  }
+  .social_media_icons{
+    display: flex;
+  }
+  .information_link{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  .section{
+    margin-bottom: 29px;
+  }
+  .cards{
+    padding-top: 27px;
   }
 }
 @media screen and (min-width: 860px) {
@@ -687,12 +938,24 @@ body {
     max-width: 253px;
   }
   .second_part_text{
-    padding-left:0;
-    width:28%;
+    padding-left:64px;
+    width:35%;
     padding-top: 140px;
   }
   .second_section{
     padding-bottom: 100px;
+  }
+  .footer_section{
+    display: flex;
+    flex-direction: row;
+  }
+  .doordash_links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .link_card{
+    width: 50%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -867,9 +1130,46 @@ body {
     display: flex;
     justify-content: center;
   }
+  .main_section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1184px;
+    width: 1184px;
+    margin-left: -90px;
+    margin-top: 5px;
+  }
+  .card_text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .card_image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .content_image{
+    margin: 0;
+  }
+  .cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .authorship_information{
+    width: 1124px;
+  }
+  .links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 1440px) {
   .nav_bar_sub{
     padding-bottom: 106px;
   }
+}
+@media screen and (max-width: 320px) {
+
 }
