@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+}
+@font-face {
+    font-family:azure_latest;
+    src: url(assets/fonts/latest.woff2);
+}
+@font-face {
+    font-family: azure_roman;
+    src: url(assets/fonts/SegoeUI-Roman-VF_web.woff2);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    height: 54px;
+}
+.filter_and_azure{
+    display: flex;
+    align-items: center;
+    width: 130px;
+}
+.azure a{
+    font-size: 18px;
+    font-family: azure_roman;
+    font-weight: 600;
+    opacity: .8;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.azure{
+    transform: translateX(4px);
+    letter-spacing: .04ch;
+}
+.filter_svg{
+    width: 20px;
+    height: 15px;
+    padding: 12px;
+}
+.filter_svg svg{
+    width: 100%;
+    height: 100%;
+}
+.search_and_sign-in{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 130px;
+    gap: 14px;
+}
+.search_icon{
+    height: 100%;
+}
+.search_icon_img{
+    width:15px;
+    height:15px;
+}
+.search_icon_img img{
+    width:100%;
+    height:100%;
+}
+.sign_in{
+    padding: 20px;
+}
+.azure_icon{
+    height:32px;
+}
+.sign_in span{
+    font-weight: 400px;
+    font-size: 14px;
+    font-family: azure_roman;
+}
+.header_tablet{
+    display:none;
+}
+@media screen and (min-width:768px){
+    .header{
+        display: none;
+    }
+    .header_tablet{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 54px;
+        padding:0 12px;
+    }
+    .search_sign-in_tablet{
+        display: flex;
+    }
+    .search_sign-in_tablet svg{
+        width: 28px;
+        height: 24px;
+    }
+    .header_links{
+        display: flex;
+    }
+    .azure_icon svg{
+        width: 24px;
+        height: 24px;
+        padding: 2px 0 0 0;
+    }
+    .azure_icon{
+        display: flex;
+        align-items: center;
+        gap:8px;
+    }
+}
