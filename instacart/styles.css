@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family:insta_bold;
+    src: url(assets/fonts/eina-bold-df33d802f345a9037eb82e0c80e76547.woff2);
+}
+@font-face{
+    font-family:insta_regular;
+    src: url(assets/fonts/eina-regular-962b94746f466cf38b0dcc93ebf0703e.woff2);
+}
+@font-face{
+    font-family: insta_semibold;
+    src: url(assets/fonts/eina-semibold-3c45702adeba381bbd0bc600c987febd.woff2);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d43684;
+    color: #fff5fa;
+    line-height: 17px;
+    height: 36px;
+}
+.header img{
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+}
+.head_offer{
+    margin: 1px 8px -1px 8px;
+    font-size: 12px;
+}
+.head_offer span{
+    font-family: insta_semibold;
+}
+.head_offer .head_normal{
+    font-family: insta_regular;
+}
+
+/* ---MEDIA QUERIES--- */
+
+@media screen and (min-width:768px){
+    .header{
+        height: 56px;
+    }
+    .head_offer span{
+        font-size: 18px;
+    }
+    .header img{
+        width: 36px;
+        height: 36px;
+        margin-left: 0;
+    }
+    .head_offer .head_normal{
+        margin: 0 2px;
+    }
+}
