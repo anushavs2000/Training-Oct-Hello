@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: insta_regular;
 }
 @font-face{
     font-family:insta_bold;
@@ -38,7 +39,47 @@
 .head_offer .head_normal{
     font-family: insta_regular;
 }
-
+.head_second{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+.hamburger{
+    width: 24px;
+    height: 24px;
+    padding: 1px 6px;
+}
+.instacart_logo{
+    height: 24px;
+}
+.instacart_logo img{
+    width: 100%;
+    height: 24px;
+}
+.login_btn{
+    display: flex;
+    align-items: center;
+}
+.login_btn span{
+    font-size:15px;
+    padding: 1px 6px;
+    margin-right: 11px;
+    white-space: nowrap;
+    font-weight: 600;
+    font-family: insta_semibold;
+}
+.login_btn button{
+    padding: 8px 16px;
+    white-space: nowrap;
+    font-size: 15px;
+    background: #0aad0a;
+    border: none;
+    border-radius: 20px;
+    color: #ffff;
+    font-weight: 600;
+    line-height: 22px;
+}
 /* ---MEDIA QUERIES--- */
 
 @media screen and (min-width:768px){
@@ -56,4 +97,35 @@
     .head_offer .head_normal{
         margin: 0 2px;
     }
+    .head_offer{
+        margin-left: 7px;
+    }
+    .instacart_logo{
+        margin-right: auto;
+    }
+    .instacart_logo img{
+        margin-top: -2px;
+    }
+    .login_btn span{
+        font-size: 18px;
+        margin: 0 22px;
+    }
+    .login_btn button{
+        font-size: 18px;
+        height: 42px;
+        font-weight: 600;
+        font-family: insta_semibold;
+        margin: 0 22px;
+        padding-bottom: 3px;
+        display: flex;
+        
+        margin: 0;
+    }
+    .head_second{
+        padding: 19px 40px 34px 34px;
+    }
+    .hamburger{
+        padding-right: 8px;
+    }
+
 }
