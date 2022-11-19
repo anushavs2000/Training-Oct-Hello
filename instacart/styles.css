@@ -30,8 +30,9 @@
     margin-left: 8px;
 }
 .head_offer{
-    margin: 1px 8px -1px 8px;
+    margin:0 8px;
     font-size: 12px;
+    line-height: 18px;
 }
 .head_offer span{
     font-family: insta_semibold;
@@ -52,6 +53,7 @@
 }
 .instacart_logo{
     height: 24px;
+    margin-bottom: 4px;
 }
 .instacart_logo img{
     width: 100%;
@@ -68,6 +70,7 @@
     white-space: nowrap;
     font-weight: 600;
     font-family: insta_semibold;
+    color: #343538;
 }
 .login_btn button{
     padding: 8px 16px;
@@ -79,9 +82,91 @@
     color: #ffff;
     font-weight: 600;
     line-height: 22px;
+    font-family: insta_semibold;
 }
-/* ---MEDIA QUERIES--- */
+.head_third h1{
+    font-size: 31px;
+    line-height: 40px;
+    color: #343538;
+    font-weight: bold;
+    font-family: insta_bold;
+    width: 256px;
+}
+.container_third_head{
+    background-color:#deedd6;
+    margin-bottom: 24px;
+}
+.head_third{
+    padding: 17px 16px 32px 16px;
+}
+.select{
+    display: none;
+}
+.head_third span{
+    display: none;
+}
+.head_fourth{
+    padding: 16px 32px;
+    text-align:center;
+}
+.head_fourth .text_normal{
+    line-height: 32px;
+    font-size: 23px;
+    color: #343538;
+}
+.head_fourth span{
+    font-size: 23px;
+    line-height: 32px;
+    color: #0aad0a;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    height: 60px;
+}
+.card_img{
+    width: 58px;
+    height: 58px;
+}
+.card_img img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e8e9eb;
+    border-radius: 50px;
+}
+.card .text{
+    margin-right: auto;
+    margin-left: 12px;
+    padding: 5px 0 0 2px;
+}
+.card .text p{
+    font-size: 18px;
+    line-height: 18px;
+    color: #343538;
+    font-weight: 600;
+    font-family: insta_semibold;
+}
+.card .text span{
+    font-size: 12px;
+    font-family: insta_semibold;
+    color: #343538;
+    line-height: 16px;
+}
+.container_cards{
+    padding-top: 7px;
+}
+.arrow_right{
+    margin-top: 4px;
+}
 
+/* ---MEDIA QUERIES--- */
+@media screen and (min-width:375px){
+    .head_fourth{
+        padding: 16px 33px;
+    }
+}
 @media screen and (min-width:768px){
     .header{
         height: 56px;
@@ -99,16 +184,20 @@
     }
     .head_offer{
         margin-left: 7px;
+        margin-top: 1px;
     }
     .instacart_logo{
         margin-right: auto;
+        margin-bottom: 0;
     }
     .instacart_logo img{
         margin-top: -2px;
+        width: 149px;
     }
     .login_btn span{
         font-size: 18px;
         margin: 0 22px;
+        margin-bottom: 1px;
     }
     .login_btn button{
         font-size: 18px;
@@ -116,16 +205,122 @@
         font-weight: 600;
         font-family: insta_semibold;
         margin: 0 22px;
-        padding-bottom: 3px;
+        padding: 10px 16px;
         display: flex;
         
         margin: 0;
     }
     .head_second{
-        padding: 19px 40px 34px 34px;
+        padding: 19px 40px 19px 34px;
     }
     .hamburger{
         padding-right: 8px;
     }
-
+    .select{
+        display: flex;
+    }
+    .head_third span{
+        display: flex;
+    }
+    .container_third_head{
+        background: url(assets/homepage_background.webp);
+        background-repeat: no-repeat;
+        background-color:#deedd6;
+        background-position: right;
+        background-size: contain;
+    }
+    .head_third{
+        display: flex;
+        height: 220px;
+        padding: 0;
+        position: relative;
+    }
+    .head_third h1{
+        width: 578px;
+        font-size: 41px;
+        font-family: insta_semibold;
+        line-height: 52px;
+    }
+    .select{
+        width: 71px;
+        height: 45px;
+        background: #ffff;
+        border: 1px solid #c7c8cd;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:40px;
+        left:40px;
+        gap: 5px;
+    }
+    .third_text{
+        padding-left: 144px;
+        padding-top: 39px;
+    }
+    .third_text span{
+        color: #343538;
+        margin-top: 16px;
+        font-size: 15px;
+    }
+    .select_icon{
+        width: 16px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        background-color: buttonface;
+        justify-content: center;
+    }
+    .select svg{
+        margin-right: 1px;
+    }
+    .head_fourth span{
+        font-size: 31px;
+    }
+    .head_fourth .text_normal{
+        font-size: 31px;
+        margin-right: 4px;
+    }
+    .head_fourth{
+        padding-top: 12px;
+    }
+    .arrow_right{
+        display: none;
+    }
+    .card{
+        box-shadow: rgb(0 0 0  / 16%) 0px 2px 8px;
+        border-radius: 12px;
+        padding: 11px 20px 13px 12px;
+    }
+    .container_cards{
+        padding: 19px 32px 0 32px;
+        max-width: 1080px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+@media screen and (min-width:776px){
+    .container_cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width:1024px){
+    .container_third_head{
+        background-size: initial;
+    }
+    .head_third{
+        max-width: 1368px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 1144px) {
+    .container_cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
