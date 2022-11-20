@@ -203,7 +203,34 @@
     line-height: 32px;
     color: #343538;
 }
-
+.cards_scroll{
+    display: flex;
+    overflow: scroll;
+}
+.card_scroll{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    background-color: #f6f7f8;
+    margin-right:8px;
+    border-radius: 8px;
+}
+.card_scroll .text{
+    padding: 32px 32px 44px 32px;
+}
+.card_scroll img{
+    border-radius: 0 0 8px 8px;
+    height: 100%;
+}
+.card_scroll .text h2{
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 15px;
+}
+.card_scroll .text span{
+    font-size: 15px;
+    line-height: 22px;
+}
 /* ---MEDIA QUERIES--- */
 @media screen and (min-width:375px){
     .head_fourth{
