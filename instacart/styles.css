@@ -171,6 +171,7 @@
     height: 100px;
     border-radius: 8px;
     box-shadow: 0px 0px 16px rgb(0 0 0 / 16%);
+    margin-top: 1px;
 }
 .scan_img_one{
     display: none;
@@ -216,7 +217,7 @@
     border-radius: 8px;
 }
 .card_scroll .text{
-    padding: 32px 32px 44px 32px;
+    padding: 32px 32px 48px 32px;
 }
 .card_scroll img{
     border-radius: 0 0 8px 8px;
@@ -225,12 +226,13 @@
 .card_scroll .text h2{
     font-size: 28px;
     line-height: 32px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     color: #343538;
+    font-family: insta_semibold;
 }
 .card_scroll .text span{
     font-size: 15px;
-    line-height: 22px;
+    line-height: 21px;
     color: #343538;
 }
 .shopping_btn{
@@ -252,13 +254,16 @@
 .shopping_btn span{
     font-size: 18px;
     font-weight: 600;
+    font-family: insta_semibold;
+    margin-top: -1px;
 }
 .container_service{
     padding: 32px;
 }
 .img_service_mobile img{
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
+    border-radius: 6px;
 }
 .container_service h2{
     color: #343538;
@@ -266,6 +271,7 @@
     font-weight: 100;
     text-align: center;
     padding-bottom: 32px;
+    line-height: 32px;
 }
 .img_service_desktop{
     display: none;
@@ -282,7 +288,9 @@
     font-size: 28px;
     font-weight: 600;
     text-align: left;
-    padding: 32px;
+    padding: 32px 32px 34px 38px;
+    font-family: insta_semibold;
+    line-height: 32px;
 }
 .cards_service{
     max-width: 1088px;
@@ -293,13 +301,13 @@
     margin-inline: auto;
 }
 .question_tags{
-    padding: 32px 32px 60px 32px;
+    padding: 31px 32px 60px 32px;
 }
 .question_tags h2{
     font-size: 23px;
     color: #343538;
     font-weight: 100;
-    margin-bottom: 32px;
+    margin-bottom: 39px;
     text-align: center;
 }
 .question{
@@ -308,7 +316,7 @@
     align-items: center;
     font-size: 24px;
     color: #424244;
-    padding: 16px 0;
+    padding: 10px 0 16px 0;
     border-bottom: 1px solid #e8e9eb;
     line-height: 36px;
 }
@@ -323,7 +331,7 @@ footer{
     height: 33px;
 }
 .footer_part .container{
-    padding: 0px 20px 40px 20px;
+    padding: 0px 20px 45px 20px;
 }
 .footer_part .head{
     display:flex;
@@ -358,6 +366,7 @@ footer{
 .container .head_two{
     display:flex;
     justify-content: center;
+    align-items: flex-end;
     color: #343538;
     padding: 20px 0 13px 0;
 }
@@ -378,7 +387,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    padding-bottom: 9px;
+    padding-bottom: 15px;
     border-bottom: 1px solid #e8e9eb;
 }
 .info :nth-last-child(1){
@@ -387,6 +396,7 @@ footer{
 .card_info h2{
     font-size: 18px;
     color: #343538;
+    font-family: insta_semibold;
 }
 .info{
     padding: 0 20px;
@@ -408,7 +418,7 @@ footer{
     justify-content: space-between;
 }
 .btn svg{
-    opacity: 0.4;
+    opacity: 0.3;
 }
 .btn button{
     background-color: #ffff;
@@ -421,7 +431,7 @@ footer{
     background-color: #c7c8cd;
     display:flex;
     align-items: center;
-    width: 54.44px;
+    width: 57px;
     height: 32px;
     border-radius: 25px;
 }
@@ -436,8 +446,11 @@ footer{
 .legal{
     font-size: 18px;
     font-weight: 600;
-    padding: 12px 20px 0 20px;
+    padding: 20px 20px 5px 20px;
     color: #343538;
+}
+.legal span{
+    font-family: insta_semibold;
 }
 .link{
     display:flex;
@@ -448,11 +461,12 @@ footer{
     padding: 20px 20px 0 0;
     font-weight: 600;
     color: #343538;
+    font-family: insta_semibold;
 }
 .socialmedia_icons svg{
     height: 35px;
     width: 35px;
-    padding: 20px 14px 0 0;
+    padding: 20px 10px 0 0;
 }
 .socialmedia_icons{
     padding: 0 20px;
@@ -467,7 +481,16 @@ footer{
     margin-bottom: 40px;
     padding-left: 6px;
     line-height: 16px;
-    margin-top: 27px;
+    margin-top: 20px;
+}
+.container .head_two img{
+    width: 33px;
+    height: 33px;
+}
+.btn button{
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 /* ---MEDIA QUERIES--- */
 @media screen and (min-width:375px){
@@ -669,10 +692,6 @@ footer{
     .container .head_two{
         justify-content: flex-start;
     }
-    .container .head_two img{
-        width: 33px;
-        height: 33px;
-    }
     .footer_part .icons{
         justify-content: flex-start;
     }
@@ -841,6 +860,29 @@ footer{
     }
     .card_scroll{
         margin: 0;
+    }
+}
+@media screen and (min-width:1224px){
+    
+    .footer{
+        margin-top: 7px;
+        padding-left: 38px;
+    }
+    .legal{
+        padding-left: 40px;
+    }
+    .link{
+        padding-left: 52px;
+        gap: 14px;
+    }
+    .socialmedia_icons{
+        padding-right: 61px;
+    }
+    .socialmedia_icons svg{
+        padding: 20px 10px 0 0;
+    }
+    .txt p{
+        width: 27vw;
     }
 }
 @media screen and (min-width:1280px){
