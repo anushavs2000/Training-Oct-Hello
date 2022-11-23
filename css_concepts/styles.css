@@ -1,0 +1,63 @@
+body{
+    margin: 100px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 15vh;
+    color: rgb(47, 57, 237);
+    font-size: 20px;
+    font-weight: 900;
+    background: aqua;
+    outline: 5px solid aqua;
+    outline-offset: 5px;
+    margin: 20px;
+}
+.btn{
+    text-decoration: none;
+    background-color: chartreuse;
+    display: inline-block;
+    padding: 2em 2em;
+    color: blue;
+    outline: 3px solid chartreuse;
+    transition: all ease-in-out 300ms;
+    margin: 20px;
+}
+.btn:hover{
+    outline-offset: 5px;
+    outline: 3px solid chartreuse;
+}
+.btn_fun{
+    background-color: coral;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: 5px solid white;
+    transition: all ease-in-out 200ms;
+    margin: 20px;
+}
+.btn_fun:hover{
+     outline-offset: -8px;
+     outline: 5px solid white;
+}
+.btn_transition{
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin: 20px;
+    transition:1000ms background ease-in-out 50ms, 1000ms transform ease-in-out; 
+}
+.btn_transition:hover{
+    background: rgb(255, 149, 0);
+    transform: rotate(360deg);
+}
+h2:after{
+    content: 'RED';
+    background-color: crimson;
+    font-size: 16px;
+    color: #ffff;
+}
