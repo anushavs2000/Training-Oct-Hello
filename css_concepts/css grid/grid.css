@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card_one{
+    display: grid;
+    grid-template-areas: ". . header . ."
+    ". . pic . ."
+    ". one two three .";
+    row-gap: 5rem;
+    justify-items:center;
+    column-gap: 3rem;
+    margin: 1rem;   
+    padding: 3rem;
+    background-color: hwb(180 16% 62%);
+}
+header{
+    grid-area: header;
+    grid-column: 2/5;
+}
+.img{
+    grid-area:pic ;
+    grid-column: 2/5;
+}
+.section_one{
+    grid-area:one;
+}
+.section_two{
+    grid-area: two;
+}
+.section_three{
+    grid-area: three;
+}
+h2{
+    text-align: center;
+    line-height: 22px;
+    padding-bottom: 1rem;
+}
+p{
+    line-height: 28px;
+}
+.card_two{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: hwb(180 16% 50%);
+    margin: 1rem;
+    padding: 3rem;
+}
+.img_card{
+    grid-column: 3/4;
+    background-color: black;
+}
+.img_card img {
+     width: 100%;
+     height: 100%;
+}
+.card_inside{
+    grid-column: 3/4;
+    color: white;
+    align-self: center;
+    font-size: 30px;
+    font-weight: 900;
+    background-color: black;
+}
+.card_inside, .img_card{
+    grid-row: 1/2;
+}
+.card_three{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-gap: 20px;
+    padding: 100px;
+}
+.three{
+    background-color: hwb(180 16% 30%);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 20px;
+}
+.one{
+    grid-row: span 2;
+    grid-column: span 2;
+    background: url(assets/0e9b8d7be8ef4213d74afc9568668f4e.jpg);
+    background-color: black;
+    background-blend-mode: hard-light;
+    background-size: cover;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 50px;
+}
+.two{
+    grid-column: span 3;
+    grid-row: span 3;
+    background: url(assets/14-bicycle-vintage-photography.jpg);
+    background-color: black;
+    background-blend-mode: hard-light;
+    background-size: cover;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 50px;
+}
+.third{
+    grid-column: span 2;
+    grid-row: span 2;
+    background: url(assets/15770942445e008c6417c5c9.webp);
+    background-color: black;
+    background-blend-mode: hard-light;
+    background-size: cover;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 50px;
+}   
+.five{
+    grid-column: span 2;
+    grid-row: span 3;
+    background: url(assets/63eca6f97f8431861cf9d8d4f3ecb1d8.jpg);
+    background-color: black;
+    background-blend-mode: hard-light;
+    background-size: cover;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 50px;
+}
+.four{
+    background: url(assets/camera-1130731__480.jpg);
+    background-color: black;
+    background-blend-mode: hard-light;
+    background-size: cover;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 50px;
+}
+.six{
+    grid-column: span 3;
+    grid-row: span 2;
+    background: url(assets/images.jpeg);
+    background-color: black;
+    background-blend-mode: hard-light;
+    background-size: cover;
+    color: #ffff;
+    font-weight: bold;
+    font-size: 50px;
+    
+}
