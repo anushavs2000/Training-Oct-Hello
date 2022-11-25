@@ -145,3 +145,85 @@ p{
     font-size: 50px;
     
 }
+.id h1{
+    font-size: 10vw;
+    color: white;
+    text-shadow: 15px 10px 10px rgb(0 0 0 / 90%);
+    text-align: center;
+}
+.id{
+    background: url(assets/yellow-background.webp);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr 1fr 3fr 1fr 1fr;
+    grid-gap: 1em;
+    width: 77%;
+    margin: 0 auto;
+    padding: 10rem;
+}
+.id img{
+    width: 100%;
+    height: 250px;
+}
+.collection_card_one{
+    text-align: center;
+    border: 8px solid white;
+    background-color: rgb(49, 49, 90);
+    height: min-content;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-row-end:5;
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 100%);
+}
+.collection_card_two{
+    text-align: center;
+    border: 8px solid white;
+    background-color: rgb(49, 49, 90);
+    height: min-content;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    grid-row-end:5;
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 80%);
+}
+.collection_card_three{
+    text-align: center;
+    border: 8px solid white;
+    background-color: rgb(49, 49, 90);
+    height: min-content;
+    grid-row-start: 4;
+    grid-column-start: 3;
+    grid-row-end: 7;
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 80%);
+}
+.title{
+    grid-column: 1/4;
+}
+.card_four img{
+    width: 100%;
+    aspect-ratio: 1 / 1.25;
+    object-fit: cover;
+}
+.card_four{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem;
+}
+.items{
+    display: grid;
+    aspect-ratio: 1 / 1.5;
+}
+.items > *{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.card_content h2{
+    text-align: left;
+    background-color: #ffff;
+}
+.card_content{
+    align-self:end;
+    background-color: white;
+    margin: .5rem .5rem 2rem;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 40%);
+}
