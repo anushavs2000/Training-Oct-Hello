@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header h2{
+    text-align:center ;
+    font-size: 40px;
+    padding: 1rem;
+}
+header{
+    background-color: rgb(38, 111, 111);
+    position:fixed;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    position: absolute;
+    top: 100%;
+    background-color: rgb(38, 111, 111);
+    /* display:none; */
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    /* opacity: 0; */
+    transition: opacity 250ms ease-in-out 250ms;
+}
+nav li{
+    list-style: none;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.checkbox:checked ~ nav{
+    /* display: block; */
+    transform: scale(1, 1);
+}
+header input{
+    display: none;
+}
+.checkbox-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.checkbox-label span,
+.checkbox-label span::before,
+.checkbox-label span::after{
+    display:block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+.checkbox-label span::before,
+.checkbox-label span::after{
+    content: '';
+    position: absolute;
+}
+.checkbox-label span::before{
+    bottom: 7px;
+}
+.checkbox-label span::after{
+    top: 7px;
+}
+.checkbox:checked ~ nav li a{
+opacity: 1;
+}
+@media screen and (min-width:1024px){
+    .checkbox-label{
+        display: none;
+    }
+    header{
+        display: grid;
+        grid-template-columns:1fr auto minmax(600px, 1fr);
+    }
+    header h2{
+        grid-column: 2 / 3;
+    }
+    nav{
+        all: unset;
+        display: flex;
+        justify-content:flex-end;
+        align-items:center ;
+        grid-column: 3 / 4;
+        transform: scale(1, 1);
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav li{
+        margin-left: 1rem;
+        margin-bottom: 0;
+        margin-right: .5em;
+    }
+    nav a{
+        opacity: 1;
+        position: relative;
+    }
+    nav a::before{
+        content: '';
+        display: block;
+        height: 4px;
+        background-color: black;
+        position: absolute;
+        top:-.7em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transform-origin: left;
+        transition: transform ease-in-out 250ms;
+    }
+    nav a:hover::before{
+        transform: scale(1, 1);
+    }
+}
