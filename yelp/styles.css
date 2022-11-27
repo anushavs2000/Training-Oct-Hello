@@ -179,7 +179,7 @@ header{
     gap: 24px;
     padding-top:64px;
     padding-left: 14px;
-    padding-bottom: 190px;
+    padding-bottom: 87px;
 }
 .selection_one{
     width: 10px; 
@@ -224,6 +224,7 @@ header{
     font-weight: 900;
     font-family: poppins_bold;
     padding-left: 7px;
+    margin-bottom: 24px;
 }
 .search_hvac{
     width: min-content;
@@ -233,6 +234,30 @@ header{
     color: #ffff;
 }
 .search_hvac p{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
+    font-family: poppins_medium;
+    padding-left: 8px;
+}
+.nav_last span{
+    font-weight: 800;
+}
+.nav_last{
+    max-width: 1130px;
+    margin-inline: auto;
+    font-size: 14px;
+    color: #ffff;
+    padding-bottom: 66px;
+}
+.card_head{
+    max-width: 1144px;
+    margin-inline: auto;
+    text-align: center;
+    padding-top: 56px;
+    margin-bottom: 48px;
+}
+.card_head h1{
+    font-size: 28px;
+    font-weight: 700;
+    font-family: poppins_bold;
 }
