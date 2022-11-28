@@ -1,0 +1,27 @@
+.colour{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 350px;
+}
+.white{
+    display:flex;
+    justify-content: center;
+    padding-top:70px;
+    width: 150px;
+    height: 80px;
+    border: 2px solid black;
+}
+.white span{
+    cursor: pointer;
+}
+div.white:hover + div.red{
+    background: red;
+}
+.red{
+    width:150px;
+    height:150px;
+    border: 2px solid black;
+    background:white;
+}
