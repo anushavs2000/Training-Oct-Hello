@@ -59,6 +59,7 @@ header{
 }
 .nav_bar{
     display:flex;
+    justify-content: space-between;
     align-items: center;
     height: 48px;
     padding: 24px 40px 0 40px;
@@ -259,13 +260,15 @@ header{
     margin-inline: auto;
     text-align: center;
     padding-top: 56px;
-    margin-bottom: 48px;
+    margin-bottom: 45px;
 }
 .card_head h1{
     font-size: 28px;
     font-weight: 700;
     font-family: poppins_bold;
     color: #2d2e2f;
+    letter-spacing: -0.02ch;
+    margin-top: -2px;
 }
 .card_container{
     max-width: 1144px;
@@ -278,11 +281,11 @@ header{
 .image img{
     width: 100%;
     height: 92px;
-    margin-bottom: 16px;
+    margin-bottom: 11px;
 }
 .card{
     height: 342px;
-    padding: 18px 0 24px 0;
+    padding: 18px 0 14px 0;
     border: 1px solid #ebebeb;
 }
 .profile img{
@@ -315,7 +318,7 @@ header{
     font-family: sans_semibold;
 }
 .continue p{
-    padding-bottom: 8px;
+    padding-bottom: 9px;
     border-bottom: 1px solid #ebebeb;
 }
 .card_heading{
@@ -327,10 +330,11 @@ header{
 }
 .img{
     max-width: 155px;
-    max-height: 210px;
+    max-height: 208px;
     border: 1px solid #ebebeb;
     border-radius: 4px;padding-bottom: 8px;
     border-bottom: 1px solid #ebebeb;
+    padding-bottom: 0px;
 }
 .img img{
     width: 100%;
@@ -343,7 +347,7 @@ header{
     padding: 16px;
 }
 .img svg{
-    padding: 7px;
+    padding: 4px 7px 0 8px;
 }
 .bottom_text{
     color: #027a97;
@@ -354,10 +358,13 @@ header{
     font-family: sans_semibold;
 }
 .rating{
-    padding-top:8px;
+    padding-top:9px;
+    display: flex;
+    gap: 2px;
+    margin-bottom: 4px;
 }
 .reactions{
-    padding: 16px 24px 0 32px;
+    padding: 17px 24px 0 32px;
     display: flex;
     gap: 40px;
 }
@@ -433,23 +440,39 @@ footer{
     margin-inline: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 44px 0 60px 0;
+    padding: 46px 0 44px 0;
+    column-gap: 32px;
 }
 .section h2{
     color: #2d2e2f;
     font-size: 16px;
-    font-family: sans_semibold;
-    margin: 16px 0;
+    font-family: sans_bold;
+    margin: 16px 0 17px 0;
 }
 .section p{
     color: #6e7072;
     font-size: 14px;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
+}
+.section_a h2{
+    color: #2d2e2f;
+    font-size: 16px;
+    font-family: sans_bold;
+    margin: 16px 0 8px 0;
+}
+.section_a p{
+    color: #6e7072;
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+.section_a svg{
+    fill: #6e7072;
+    transform: translateY(3px);
 }
 .footer{
     max-width: 1144px;
     margin-inline: auto;
-    padding-bottom: 60px;
+    padding-bottom: 58px;
 }
 .footer span{
     font-size: 12px;
@@ -467,5 +490,14 @@ footer{
 }
 .footer svg{
     transform: translateY(2px);
-    margin:0 1px 0 2px
+    margin:0 2px 0 1px
+}
+@media screen and (min-width:1910px) {
+    .nav_bar .logo{
+        padding-right: 260px;
+    }
+    .nav_bar{
+        display: flex;
+        
+    }
 }
