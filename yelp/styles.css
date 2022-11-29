@@ -98,7 +98,7 @@ header{
 }
 .nav_bar .logo{
     padding-top: 5px;
-    padding-right: 32px;
+    min-width: 112px;
 }
 .search_bar button{
     width: 61px;
@@ -163,9 +163,9 @@ header{
     padding: 0 16px 5px 16px;
 }
 .nav_tabs{
-    margin-left: 152px;
+    margin-inline: auto;
     font-size: 14px;
-    max-width: 1162px;
+    max-width: 1136px;
     display: flex;
 }
 .tab svg{
@@ -399,10 +399,11 @@ header{
 }
 .categories h2{
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     font-family: poppins_bold;
     font-size: 28px;
     color: #2d2e2f;
+    letter-spacing: -0.02ch;
 }
 .container_category_card{
     display: grid;
@@ -413,12 +414,12 @@ header{
 }
 .category_card{
     max-width: 256px;
-    height: 183px;
+    height: 181px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 23px;
     border: 1px solid #ebebeb;
 }
 .category_card svg{
@@ -492,12 +493,14 @@ footer{
     transform: translateY(2px);
     margin:0 2px 0 1px
 }
-@media screen and (min-width:1910px) {
+@media screen and (min-width:1860px) {
     .nav_bar .logo{
-        padding-right: 260px;
+        padding-right: 205px;
     }
     .nav_bar{
-        display: flex;
-        
+        display: flex;  
+    }
+    .nav_tabs{
+        max-width: 1162px;
     }
 }
