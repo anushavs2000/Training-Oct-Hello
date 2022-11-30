@@ -183,10 +183,12 @@ header p{
     height: 116px;
 }
 .card{
-    padding: 5px;
+    padding-top: 5px;
 }
 .item{
     display: flex;
+    padding-bottom: 17px;
+    padding-left: 5px;
 }
 .content p{
     font-family: regular;
@@ -209,6 +211,7 @@ header p{
 }
 .info{
     display: flex;
+    flex-wrap: wrap;
 }
 .like_icon{
     border: 1px solid transparent;
@@ -224,6 +227,8 @@ header p{
 }
 .cards_container{
     display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(240, 240, 240, 1.00);
 }
 .rating{
     display: flex;
@@ -244,7 +249,8 @@ header p{
     font-size: 12px;
     color: #878787;
     margin-left: 5px;
-    font-family:Roboto, Helvetica, Arial, sans-serif;
+    font-family:regular;
+    margin-right: 1px;
 }
 .rating_and_logo img{
     height: 13px;
@@ -257,9 +263,7 @@ header p{
     text-decoration-line: line-through;
     font-size: 12px;
     color: #878787;
-}
-.price .current_price{
-    padding-left:7px;
+    padding-right:7px;
 }
 .price{
     display: flex;
@@ -269,4 +273,72 @@ header p{
     font-size: 12px;
     color: #4bb550;
     margin-left: 4px;
+}
+.free_delivery span{
+    font-size: 12px;
+    font-family: regular;
+}
+.free_delivery{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.bank_offer span{
+    font-size: 12px;
+    color: #26a541;
+}
+.info span{
+    font-size: 12px;
+    white-space: nowrap;
+    color: #878787;
+}
+.buttons{
+    margin: 0 0 10px 10px;
+    border: 1px solid rgb(240, 240, 240, 1.00);
+    padding:2px 8px;
+}
+.btn_border{
+    width: 2px;
+    background-color: rgb(240, 240, 240, 1.00);
+    height: 15px;
+    margin: 0px 4px;
+}
+.space_div{
+    height: 9px;
+}
+.card_limited_offer{
+    padding: 8px 0;
+    background-color: #f0f0f0;
+}
+.timer img{
+    width: 70px;
+    height: 70px;
+}
+.timer{
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+.arrow_right img{
+    width: 6px;
+    height: 10px;
+}
+.timer_icon_text{
+    display: flex;
+}
+.timer_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 18px;
+}
+.offer_text{
+    font-size: 12px;
+    color: #878787;
+    font-family: regular;
+    margin-top: 2px;
+}
+.arrow_right{
+    margin: 1px 1px 0  0;
 }
