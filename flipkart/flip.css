@@ -50,6 +50,10 @@ header p{
 .sort_and_filter{
     height: 48px;
     display: flex;
+    background-color: #ffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .sort_and_filter img{
     width: 24px;
@@ -169,6 +173,8 @@ header p{
 }
 .nav_bottom{
     margin-top: -1px;
+    position:sticky;
+    top: 39px;
 }
 
 /* CARDS */
@@ -306,7 +312,7 @@ header p{
     height: 9px;
 }
 .card_limited_offer{
-    padding: 8px 0;
+    padding: 8px 0 9px 0;
     background-color: #f0f0f0;
 }
 .timer img{
