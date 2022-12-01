@@ -365,14 +365,21 @@ header p{
         align-items:center ;
     }
     .header_desktop_container{
-        max-width: 1248px;
-        margin: 0px 27.5px;
         display: flex;
         align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    .header_icons{
+        max-width: 1248px; 
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        width: 100%;
     }
     .logo_flipkart{
-        margin-left: 124px;
-        width: 109px;
+        width: 137px;
+        min-width: 137px;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -401,8 +408,8 @@ header p{
     }
     .logo_plus .plus{
         color: #ffe500;
-        margin-right: 2px;
-        margin-left: 3px;
+        margin-right: 3px;
+        margin-left: 2.5px;
     }
     .search_bar_desktop{
         margin-left: 12px;
@@ -413,12 +420,15 @@ header p{
         border: 1px;
         min-width: 304px;
         box-shadow: 0 2px 4px 0 rgb(0 0 0 / 23%);
+        width: 100%;
+        max-width: 564px;
+        margin-right: auto;
     }
     .search_bar_desktop input{
         height: 34px;
         border: none;
         width: 100%;
-        padding-left:16.5px;
+        padding-left:16px;
         font-family: regular;
         font-size: 14px;
     }
@@ -435,14 +445,269 @@ header p{
         font-family: regular;
         color: #2874f0;
         font-weight: 600;
-        padding: 5px 42px 5px 41px;
+        padding: 5px 41px 5px 41px;
         line-height: 21px;
     }
     .seller_btn{
-        margin: 0 20px;
+        margin: 0 19px 0 20px;
         white-space: nowrap;
         color: #ffff;
         font-family: regular;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        font-size: 15.87px;
     }
+    .more_btn{
+        display: flex;
+        align-items:center;
+        color: #ffff;
+        font-family: regular;
+        margin: 0 21px;
+        letter-spacing: .2px;
+        font-weight: 600;
+        font-size: 15.87px;
+    }
+    .cart_btn{
+        display: flex;
+        color: #ffff;
+        font-family: regular;
+        margin-left: 15px;
+        margin-right: 20px;
+    }
+    .more_btn .drop_down{
+        height: 24px;
+        font-weight: 100;
+        margin-left: 4.1px;
+    }
+    .cart_btn svg{
+        margin: 2px 8px 0 8px;
+        width: 16px;
+        height: 16px;
+    }
+    .header_space_div{
+        min-width: 124px;
+        height: 56px;
+    }
+    .container_tabs{
+        max-width: 1248px;
+        height: 40px;
+        margin-inline:auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-family: regular;
+        font-size:13.99px;
+        font-weight: 600;
+        color: #000000;
+        white-space: nowrap;
+        padding: 0 8px;
+    }
+    .tabs{
+        border-bottom:1px solid rgb(0 0 0 / 16%);
+    }
+    .tab{
+        display: flex;
+    }
+    .tab p{
+        color: #d7d7d7;
+        margin-left:4px;
+        width: 8px;
+        transform:translateY(-3px)
+    }
+    .tab span{
+        letter-spacing: 0.062px;
+    }
+    .container_content{
+        background-color: #e9eee9c9;
+        padding: 7px 8px 8px 8px;
+    }
+    .side_bar{
+        min-width: 270px;
+        width: 270px;
+        font-family: Regular;
+        border-bottom: 1px solid rgb(0 0 0 / 10%);
+    }
+    .card_best_deals{
+        margin-bottom: 10px;
+        background-color: #ffff;
+    }
+    .card_best_deals img{
+        width: 100%;
+    }
+    .card_best_deals .img{
+        border-bottom: 1px solid rgb(0 0 0 / 10%);
+        height: 144.625px;
+    }
+    .card_best_deals .text{
+        display: flex;
+        flex-direction: column;
+        padding: 14px 16px;
+        font-family: regular;
+        font-weight: 500;
+        letter-spacing: .1px;
+    }
+    .names{
+        font-size: 12px;
+        color: #212121;
+        margin-top: 3px;
+        letter-spacing: .01px;
+        margin-bottom: 2px;
+    }
+    .filter{
+        padding: 18px 16px 16px 16px;
+        font-size: 17px;
+        letter-spacing: .9px;
+        font-weight: 600;
+        background-color: #ffff;
+        border-bottom: 1px solid rgb(0 0 0 / 10%);
+    }
+    .side_bar_categories{
+        display: flex;
+        flex-direction: column;
+        background-color: #ffff;
+        padding: 16px;
+        border-bottom: 1px solid rgb(0 0 0 / 10%);
+    }
+    .side_bar_categories .text_one{
+        font-size: 12px;
+        margin-bottom: 13px;
+    }
+    .side_bar_categories .text_two{
+        font-size: 14px;
+        color: #878787;
+        margin-bottom: 13px;
+    }
+    .side_bar_categories .text_two svg{
+        margin-right: 5px;
+    }
+    .side_bar_categories .text_three{
+        margin-left: 15px;
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .side_bar_price{
+        padding: 18px 0 16px 0;
+        background-color: #ffff;
+        font-size: 12.2px;
+        letter-spacing: .9px;
+        font-weight: 600;
+        color: #212121;
+        border-bottom: 1px solid rgb(0 0 0 / 10%);
+    }
+    .side_bar_price p{
+        padding: 0 16px;
+    }
+    .graph{
+        display: flex;
+        align-items: flex-end;
+        margin-top: 8px;
+        padding: 0 16px;
+    }
+    .first_deviation{
+        width: 189px;
+        height: 25px;
+        background-color: #e0e0e0;
+    }
+    .second_deviation{
+        width: 48px;
+        height: 21px;
+        background-color: #e0e0e0;
+        z-index:3;
+    }
+    .graph_axis{
+        display: flex;
+        padding: 0 10px;
+    }
+    .reading_point{
+        width: 12px;
+        height: 11px;
+        border: 1px solid #bababa;
+        border-radius: 100px;
+        background-color: #ffff;
+        transform: translateY(-6px);
+        z-index: 4;
+    }
+    .axis_bar{
+        width: 238px;
+        height: 6px;
+        background-color: #2874f0;
+        transform: translateY(-2px);
+        z-index: 3;
+    }
+    .dots .dot{
+        transform: translateY(-5px);
+        color: #bababa;
+    }
+    .dots{
+        display: flex;
+        gap: 43.5px;
+        padding-left: 17px;
+    }
+    .min-max{
+        display: flex;
+        padding:0 12px;
+    }
+    .min{
+        width: 96px;
+        height: 19px;
+        padding-top: 3px;
+        padding-left: 5px;
+        border: 1px solid rgb(0 0 0 / 10%);
+    }
+    .min-max p{
+        padding: 0 14px;
+        color: #878787;
+        font-size: 14px;
+        font-weight: 100;
+        margin-top: 4px;
+        letter-spacing: 0.1px;
+    }
+    .max{
+        width: 110px;
+        height: 19px;
+        padding-top: 3px;
+        display: flex;
+        border:1px solid rgb(0 0 0 / 10%);
+    }
+    .min span{
+        font-weight: 100;
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+    .min svg{
+        transform: translate(46px, -3px);
+    }
+    .max span{
+        font-weight: 100;
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+    .max p{
+        color: #000000;
+        padding-left: 5px;
+        padding-right: 0;
+        margin-top: 0;
+    }
+    .max svg{
+        transform: translate(28px, 5px);
+    }
+    .brand_sidebar{
+        padding: 16px;
+        background-color: #ffff;
+        border-bottom: 1px solid rgb(0 0 0 / 10%);
+    }
+    .brand{
+        font-size: 13px;
+        font-weight: 600;
+        color: #212121;
+        letter-spacing: 0.5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .arrow_sidebar{
+        font-size: 24px;
+        font-weight: 100;
+    }
+
 
 }
