@@ -352,6 +352,9 @@ header p{
     display: none;
 }
 @media screen and (min-width:995px) {
+    body{
+        background-color: #e9eee9c9;
+    }
     .mobile_view{
         display: none;
     }
@@ -507,6 +510,7 @@ header p{
     }
     .tabs{
         border-bottom:1px solid rgb(0 0 0 / 16%);
+        background-color: #ffff;
     }
     .tab{
         display: flex;
@@ -523,6 +527,9 @@ header p{
     .container_content{
         background-color: #e9eee9c9;
         padding: 7px 8px 8px 8px;
+        display: flex;
+        max-width: 1664px;
+        margin-inline: auto;
     }
     .side_bar{
         min-width: 270px;
@@ -817,5 +824,254 @@ header p{
         width: 6px;
         height: 11px;
     }
-
+    .main_content{
+        box-sizing: border-box;
+        background-color: #ffff;
+        margin-left: 10px;
+        width: 100%;
+        font-family: regular;
+    }
+    .content_navbar{
+        padding: 11px 16px 0 16px;
+        border-bottom: 1px solid rgb(0 0 0 / 7%);
+    }
+    .content_navbar a{
+        text-decoration: none;
+        font-size: 12px;
+        color: #878787;
+    }
+    .content_navbar .links svg{
+        transform:rotate(180deg);
+        padding: 0 5px;
+    }
+    .link_mobile_ac{
+        margin-left: 3px;
+    }
+    .links_mobile{
+        padding: 13px 5px 4px 0;
+        line-height: 1.05;
+    }
+    .links_mobile a{
+        color: #2874f0;
+    }
+    .links_mobile .bar_a{
+        color: #878787;
+        margin-right: 3px;
+    }
+    .bar{
+        color: #878787;
+    }
+    .content_header{
+        display:flex;
+        padding-top: 10px;
+        font-weight: 600;
+        color: #212121;
+    }
+    .content_header p{
+        padding-right: 11px;
+    }
+    .content_header a{
+        font-weight: 100;
+        margin-top: 4px;
+    }
+    .tab_sort{
+        font-size: 14px;
+        color: #212121;
+        display: flex;
+        letter-spacing: 0px;
+    }
+    .card_sort{
+        margin: 0 21px 0 0;
+        padding: 12px 0 6px 0;
+        border-bottom: 2px solid transparent;
+    }
+    .card_sort:hover{
+        border-bottom: 2px solid #2874f0;
+        color: #2874f0;
+        font-weight: 600;
+    }
+    .card_sort span{
+        font-weight: 600;
+    }
+    .card_sort p{
+        letter-spacing: -0.04px;
+    }
+    .content_card{
+        padding: 24px 0 25px 24px;
+        display:flex;
+        border-bottom: 1px solid rgb(0 0 0 / 6%);
+    }
+    .desktop_card_img .img{
+        height: 200px;
+        width: 200px;
+        position: relative;
+    }
+    .desktop_card_img .img img{
+       height: 100%;
+       margin-left:15px;
+    }
+    .desktop_card_img .box{
+        margin-top: 18px;
+    }
+    .desktop_card_img .box .checkbox{
+        margin-right: 8px;
+    }
+    .like_btn{
+        position: absolute;
+        top: 2px;
+        right:-8px;
+    }
+    .card_content{
+        width: 100%;
+        padding-left: 25px;
+        display: flex;
+    }
+    .section_one{
+        width: 58.33%;
+    }
+    .section_two{
+        padding-left: 25px;
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+    }
+    .section_two img{
+        width: 77px;
+        height: 21px;
+    }
+    .section_one h2{
+        font-size: 17.5px;
+        color: #212121;
+        letter-spacing: .3px;
+        line-height: 1.1;
+    }
+    .section_one ul{
+        list-style-type: none;
+        font-size: 14px;
+        margin-top: 14px;
+        line-height: 22px;
+    }
+    .section_one .rating{
+        background-color: #388e3c;
+        height: 19px;
+        padding: 0 3px 0 6px;
+        margin-top: 5px;
+    }
+    .section_one .rating .star{
+        font-size: 13px;
+    }
+    .section_one .rating_and_logo .viewers{
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 5px;
+        margin-left: 8px;
+        letter-spacing: .1px;
+    }
+    .section_one ul li{
+        display: table-row;
+    }
+    .section_one ul li::before{
+        content:"•";
+        color: rgb(194, 194, 194);
+        padding-right: 8px;
+        display: table-cell;
+    }
+    .section_two .rate{
+        font-size: 24px;
+        font-weight: 600;
+        color: #212121;
+        margin-top: -1px;
+        letter-spacing: .8px;
+    }
+    .old_price{
+        font-size: 14px;
+        color: #878787;
+        text-decoration: line-through;
+        margin-top: 6px;
+        margin-left: 1px;
+    }
+    .section_two .offer{
+        color: #388e3c;
+        font-size: 13px;
+        text-decoration: none;
+        font-weight: 600;
+        margin-left: 4px;
+    }
+    .price_and_offer{
+        margin-top: 4px;
+        margin-bottom: 1px;
+    }
+    .section_two .text_one{
+        font-size: 11px;
+        letter-spacing: .4px;
+        margin-top: 7.9px;
+        margin-bottom: 1px;
+        margin-left: 1px;
+    }
+    .section_two .text_two{
+        color: #26a541;
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 6px;
+        letter-spacing: .1px;
+        margin-left: 1px;
+    }
+    .section_pages{
+        display: flex;
+        font-size: 14px;
+        padding: 10px;
+        border-top: 1px solid rgb(0 0 0 / 20%);
+    }
+    .pages{
+        display: flex;
+        margin-inline: auto;
+    }
+    .num{
+        width: 32px;
+        height: 32px;
+        background:white;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .num:hover{
+        background-color: #2874f0;
+        color: #ffff;
+    }
+    .next{
+        line-height: 32px;
+        color: #2874f0;
+        font-weight: 600;
+        padding: 0 25px;
+    }
+    .space_bar{
+        height: 10px;
+        width: 100%;
+        background-color: #e9eee9c9;;
+    }
+    .feedback{
+        display: flex;
+        padding: 16px;
+        font-weight: 600;
+        align-items: center;
+    }
+    .feedback p{
+        font-size: 16px;
+        margin-right: 24px;
+    }
+    .yes_or_no{
+        padding: 8px 28px;
+        font-size: 14px;
+        border: 1px solid rgb(0 0 0 / 10%);
+        margin-right: 8px;
+    }
+}
+@media screen and (min-width:1015px) {
+    .section_two .section_sub{
+        display: flex;
+    }
+    .section_rate{
+        padding-right: 10px;
+    }
 }
