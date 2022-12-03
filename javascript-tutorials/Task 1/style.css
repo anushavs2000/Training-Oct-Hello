@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+h2{
+    font-size: 50px;
+    font-weight: 900;
+}
+button{
+    width: 131px;
+    height: 45px;
+    padding: 10px;
+    border: 1 px solid #0000;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #ffff;
+    font-weight: bold;
+}
+#increment_btn{
+    background-color: crimson;
+}
+#save_btn{
+    background-color: darkmagenta;
+}
