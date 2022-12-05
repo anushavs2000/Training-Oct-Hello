@@ -351,6 +351,9 @@ header p{
 .desktop_view{
     display: none;
 }
+footer{
+    display: none;
+}
 @media screen and (min-width:995px) {
     body{
         background-color: #e9eee9c9;
@@ -1070,7 +1073,7 @@ header p{
 
     /* REVIEWS */
 
-    .reviews{
+    /* .reviews{
         background-color: #ffff;
         margin: 8px;
         box-sizing: border-box;
@@ -1097,9 +1100,11 @@ header p{
     }
     .most_helpful_review{
         width: 30%;
+        
     }
     .recent_review{
         width: 30%;
+        
     }
     .review_img img{
         height: 100%;
@@ -1112,11 +1117,12 @@ header p{
     .review_img{
         width: 150px;
         height: 150px;
-        margin: 0 31px;
+        margin: 0 50px;
     } 
     .model h2{
         font-size: 18px;
         color: #212121;
+        line-height: 25px;
     }
     .model .viewers{
         font-size: 14px;
@@ -1126,6 +1132,117 @@ header p{
         background-color: #388e3c;
         height: 19px;
     }
+    .model .rating_and_logo{
+        margin-bottom: 8px;
+    }
+    .rate{
+        font-size: 14px;
+        color: #212121;
+        font-weight: 600;
+    }
+    .model .offer{
+        font-size: 14px;
+        color: #878787;
+        margin-left: 10px;
+    }
+    .model ul li{
+        list-style-type: none;
+        font-size: 14px;
+        color: #212121;
+        padding-bottom: 10px;
+    }
+    .rate_and_offer{
+        margin-bottom: 8px;
+    }
+    #heading{
+        font-size: 14px;
+        color: #878787;
+    }
+    .rating_star{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        margin: 5px 0;
+    }
+    .rating_star p{
+        font-weight: 600;
+        color: #212121;
+        margin-left: 10px;
+    } */
+
+    /* FOOTER */
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        background-color: #172337;
+        box-sizing: border-box;
+        font-size: 12px;
+        font-family: regular;
+        font-weight: 100;
+    }
+    .footer{
+        display:flex;
+        padding-top: 36px;
+        width: 90%;
+        margin-left:65px;
+    }
+    #link{
+        font-size: 12px;
+        color: #878787;
+        margin-bottom: 6px;
+    }
+    .about p{
+        color: #ffff;
+        line-height: 24px;
+    }
+    .mail p{
+        color: #ffff;
+        line-height: 18px;
+    }
+    .address{
+        padding-left: 15px;
+    }
+    .address p{
+        color: #ffff;
+        line-height: 18px;
+    }
+    code{
+        color: #2874f0;
+    }
+    .links{
+        padding: 0 24px 0 25px;
+        border-left: 1px solid #454d5e;
+        margin-top: 4px;
+    }
+    .about{
+        flex: 1;
+    }
+    .footer_icon{
+        display:flex;
+        justify-content: space-evenly;
+        color: #ffff;
+        margin-top:40px;
+        border-top: 1px solid #454d5e;
+        font-size: 14px;
+        padding: 27px 0;
+    }
+    .icon{
+        display: flex;
+        align-items: center;
+    }
+    .icon p{
+        white-space: nowrap;
+    }
+    .icon img{
+        margin-right: 8px;
+        margin-top: -1px;
+    }
+    .links #link{
+        margin-top: 2px;
+        margin-bottom: 9px;
+    }
+}
 @media screen and (min-width:1015px) {
     .section_two .section_sub{
         display: flex;
