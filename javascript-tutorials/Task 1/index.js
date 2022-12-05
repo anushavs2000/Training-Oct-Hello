@@ -36,10 +36,11 @@ function increment() {
     countEl.innerText = count
 }
 function save(){
-    // console.log(count)
     let countStr = count + "-"
     saveEl.innerText += countStr
-    console.log(count)
+    countEl.textContent = 0
+    count = 0
+    // console.log(count)
 }
 // let username = "Anusha"
 // let messege = "You have 4 notifications"
