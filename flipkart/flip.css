@@ -526,7 +526,7 @@ header p{
     }
     .container_content{
         background-color: #e9eee9c9;
-        padding: 7px 8px 8px 8px;
+        padding: 7px 8px 0 8px;
         display: flex;
         max-width: 1664px;
         margin-inline: auto;
@@ -926,7 +926,7 @@ header p{
         padding-left: 25px;
         display: flex;
     }
-    .section_one{
+    .mobile_model{
         width: 58.33%;
     }
     .section_two{
@@ -939,38 +939,38 @@ header p{
         width: 77px;
         height: 21px;
     }
-    .section_one h2{
+    .mobile_model h2{
         font-size: 17.5px;
         color: #212121;
         letter-spacing: .3px;
         line-height: 1.1;
     }
-    .section_one ul{
+    .mobile_model ul{
         list-style-type: none;
         font-size: 14px;
         margin-top: 14px;
         line-height: 22px;
     }
-    .section_one .rating{
+     .mobile_model.rating{
         background-color: #388e3c;
         height: 19px;
         padding: 0 3px 0 6px;
         margin-top: 5px;
     }
-    .section_one .rating .star{
+    .mobile_model .rating .star{
         font-size: 13px;
     }
-    .section_one .rating_and_logo .viewers{
+    .mobile_model .rating_and_logo .viewers{
         font-size: 14px;
         font-weight: 600;
         margin-top: 5px;
         margin-left: 8px;
         letter-spacing: .1px;
     }
-    .section_one ul li{
+    .mobile_model ul li{
         display: table-row;
     }
-    .section_one ul li::before{
+    .mobile_model ul li::before{
         content:"•";
         color: rgb(194, 194, 194);
         padding-right: 8px;
@@ -1018,6 +1018,7 @@ header p{
     }
     .section_pages{
         display: flex;
+        align-items: center;
         font-size: 14px;
         padding: 10px;
         border-top: 1px solid rgb(0 0 0 / 20%);
@@ -1072,32 +1073,59 @@ header p{
     .reviews{
         background-color: #ffff;
         margin: 8px;
+        box-sizing: border-box;
+        font-family: regular;
     }
     .heading_reviews{
         font-size: 20px;
         padding: 15px 20px;
         font-weight: 600;
-        font-family: regular;
+        color: #212121;
+        height: 28px;
         border-bottom: 1px solid rgb(0 0 0 / 7%);
     }
     .review_card{
         padding: 20px 0;
+        display: flex;
+    }
+    .reviews .rating{
+        width: fit-content;
+    }
+    .review_img_and_model{
+        display:flex;
+        width: 40%;
+    }
+    .most_helpful_review{
+        width: 30%;
+    }
+    .recent_review{
+        width: 30%;
+    }
+    .review_img img{
+        height: 100%;
+    }
+    .review_img .img{
+        width: fit-content;
+        height: 100%;
+        margin-inline: auto;
     }
     .review_img{
         width: 150px;
         height: 150px;
-        margin-inline: 25px;
-        display: flex;
-        justify-content: center;
+        margin: 0 31px;
+    } 
+    .model h2{
+        font-size: 18px;
+        color: #212121;
     }
-    .review_img img{
-        height: 100%;
-        width: min-content;
+    .model .viewers{
+        font-size: 14px;
+        font-weight: 600;
     }
-    .review_img .img img{
-        height: 100%;
+    .reviews .rating{
+        background-color: #388e3c;
+        height: 19px;
     }
-}
 @media screen and (min-width:1015px) {
     .section_two .section_sub{
         display: flex;
