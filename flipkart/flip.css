@@ -1184,14 +1184,15 @@ footer{
     }
     .footer{
         display:flex;
-        padding-top: 40px;
-        width: 90%;
+        padding-top: 32px;
+        width: 88.6%;
         margin-left:65px;
     }
     #link{
         font-size: 12px;
         color: #878787;
-        margin-bottom: 9px;
+        margin-bottom: 5px;
+        margin-top: 4px;
     }
     .about p{
         color: #ffff;
@@ -1206,7 +1207,6 @@ footer{
     }
     code{
         color: #2874f0;
-        font-family: monospace;
     }
     .links{
         border-left: 1px solid #454d5e;
