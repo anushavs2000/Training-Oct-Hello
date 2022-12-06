@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-size: cover;
+    background: url(assets/background.jpg);
+    text-align: center;
+    color: white;
+    font-size: larger;
+    padding: 40px;
+    font-weight: bold;
+}
+h1{
+    color: goldenrod;
+    font-size: 50px;
+}
+p{
+    font-size: 30px;
+}
+#message-el{
+    font-style: italic;
+}
+button{
+    color: #016f32;
+    background-color: goldenrod;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    display: block;
+    margin-inline: auto;
+    border: 2px solid goldenrod;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+button:hover{
+    border: 2px solid #016f32;
+}

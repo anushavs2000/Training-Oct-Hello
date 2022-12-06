@@ -74,6 +74,3 @@ function newCard(){
 // messages.push(newMessage)
 // console.log(messages)
 // messages.pop()
-// console.log(messages)
-
-for(let count = 1; count < 21)
