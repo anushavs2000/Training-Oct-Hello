@@ -1180,28 +1180,25 @@ footer{
         font-size: 12px;
         font-family: regular;
         font-weight: 100;
+        line-height: 1.4;
     }
     .footer{
         display:flex;
-        padding-top: 36px;
+        padding-top: 40px;
         width: 90%;
         margin-left:65px;
     }
     #link{
         font-size: 12px;
         color: #878787;
-        margin-bottom: 6px;
+        margin-bottom: 9px;
     }
     .about p{
         color: #ffff;
-        line-height: 24px;
     }
     .mail p{
         color: #ffff;
-        line-height: 18px;
-    }
-    .address{
-        padding-left: 15px;
+        line-height: ;
     }
     .address p{
         color: #ffff;
@@ -1209,14 +1206,14 @@ footer{
     }
     code{
         color: #2874f0;
+        font-family: monospace;
     }
     .links{
-        padding: 0 24px 0 25px;
         border-left: 1px solid #454d5e;
-        margin-top: 4px;
+        padding: 0 25px;
     }
-    .about{
-        flex: 1;
+    .about p{
+        line-height: 2;
     }
     .footer_icon{
         display:flex;
@@ -1241,6 +1238,13 @@ footer{
     .links #link{
         margin-top: 2px;
         margin-bottom: 9px;
+    }
+    .address_link{
+        padding-left: 14px;
+        margin-bottom: 10px;
+    }
+    .about{
+        flex: 1;
     }
 }
 @media screen and (min-width:1015px) {
