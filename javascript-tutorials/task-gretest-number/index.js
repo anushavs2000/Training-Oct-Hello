@@ -130,29 +130,33 @@
 // }
 // let gretestNumber = getGreatestNumber()
 // console.log(gretestNumber)
+
+let number = 4
 let r = 0
-let number = 21
-if (number === 0 || number === 1){
-    console.log("not a prime")
-    }
-    else{    
-        for (let i = 0; i <= number; i++ ){
-       
-        if(number % i === 0){
-            r++
+let prime = "Pime Number"
+let nprime = "Not a Prime Number"
+function getPrimeNumber(){
+    if (number === 0 || number === 1){
+        // console.log("Not a prime")
+        return nprime
         }
+        else{    
+            for (let i = 0; i <= number; i++ ){
+        
+            if(number % i === 0){
+                r++
+            }
+            // console.log(r)
+        }
+        if(r < 3){
+            // console.log("prime")
+            return prime
+        }
+        else {
+            // console.log("Not a prime")
+            return nprime
+        } 
     }
-    if(r < 3){
-        console.log("prime")
-    }
-    else {
-        console.log("nprime")
-      } 
 }
-    // console.log(r)
-    
-      
-    
-  
-   
-    
+let primeNumber = getPrimeNumber()
+console.log(primeNumber)
