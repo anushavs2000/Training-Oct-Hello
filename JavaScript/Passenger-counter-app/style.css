@@ -1,0 +1,12 @@
+body{
+    margin: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgb(229, 217, 165);
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+#count-el{
+    font-size: 55px;
+}
