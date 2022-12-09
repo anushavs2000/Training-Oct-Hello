@@ -131,7 +131,7 @@
 // let gretestNumber = getGreatestNumber()
 // console.log(gretestNumber)
 
-let number = 4
+let number = 97
 let r = 0
 let prime = "Pime Number"
 let nprime = "Not a Prime Number"
@@ -139,8 +139,8 @@ function getPrimeNumber(){
     if (number === 0 || number === 1){
         // console.log("Not a prime")
         return nprime
-        }
-        else{    
+    }
+    else{    
             for (let i = 0; i <= number; i++ ){
         
             if(number % i === 0){

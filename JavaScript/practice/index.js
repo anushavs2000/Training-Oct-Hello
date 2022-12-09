@@ -102,3 +102,147 @@
 // function clickclick(){
 //     document.getElementById('click_me').innerHTML = "Booooooom!"
 // }
+
+// function first(){
+//     document.getElementById("myImage").src="assets/cat2.jpg"
+//     // document.getElementById("text").style.color="red"
+//     document.getElementById("text").style.display="none"
+// }
+// function second(){
+//     document.getElementById("myImage").src="assets/img-2.jpg"
+//     document.getElementById("text").style.color="green"
+// }
+
+// document.getElementById("sum").innerHTML= 7 + 9
+// document.write(5 + 9)
+// window.alert("Save Password")
+
+// let name = "Anusha";
+// let age = 22;
+// let isApproved = false;
+// let firstName = undefined;
+// let selectedColor = null;
+
+// let person = {
+//     name : "anu",
+//     age : 22
+// }
+// person.name = "niv";
+// console.log(person.name)
+
+// let selectedColors = ["red", "white"];
+// selectedColors[2] = 1001;
+// console.log(selectedColors)
+
+// function square (number) {
+//     return number * number
+// }
+// // let  number = square(2)
+// console.log(square(5))
+// // console.log(number)
+
+// var myArray = [["cat", "hello"], [749 , "black"]]
+// console.log(myArray)
+// myArray.push(["white", "Kattan"])
+// console.log(myArray)
+
+// function check(val){
+//     if (val > 20){
+//         return "greater than 20"
+//     }
+//     if (val > 30){
+//         return "greater than 30"
+//     }
+//     return "30 or over"
+// }
+// console.log(check(25))
+
+// function testSize(num){
+//     if (num < 5){
+//         return "tiny"
+//     }
+//     else if(num < 10){
+//         return "small"
+//     }
+//     else if(num < 15){
+//         return "medium"
+//     }
+//     else if(num < 20){
+//         return "Large"
+//     }
+//     else if(num < 30){
+//         return "Huge"
+//     }
+//     else{
+//         return "Very huge"
+//     }
+    
+// }
+// console.log(testSize(50))
+
+// var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", 
+//             "Borgie", "Double Bogey", "Go Home!"]
+// function golfScore(par, strokes){
+//     if (strokes === 1){
+//         return names[0]
+//     }
+//     else if (strokes <= par - 2){
+//         return names[1]
+//     }
+//     else if(strokes === par - 1){
+//         return names[2]
+//     }
+//     else if(strokes === par){
+//         return names[3]
+//     }
+//     else if(strokes === par + 1){
+//         return names[4]
+//     }
+//     else if(strokes === par + 2){
+//         return names[5]
+//     }
+//     else {
+//         return names[6]
+//     }
+// }
+// console.log(golfScore(9, 1))
+
+// function caseInSwitch(val){
+//     var answer = "";
+//     switch(val){
+//         case 1:
+//             answer = "alpha";
+//             break;
+//         case 2:
+//             answer = "beta";
+//             break;
+//         case 3:
+//             answer = "gamma";
+//             break;
+//         case 4:
+//             answer = "delta"
+//             break;
+//     }
+//     return answer;
+// }
+// console.log(caseInSwitch(4))
+
+function fruits(val){
+var answer = "";
+switch(val){
+    case "a":
+        answer = "apple"
+        break;
+    case "b":
+        answer = "orange"
+        break;
+    case "c":
+        answer = "grapes"
+        break;
+    case "d":
+        answer = "pine apple"
+        break;
+    }
+    return answer;
+}
+console.log(fruits("d"))
