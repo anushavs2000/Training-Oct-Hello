@@ -64,17 +64,24 @@
 // const sentence = generateSentence("highest mountains", ["Mount Everest", "K2"])
 // console.log(sentence)
 
-const imgs = [
-    "assets/img-1.jpg",
-    "assets/img-2.jpg",
-    "assets/img-3.jpg"
-]
-const container = document.getElementById("container")
-function renderImages(){
-    let imgsDOM = ""
-    for (let i = 0; i < imgs.length; i++){
-        imgsDOM += `<img class="team-img" src="${imgs[i]}">`
-    }
-    container.innerHTML = imgsDOM
-}
-renderImages()
+// const imgs = [
+//     "assets/img-1.jpg",
+//     "assets/img-2.jpg",
+//     "assets/img-3.jpg"
+// ]
+// const container = document.getElementById("container")
+// function renderImages(){
+//     let imgsDOM = ""
+//     for (let i = 0; i < imgs.length; i++){
+//         imgsDOM += `<img class="team-img" src="${imgs[i]}">`
+//     }
+//     container.innerHTML = imgsDOM
+// }
+// renderImages()
+
+const player = "nivi"
+const opponent = "anusha"
+const game = "crazy partner"
+let points = 0
+let hasWon = false
+
