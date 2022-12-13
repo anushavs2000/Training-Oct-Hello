@@ -70,7 +70,7 @@
 
 // var a = "\"first\"\n\t second \n third"
 // console.log(a)
- 
+
 /////// 08/12/12 //////
 
 // var firstNameLength = 0
@@ -176,7 +176,7 @@
 //     else{
 //         return "Very huge"
 //     }
-    
+
 // }
 // console.log(testSize(50))
 
@@ -227,22 +227,301 @@
 // }
 // console.log(caseInSwitch(4))
 
-function fruits(val){
-var answer = "";
-switch(val){
-    case "a":
-        answer = "apple"
-        break;
-    case "b":
-        answer = "orange"
-        break;
-    case "c":
-        answer = "grapes"
-        break;
-    case "d":
-        answer = "pine apple"
-        break;
-    }
-    return answer;
-}
-console.log(fruits("d"))
+// function fruits(val){
+// var answer = "";
+// switch(val){
+//     case "a":
+//         answer = "apple"
+//         break;
+//     case "b":
+//         answer = "orange"
+//         break;
+//     case "c":
+//         answer = "grapes"
+//         break;
+//     case "d":
+//         answer = "pine apple"
+//         break;
+//     }
+//     return answer;
+// }
+// console.log(fruits("d"))
+
+// function clrs(val){
+//     var answer = ""
+//     switch(val){
+//         case 1:
+//         case 2:
+//         case 3:
+//         case 4:
+//             answer = "RED"
+//             break;
+//         case 5:
+//         case 6:
+//         case 7:
+//             answer = "BLUE"
+//             break;
+//     }
+//     return answer;
+// }
+// console.log(clrs(6))
+
+// var count = 0
+// function cc(card){
+//     switch(card){
+//         case 2:
+//         case 3:
+//         case 4:
+//         case 5:
+//         case 6:
+//             count++;
+//             break;
+//         case 10:
+//         case "J":
+//         case "Q":
+//         case "K":
+//         case "A":
+//             count --;
+//             break;       
+//     }
+//     var holdbet = "Hold"
+//     if(count > 0) {
+//         holdbet = "Bet"
+//     }
+//     return count + " " + holdbet;
+// }
+// cc(2); cc("K"); cc(7) ; cc("K"); cc("A");
+// console.log(cc(4))
+
+// var myDog = {
+//     "name" : "Happy",
+//     "legs" : 4,
+//     "tails" : 1,
+//     friends : 2
+// }
+// delete myDog.tails;
+// console.log(myDog)
+// // // var test = myDog.name;
+// // var test = myDog["legs"];
+// // console.log(test)
+
+// function phoneticLookUp(val){
+//     var result = "";
+//     var lookup = {
+//         "alpha": "Adams",
+//         "bravo": "Boston",
+//         "charlie": "Chicago",
+//         "delta": "denver",
+//         "echo": "easy",
+//         "foxtrop": "frank"
+
+//     };
+//     // switch(val){
+//     //     case "alpha":
+//     //         result = "Adams";
+//     //         break;
+//     //     case "bravo":
+//     //         result = "Boston";
+//     //         break;
+//     //     case "charlie":
+//     //         result = "Chicago";
+//     //         break;
+//     //     case "delta":
+//     //         result = "denver"
+//     //         break;
+//     //     case "echo":
+//     //         result = "easy"
+//     //         break;
+//     //     case "foxtrop":
+//     //         result = "frank"
+//     //         break;
+//     // }
+//     result = lookup[val];
+//     return result;
+// }
+// console.log(phoneticLookUp("echo"))
+
+// var myObj = {
+//     gift : "pony",
+//     pet : "kitten",
+//     bed :"sleigh"
+// };
+//  function checkObj(checkProp){
+//     if(myObj.hasOwnProperty(checkProp)){
+//         return myObj[checkProp];
+//     }else
+//     return "Not Found"
+//  }
+//  console.log(checkObj("hello"))
+
+// var myMusic = [
+//     {
+//         "artist": "Billy Joel",
+//         "title": "Piano Man",
+//         "release-year": 1973,
+//         "formats":[
+//             "CD",
+//             "8T",
+//             "LP"
+//         ],
+//         "gold": true
+//     },
+//     {
+//         "artist": "Beau Carnes",
+//         "title": "cereal man",
+//         "release-year": 2003,
+//         "formats": [
+//             "YouTube video"
+//         ]
+//     }
+// ]
+// // console.log(myMusic)
+// var sol = myMusic[1].formats[0]
+// console.log(sol)
+
+// var collection = {
+//     "2548": {
+//         "album": "Slippery when wet",
+//         "artist": "Bon Jovi",
+//         "tracks": [
+//             "Let it Rock",
+//             "You give love a bad name"
+//         ]
+//     },
+//     "2468": {
+//         "album": "1999",
+//         "artist": "Prince",
+//         "tracks": [
+//             "1999",
+//             "title red corvette"
+//         ]
+//     },
+//     "1245": {
+//         "artist": "Robert Palmer",
+//         "tracks": [ ]
+//     },
+//     "5439": {
+//         "album": "ABBA Gold"
+//     }
+// }
+// var collectionCopy = JSON.parse(JSON.stringify(collection));
+// function updateRecords(id, prop, value) {
+//     if (value === ""){
+//         delete collection[id][prop];
+//     }else if(prop === "tracks"){
+//         collection[id][prop] = collection[id][prop] || [];
+//         collection[id][prop].push(value);
+//     }else{
+//         collection[id][prop] = value;
+//     }
+//     return collection;
+// }
+// updateRecords(2468, "tracks", "test");
+// console.log(updateRecords(5439, "artist","ABBA"));
+
+//                                      ITERATE WITH WHILE LOOP                             //
+
+// var myArray = [];
+// var i = 0;
+// while (i < 5){
+//     myArray.push(i);
+//     i++;
+// }
+// console.log(myArray) 
+
+// ITERATE WITH WHILE LOOP //
+
+// var myArray = [];
+// for (var i = 1; i < 6; i++){
+//     myArray.push(i);
+// }
+// console.log(myArray)
+
+//                                      ITERATE ODD NUMBERS WITH FOR LOOP                       //
+
+// var myArray = [];
+// for (var i = 1; i < 8; i+= 2){
+//     myArray.push(i)
+// }
+// console.log(myArray)
+
+// var myArray = [];
+// for (i = 0; i < 100; i += 2){
+//     myArray.push(i)
+// }
+// console.log(myArray)
+
+// var myArray = [];
+// for(i = 100; i>0; i-=2){
+//     myArray.push(i)
+// }
+// console.log(myArray)
+
+// var ourArr = [9, 10, 11, 12];
+// var ourTotal = 0;
+// for (var i =0; i < ourArr.length; i++){
+//     ourTotal += ourArr[i];
+// }
+// console.log(ourTotal);
+
+// var myArr = [2, 3, 4, 5, 6];
+// var total = 0;
+// for (var i = 0; i < myArr.length; i++){
+//     total += myArr[i];
+// }
+// console.log(total)
+
+//                                  NESTING FOR LOOPS                                       //
+
+// function multiplyAll(arr){
+//     var product = 1;
+//     for (var i = 0; i < arr.length; i++){
+//         for (var j = 0; j < arr[i].length; j++){
+//             product *= arr[i][j]
+//         }
+//     }
+//     return product;
+// }
+// var product = multiplyAll([[1,2],[3,4],[5,6,7]]);
+// console.log(product);
+
+//                                  ITERATE WITH DO WHILE LOOP
+
+// var contacts = [
+//     {
+//         "firstName": "meenu",
+//         "lastName": "kv",
+//         "number": 3994873827,
+//         "likes": ["pizza", "cutlet"]
+//     },
+//     {
+//         "firstName": "john",
+//         "lastName": "dude",
+//         "number": 938748735,
+//         "likes":["red", "white","pink"]
+//     }
+// ];
+// function lookUpProfile(name,prop){
+//     for (var i = 0; i < contacts.length; i++){
+//         if(contacts[i].firstName === name){
+//             return contacts[i][prop] || "No such property";
+//         }
+//     }
+//     return "No such contact";
+// }
+// var data = lookUpProfile("john", "lastName");
+// console.log(data)
+
+// function randomFraction(){
+//     return Math.floor(Math.random()*20);
+// }
+// console.log(randomFraction())
+
+const sum = (function () {
+    // return function sum(x, y, z){
+    // const args = [x, y, z];
+    return function sum(...args) {
+        return args.reduce((a, b) => a + b, 0)
+    };
+})();
+console.log(sum(5, 98, 35, 34, 8, 76))
