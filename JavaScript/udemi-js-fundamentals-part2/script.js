@@ -1,5 +1,5 @@
-/*"use strict";
-let hasDriversLicense = false;
+"use strict";
+/*let hasDriversLicense = false;
 const passTest = true;
 if(passTest) hasDriversLicense = true;
 if(hasDriversLicense) console.log("I can Drive");
@@ -154,7 +154,7 @@ console.log(age4);
 const age5 = calcAge(years[years.length -1]);
 console.log(age5);
 const ages =[calcAge(years[0]), calcAge(years[1]), calcAge(years[2]), calcAge(years[3]), calcAge(years[4])];
-console.log(ages);*/
+console.log(ages);
 
 const friends = ["anu", "appu", "kripa", "neethu"];
 console.log(friends);
@@ -184,4 +184,312 @@ if(friends.includes("bob")){
 }
 if(friends.includes("appu")){
     console.log("You have a friend called appu");
+}
+
+const calcTip = function (bill) {
+    return bill >= 30 && bill <= 500 ? bill * .15 : bill * .2;
+}
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(bills, tips, totals);
+
+//array
+const anuArray = [
+    "Anu",
+    "Wayanad",
+    2022 - 2000,
+    "student",
+    ["nivi", "kaavi", "appu"]
+];
+
+//object
+const anu = {
+    firstName: "Anu",
+    place: "Wayanad",
+    age: 2022 - 2000,
+    job: "Web devoloper",
+    friends: ["nivi", "Kaavi", "Appu"]
+};
+console.log(anu);
+console.log(anu.firstName);
+console.log(anu.age);
+console.log(anu.job);
+console.log(anu.friends);
+console.log(anu["firstName"]);
+console.log(anu["place"]);
+console.log(anu["age"]);
+console.log(anu["job"]);
+console.log(anu["friends"]);
+const nameKey = "Name";
+console.log(anu["first" + nameKey]);
+const interestedIn = prompt("What do you want to know about anu? Choose betweeen firstName, place, age, job and friends");
+// console.log(interestedIn);
+// console.log(anu[interestedIn]);
+if(anu[interestedIn]){
+    console.log(anu[interestedIn])
+}else{
+    console.log("Wrong request! Choose betweeen firstName, place, age, job and friends")
+}
+anu.location = "Kerala";
+anu["Insta"] = "@anushavs";
+console.log(anu);
+console.log(`${anu.firstName} has ${anu.friends.length} friends, and her best friend is ${anu.friends[0]}`);
+
+const anu = {
+    firstName: "Anu",
+    place: "Wayand",
+    birthYear : 2000,
+    job: "Web developer",
+    friends: ["Nivi", "Kaavi", "Appu"],
+    hasDriverLicense: true,
+
+    // calcAge: function(birthYear){ //method
+    //     return 2022 - birthYear;
+    // }
+
+    // calcAge: function(){
+    //     // console.log(this);
+    //     return 2022 - this.birthYear;
+    // }
+
+    calcAge: function (){
+        this.age = 2022 - this.birthYear;
+        return this.age;
+    },
+    getSummary: function(){
+        return `${this.firstName} is a ${this.age}-year old ${this.job} and she has ${this.hasDriverLicense ? "a" : "no"} driver's license.`
+    }
+};
+console.log(anu.calcAge());
+console.log(anu.age);
+// console.log(`${anu.firstName} is a ${anu.age}-year old ${anu.job} and she has ${this.hasDriverLicense ? "a" : "no"} driver's license.`);
+console.log(anu.getSummary());
+// console.log(anu.calcAge());
+// console.log(anu.calcAge());
+// console.log(anu.calcAge());
+// console.log(anu.calcAge());
+// console.log(anu.calcAge(2000));
+// console.log(anu["calcAge"](2000));
+
+const mark = {
+    fullName: "Mark Miller",
+    mass: 78,
+    height: 1.69,
+    calcBMI: function(){
+        this.BMI = this.mass / this.height ** 2
+    }
+}
+const john = {
+    fullName: "John Smith",
+    mass: 92,
+    height: 1.95,
+    calcBMI: function(){
+        this.BMI = this.mass / this.height ** 2
+    }
+}
+mark.calcBMI();
+console.log(mark.BMI);
+john.calcBMI();
+console.log(john.BMI);
+console.log(mark.BMI, john.BMI)
+
+if(mark.BMI > john.BMI){
+    console.log(`${mark.fullName}'s BMI (${mark.BMI}) is higher than ${john.fullName}'s (${john.BMI}). `)
+}else if(john.BMI > mark.BMI){
+    console.log(`${john.fullName}'s BMI (${john.BMI}) is higher than ${mark.fullName}'s (${mark.BMI}).`)
+}else{
+    console.log(`They both have same BMI`)
+}
+
+console.log(`"lifting weights repetition 1"`);
+console.log(`"lifting weights repetition 2"`);
+console.log(`"lifting weights repetition 3"`);
+console.log(`"lifting weights repetition 4"`);
+console.log(`"lifting weights repetition 5"`);
+console.log(`"lifting weights repetition 6"`);
+console.log(`"lifting weights repetition 7"`);
+console.log(`"lifting weights repetition 8"`);
+console.log(`"lifting weights repetition 9"`);
+console.log(`"lifting weights repetition 10"`);
+
+for (let rep = 1; rep <= 10; rep++){
+    // console.log("lifting weights repetition 1");
+    console.log(`lifting weights repetition ${rep}!`)
+}
+
+const anu = [
+    "Anusha VS",
+    "Wayanad",
+    2022 - 2000,
+    "Student",
+    ["nivi", "Appu", "Kaavi"],
+    true
+];
+const types = [];
+
+for(i = 0; i < anu.length; i++){
+    console.log(anu[i], typeof anu[i])
+
+    types[i] = typeof anu[i]
+}
+console.log(types)
+
+const years = [1990, 1991, 1992, 2000, 2003, 2005, 2017];
+const ages = [];
+for (let i = 0; i < years.length; i++){
+    ages.push(2022 - years[i])
+}
+console.log(ages)
+
+console.log("---ONLY STRINGS---")
+for (let i = 0; i < anu.length; i++){
+    if(typeof anu[i] !== "string") continue;
+    console.log(anu[i], typeof anu[i])
+}
+
+console.log("---BREAK WITH NUMBERS---")
+for (let i = 0; i < anu.length; i++){
+    if (typeof anu[i] === "number") break;
+    console.log(anu[i], typeof anu[i])
+}
+for (let i = anu.length - 1; i>=0; i--){
+    console.log(anu[i])
+} 
+
+for (exercise = 1; exercise < 4; exercise++) {
+    console.log(`---Starting exercise${exercise}`)
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`)
+    }
+}
+
+for (let rep = 1; rep <= 10; rep ++){
+    console.log(`Lifting weight repetition ${rep}`)
+}
+
+let rep = 1;
+while(rep <= 10){
+    console.log(`Lifting weight repetition ${rep}`);
+    rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6)+ 1;
+// console.log(dice);
+
+while (dice !==6) {
+    console.log(`You are rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6)+ 1
+    if(dice === 6)console.log(`Loop is about to end...`)
+}
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
+}
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+for (let i = 0; i < bills.length; i++) {
+    const tip = calcTip(bills[i]);
+    tips.push(tip);
+    totals.push(tip + bills[i]);
+}
+console.log(bills, tips, totals)
+const calcAverage = function (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        // sum = sum + arr[i];
+        sum += arr[i];
+    }
+    // console.log(sum);
+    return sum / arr.length;
+}
+console.log(calcAverage([2, 3, 6]));
+console.log(calcAverage(totals));
+console.log(calcAverage(tips));
+console.log(calcAverage(bills));
+
+const temperatures = [3, -2, -6, -1, "error", 9, 13, 17, 15, 14, 9, 5];
+const calcTempAplitude = function (temps) {
+    let max = temps[0];
+    let min = temps[0];
+
+    for (let i = 0; i < temps.length; i++) {
+        const curTemp = temps[i];
+        if (typeof curTemp !== "number") continue;
+        if (curTemp > max) max = curTemp;
+        if (curTemp < min) min = curTemp;
+    }
+    console.log(max, min);
+    return max - min;
+}
+// calcTempAplitude([3, 7, 4, 1, 8]);
+// calcTempAplitude(temperatures);
+const amplitude = calcTempAplitude(temperatures);
+console.log(amplitude);
+
+const calcTempAplitudeNew = function (t1, t2) {
+    const array1 = ["a", "b", "c"];
+    const array2 = ["d", "e", "f"];
+    const array3 = array1.concat(array2);
+    const temps = t1.concat(t2);
+    console.log(temps);
+    let max = temps[0];
+    let min = temps[0];
+
+    for (let i = 0; i < temps.length; i++) {
+        const curTemp = temps[i];
+        if (typeof curTemp !== "number") continue;
+        if (curTemp > max) max = curTemp;
+        if (curTemp < min) min = curTemp;
+    }
+    console.log(max, min);
+    return max - min;
+}
+const amplitudeNew = calcTempAplitudeNew([3, 5, 1], [9, 0, 5]);
+console.log(amplitudeNew);
+
+const measureKelvin = function () {
+    const measurement = {
+        type: "temp",
+        unit: "celcius",
+        value: Number(prompt('Degree celsius:')),
+    }; 11
+    console.log(measurement);
+    console.table(measurement);
+    // console.log(measurement.value);
+    // console.warn(measurement.value);
+    // console.error(measurement.value);
+
+    const kelvin = measurement.value + 273;
+    return kelvin;
+}
+console.log(measureKelvin());*/
+
+// const calcTempAmplitudeBug = function(t1, t2){
+//     const temps = t1.concat(t2);
+//     console.log(temps);
+//      let max = 0;
+//      let min = 0;
+
+//      for (let i = 0; i < temps.length; i++) {
+//         const curTemp = temps[i];
+//         if (typeof curTemp !== "number") continue;
+//         if (curTemp > max) max = curTemp;
+//         if (curTemp < min) min = curTemp;
+//     }
+//     console.log(max, min);
+//     return max - min;
+// };
+// const amplitudeBug = calcTempAmplitudeBug([3, 5, 1], [9, 4, 5]);
+// console.log(amplitudeBug);
+
+const data1 = [17, 21, 23];
+const data2 = [12, 5, -5, 0, 4];
+console.log(`...${data1[0]}°C...${data1[1]}°C...${data1[2]}°C...`);
+const printForecast = function(arr){
+    let str = "";
+    for(let i = 0; i < arr.length; i++){
+        str = str + `${arr[i]}°C`;
+    }
 }
