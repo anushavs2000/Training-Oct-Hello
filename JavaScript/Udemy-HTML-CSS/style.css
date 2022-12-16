@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 50px;
+  line-height: 30px;
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+h1 {
+  font-size: 35px;
+  line-height: 40px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.first {
+  color: red;
+}
+#puppy_name {
+  background-color: hsl(187, 4%, 57%);
+  padding: 10px;
+  border: 4px solid hsl(187, 4%, 45%);
+  border-radius: 15px;
+  width: 400px;
+  margin-top: 20px;
+  padding: 20px 50px;
+}
+input, button{
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(43, 104, 104);
+    background-color: rgb(205, 223, 223);
+}
+#puppy_name h1{
+    color: rgb(45, 44, 44);
+    text-align: left;
+}
