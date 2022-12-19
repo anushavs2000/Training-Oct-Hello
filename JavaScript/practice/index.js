@@ -517,7 +517,7 @@
 // }
 // console.log(randomFraction())
 
-const sum = (function () {
+/*const sum = (function () {
     // return function sum(x, y, z){
     // const args = [x, y, z];
     return function sum(...args) {
@@ -525,3 +525,451 @@ const sum = (function () {
     };
 })();
 console.log(sum(5, 98, 35, 34, 8, 76))
+
+// ---------UDEMY PRACTICE SECTION ---------//
+
+// Global scope
+const me = "Anu";
+const job = "web developer";
+const year = 2022;
+
+// Function scope
+function calcAge(birthYear){
+    const now = 2022;
+    const age = now - birthYear;
+    return age;
+}
+
+// Block scope
+console.log(now); // Reference error
+
+if(year >= 1981 && year <= 2000){
+    const millenial = true;
+    const food ="Juice";
+}
+console.log(food);// Reference error
+
+const myName = "Anusha";
+function first(){
+    const age = 22;
+    if (age >= 30){
+        const decade = 3;
+        var millenial = true;
+    }
+    function second(){
+        const job = "teacher";
+        console.log(`${myName} is a ${age}-year old ${job}`)
+    }
+    second();
+}
+first();*/
+
+"use strict";
+/*function calcAge(birthYear){
+    const age = 2022 - birthYear;
+    function printAge(){
+        let output = `${firstName}, you are ${age}, born in ${birthYear}`
+        console.log(output);
+
+        if(birthYear >= 1981 && birthYear <= 2000){
+            var millenial = true;
+            const firstName = "appzz";
+            const str = `oh, and you're a millenial, ${firstName}`;
+            console.log(str);
+
+            function add(a, b){
+                return a + b;
+            }
+            output = "NEW OUTPUT!"
+        }
+        console.log(millenial);
+        // console.log(add(2, 3));
+        console.log(output)
+    }
+    printAge();
+    // console.log(firstName)
+    return age;
+}
+const firstName = "Anu";
+calcAge(2000);*/
+
+// --------HOISTING------//
+/*console.log(me); // Undefined
+console.log(job); // Error
+console.log(year); //Error
+
+var me = "Jonas";
+let job = "teacher";
+const year = 2022;
+
+var me = "Anusha";
+let job = "teacher";
+const year = 2022;
+
+console.log(addDecl(2, 3));
+// console.log(addExpr(2, 3));
+console.log(addArrow);
+console.log(addArrow(2, 3));
+
+function addDecl(a, b) {
+    return a + b;
+};
+
+// const addExpr = function (a, b){
+var addExpr = function (a, b) {
+    return a + b;
+};
+
+// const addArrow = (a, b) => a + b;
+var addArrow = (a, b) => a + b;
+
+// Example
+console.log(undefined)
+if (!numProducts) deleteShoppingCart();
+
+var numProducts = 10;
+
+function deleteShoppingCart() {
+    console.log("All products deleted");
+}
+
+var x = 1;
+let y = 2;
+const z = 3;
+console.log(x === window.x);
+console.log(y === window.y);
+console.log(z === window.z);
+
+// console.log(this);
+
+const calcAge = function(birthYear){
+    console.log(2037 - birthYear);
+    // console.log(this)
+};
+calcAge(1991);
+
+const calcAgeArrow = birthYear => {
+    console.log(2037 - birthYear);
+    // console.log(this);
+};
+calcAgeArrow(1980);
+
+const jonas = {
+    year : 1991,
+    calcAge : function(){
+        console.log(this);
+        console.log(2037 - this.year)
+    }
+};
+jonas.calcAge();
+
+const mary = {
+    year: 2017
+}
+mary.calcAge = jonas.calcAge;
+mary.calcAge();
+
+const f = jonas.calcAge;
+// f();
+
+var firstName = "Matilda";
+const jonas = {
+    firstName: "Jonas",
+    year: 1991,
+    calcAge: function () {
+        console.log(this);
+        console.log(2037 - this.year);
+    },
+    greet: () => {
+        console.log(this);
+        console.log(`Hey ${this.firstName}`);
+    }
+}
+jonas.greet();
+
+const jonas = {
+    firstName: "jonas",
+    year: 1991,
+    calcAge: function () {
+        // console.log(this);
+        console.log(2037 - this.year);
+
+        // solution 1
+        // const self = this;
+        // const isMillenial = function () {
+        //     console.log(self);
+        //     console.log(self.year >= 1981 && self.year <= 1996);
+        // };
+        // isMillenial();
+
+        // solution 2
+        const isMillenial = () => {
+            console.log(this);
+            console.log(this.year >= 1981 && this.year <= 1996)
+        };
+        isMillenial();
+
+    },
+    // greet: function(){
+    //     console.log(this);
+    //     console.log(`Hey ${this.firstName}`);
+    // }
+    greet: () => {
+        console.log(this);
+        console.log(`Hey ${this.firstName}`);
+    }
+};
+jonas.greet();
+jonas.calcAge();
+
+// Arguments keyword
+const addExpr = function (a, b){
+console.log(arguments);
+return a + b;
+};
+addExpr(2, 5);
+addExpr(2, 4, 7, 8);
+
+var addArrow = (a, b) => {
+    console.log(arguments);
+    return a + b;
+}
+addArrow (2, 5, 8);
+
+let age = 22;
+let oldAge = age;
+age = 23;
+console.log(age);
+console.log(oldAge);
+
+const me = {
+    name: "Jonas",
+    age: 30
+};
+const friend = me;
+friend.age = 27;
+console.log("friend :", friend)
+console.log("Me", me)
+
+// Primitive types
+let lastName = "Williams";
+let oldLastName = lastName;
+lastName = "Davis";
+console.log(lastName);
+console.log(oldLastName);
+
+// Reference types
+const jessica = {
+    firstName: "Jessica",
+    lastName: "Williams",
+    age: 27
+}
+const marriedJessica = jessica;
+marriedJessica.lastName = "Davis";
+console.log("Before marriage:", jessica);
+console.log("After marriage:", marriedJessica);
+
+// Copying object
+const jessica2 = {
+    firstName: "Jessica",
+    lastName: "Williams",
+    age: 27,
+    family: ["Alice","Bob"]
+}
+
+const jessicaCopy = Object.assign({}, jessica2);
+jessicaCopy.lastName = "Davis";
+console.log("Before marriage:", jessica2);
+console.log("After marriage:", jessicaCopy);
+jessicaCopy.family.push("Mary");
+jessicaCopy.family.push("John");
+console.log("Before marriage:", jessica2);
+console.log("After marriage:", jessicaCopy);
+
+// DESTRUCTURING ARRAYS
+const restaurant = {
+    name: "Classico Italiano",
+    location: "Via Angelo Tavanti 23, Firenze, Italy",
+    categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+    starterMenu: ["Focaccia", "Bruschetta", "Garlic", "Bread", "Caprese Salad"],
+    mainMenu: ["Pizza", "Pasta", "Risotto"],
+
+    order: function (starterIndex, mainIndex) {
+        return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+    }
+};
+
+const arr = [2, 3, 4];
+const a = arr[0];
+const b = arr[1];
+const c = arr[2];
+
+const [x, y, z] = arr;
+console.log(x, y, z);
+console.log(arr);
+
+const [first, second] = restaurant.categories;
+console.log(first, second);
+const [s, , , u] = restaurant.categories;
+console.log(s, u);
+
+let [main, , secondary] = restaurant.categories;
+console.log(main, secondary);
+
+// const temp = main;
+// main = secondary;
+// secondary = temp;
+// console.log(main, secondary);
+
+[main, secondary] = [secondary, main];
+console.log(main, secondary);
+
+// RECEIVE 2 RETURN VALUES FROM A FUNCTION
+// console.log(restaurant.order(2, 0));
+const [starter, mainCourse] = restaurant.order(2, 0);
+console.log(starter, mainCourse);
+
+// NESTED DESTRUCTURING
+const nested = [2, 4, [5, 6]];
+// const [i, , j] = nested;
+// console.log(i, j)
+const [i, , [j, k]] = nested;
+console.log(i, j, k);
+
+// DEFAULT VALUES
+const [p, q, r] = [8, 9];
+console.log(p, q, r);
+
+const [l=1, m=1, n=1]=[8,9];
+console.log(l,m,n);*/
+
+// DESTRUCTURING OBJECTS
+const restaurant = {
+    name: "Classico Italiano",
+    location: "Via Angelo Tavanti 23, Firenze, Italy",
+    categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+    starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
+    mainMenu: ["Pizza", "Pasta", "Risotto"],
+    openingHours: {
+        thu: {
+            open: 12,
+            close: 22,
+        },
+        fri: {
+            open: 11,
+            close: 23,
+        },
+        sat: {
+            open: 0,
+            close: 24,
+        }
+    },
+    order: function (starterIndex, mainIndex) {
+        return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+    },
+    // orderDelivery: function(obj){
+    //     console.log(obj);
+    // }
+    orderDelivery: function ({ starterIndex, mainIndex, time, address }) {
+        console.log(
+            `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+        );
+    },
+    orderPasta: function (ing1, ing2, ing3) {
+        console.log(`Here is your delicious pasta with ${ing1}, ${ing2} and ${ing3}`);
+    }
+}
+
+restaurant.orderDelivery({
+    time: "22:30",
+    address: "Via del Sole, 21",
+    mainIndex: 2,
+    starterIndex: 2,
+})
+
+restaurant.orderDelivery({
+    address: "Via del Sole, 21",
+    starterIndex: 1,
+})
+
+const { name, openingHours, categories } = restaurant;
+console.log(name, openingHours, categories);
+
+const {
+    name: restaurantName,
+    openingHours: hours,
+    categories: tags,
+} = restaurant;
+console.log(restaurantName, hours, tags);
+
+// Default values
+// const { menu = [], starterMenu: starters = [] } = restaurant;
+// console.log(menu, starters);
+
+// Mutating variables
+let a = 111;
+let b = 999;
+const obj = { a: 23, b: 7, c: 14 };
+({ a, b } = obj);
+console.log(a, b);
+
+// Nested objects
+// const {fri} = openingHours;
+// console.log(fri);
+
+// const {
+//     fri: { open, close }
+// } = openingHours;
+// console.log(open, close);
+
+const {
+    fri: { open: o, close: c },
+} = openingHours;
+console.log(open, close);
+console.log(o, c);
+
+
+console.log(restaurant.order(1, 2))
+
+// Spread operator
+const arr = [7, 8, 9];
+const badNewArr = [1, 2, arr[0], arr[1], arr[2]];
+console.log(badNewArr);
+
+const newArr = [1, 2, ...arr];
+console.log(newArr);
+console.log(...newArr);
+console.log(1, 2, 7, 8, 9);
+
+const newMenu = [...restaurant.mainMenu, "Gnocci"];
+console.log(newMenu);
+
+// copy array
+const mainMenuCopy = [...restaurant.mainMenu];
+console.log(mainMenuCopy);
+
+// join 2 arrays
+const menu = [...newMenu, ...mainMenuCopy];
+console.log(menu);
+
+// Iterables: arrays, strings, maps, sets. NOT objects
+const str = "Jonas";
+const letters = [...str, " ", "S."];
+console.log(letters);
+console.log(...str);
+// console.log(`${...str} Schmedtmann`);
+// const ingredients = [
+//     prompt("let's make pasta! Ingreddient 1?"),
+//     prompt("Ingredient 2?"),
+//     prompt("Ingredient 3")
+// ];
+// console.log(ingredients);
+
+// restaurant.orderPasta(ingredients[0], ingredients[1], ingredients[2]);
+// restaurant.orderPasta(...ingredients);
+
+// Objects
+const newRestaurant = { foundedIn: 1998, ... restaurant, founder: "Guiseppe"};
+const restaurantCopy = {...restaurant};
+console.log(restaurantCopy.name);
+console.log(restaurant.name);
