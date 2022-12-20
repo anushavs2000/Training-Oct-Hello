@@ -841,7 +841,7 @@ const [p, q, r] = [8, 9];
 console.log(p, q, r);
 
 const [l=1, m=1, n=1]=[8,9];
-console.log(l,m,n);*/
+console.log(l,m,n);
 
 // DESTRUCTURING OBJECTS
 const restaurant = {
@@ -877,10 +877,31 @@ const restaurant = {
     },
     orderPasta: function (ing1, ing2, ing3) {
         console.log(`Here is your delicious pasta with ${ing1}, ${ing2} and ${ing3}`);
+    },
+    orderPizza: function (mainIngredient, ...otherIngredients) {
+        console.log(mainIngredient);
+        console.log(otherIngredients);
     }
 }
 
-restaurant.orderDelivery({
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(menu);
+
+for (const item of menu) console.log(item);
+
+// for (const item of menu.entries()){
+//     // console.log(item);
+//     console.log(`${item[0] +1}: ${item[1]}`)
+// }
+
+for (const [i, el] of menu.entries()) {
+    console.log(`${i+ 1}:${el}`)
+}
+
+// console.log(menu.entries());
+// console.log([...menu.entries()]);
+
+/*restaurant.orderDelivery({
     time: "22:30",
     address: "Via del Sole, 21",
     mainIndex: 2,
@@ -973,3 +994,362 @@ const newRestaurant = { foundedIn: 1998, ... restaurant, founder: "Guiseppe"};
 const restaurantCopy = {...restaurant};
 console.log(restaurantCopy.name);
 console.log(restaurant.name);
+
+// 1.DESTRUCTURING
+// SPREAD, because on RIGHT side of = 
+const arr = [1, 2, ...[3, 4]];
+
+// REST, because on LEFT side of = 
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others);
+const [pizza, , risotto, ...otherFood] = [...restaurant.mainMenu, ...restaurant.starterMenu];
+console.log(pizza, risotto, otherFood);
+
+//  Objects 
+const { sat, ...weekdays } = restaurant.openingHours;
+console.log(weekdays);
+
+// 2.FUNCTIONS
+const add = function (...numbers) {
+    // console.log(numbers);
+    let sum = 0
+    for (let i = 0; i < numbers.length; i++)
+        sum += numbers[i];
+    console.log(sum);
+};
+add(2, 3);
+add(5, 3, 4, 5, 6);
+add(7, 5, 8, 2, 6, 9, 1, 4, 7);
+
+const x = [23, 5, 7];
+add(...x);
+
+restaurant.orderPizza("mushroom", "onion", "olives", "spinach");
+restaurant.orderPizza("mushroom");
+
+console.log("--- OR ---")
+// OR - use any data type, return any data type, short-circuiting
+console.log(3 || "Jonas");
+console.log("" || "Jonas");
+console.log(true || 0);
+console.log(undefined || null);
+console.log(undefined || 0 || "" || "Hello" || 23 || null);
+
+restaurant.numGuests = 23;
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 15;
+console.log(guests1);
+
+const guests2 = restaurant.numGuests || 10;
+console.log(guests2);
+
+console.log("--- AND ---");
+console.log(0 && "Jonas");
+console.log(7 && "Jonas");
+console.log("Hello" && 23 && null && "Jonas");
+
+// Practical example
+if (restaurant.orderPizza) {
+    restaurant.orderPizza("mushrooms", "spinach");
+}
+restaurant.orderPizza && restaurant.orderPizza("mushrooms", "spinach");
+
+restaurant.numGuests = 0;
+const guests = restaurant.numGuests || 10;
+console.log(guests);
+
+const guestCorrect = restaurant.numGuests ?? 10;
+console.log(guestCorrect);
+
+const rest1 = {
+    name: "Capri",
+    // numGuests: 20,
+    numGuests: 0,
+};
+const rest2 = {
+    name: "la piazza",
+    owner: "Giovanni Rossi",
+}
+// OR assignment operator
+// rest1.numGuests = rest1.numGuests || 10;
+// rest2.numGuests = rest1.numGuests || 10;
+// rest1.numGuests ||=10;
+// rest2.numGuests ||=10;
+
+// Nullish assignment operator
+rest1.numGuests ??= 10;
+rest2.numGuests ??= 10;
+
+// rest2.owner = rest2.owner && "<ANONYMOUS>";
+// rest2.owner = rest2.owner && "<ANONYMOUS>";
+rest1.owner &&="<ANONYMOUS>";
+rest2.owner &&="<ANONYMOUS>";
+
+console.log(rest1);
+console.log(rest2);
+
+const game = {
+    team1: "Bayern Munich",
+    team2: "Borrussia Dortmund",
+    players: [
+        [
+            "Neuer",
+            "Pavard",
+            "Martinez",
+            "Alaba",
+            "Davies",
+            "Kimmich",
+            "Goretzka",
+            "Coman",
+            "Muller",
+            "Gnarby",
+            "Lewandowski",
+        ],
+        [
+            "Burki",
+            "Schulz",
+            "Hummels",
+            "Akanji",
+            "Hakimi",
+            "Weigl",
+            "Witsel",
+            "hazard",
+            "Brandt",
+            "Sancho",
+            "Gotze",
+        ],
+    ],
+    score: "4:0",
+    scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
+    date: "Nov 9th, 2037",
+    odds: {
+        team1: 1.33,
+        x: 3.25,
+        team2: 6.5,
+    },
+};
+
+for (const [i, player] of game.scored.entries())
+console.log(`Goal ${i + 1}: ${player}`);
+
+const odds = Object.values(game.odds);
+let average = 0;
+for(const odd of Object.values(game.odds))
+average += odd;
+// average /= Object.values(game.odds)
+console.log(average)
+average /= odds.length;
+console.log(average);
+
+for(const [team, odd] of Object.entries(game.odds)){
+    // console.log(team, odd);
+    const teamStr = team === "x" ? "draw" : `victory ${game[team]}`
+    console.log(`Odd of ${teamStr} ${odd}`);
+}
+
+const [players1, players2] = game.players;
+console.log(players1, players2);
+
+const [goalKeeper, ...fieldPlayers] = players1;
+console.log(goalKeeper, fieldPlayers);
+
+const allPlayers = [...players1, ...players2];
+console.log(allPlayers);
+
+const players1Final = [...players1, "Thiago", "Coutinho", "Periscic"];
+console.log(players1Final);
+
+const { odds: { team1, x: draw, team2 } } = game;
+console.log(team1, draw, team2);
+
+const printGoals = function (...parameterPlayers){
+    console.log(parameterPlayers)
+    console.log(`${parameterPlayers.length} goals were scored`);
+};
+printGoals(...game.scored);
+// printGoals("Davies", "Muller", "Lewandowski", "Kimmich");
+// printGoals("Davies", "Muller")
+
+team1 < team2 && console.log("Team 1 is more likely to win");
+team1 > team2 && console.log("Team 2 is more likely to win");*/
+
+const weekdays = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+const openingHours = {
+    [weekdays[3]]: {
+        open: 12,
+        close: 22,
+    },
+    [weekdays[4]]: {
+        open: 11,
+        close: 23,
+    },
+    [weekdays[5]]: {
+        open: 0,
+        close: 12 + 12,
+    },
+};
+const restaurant = {
+    name: "Classico Italiano",
+    location: "Via Angelo Tavanti 23, Firenze, Italy",
+    categories: ["Italian", "Pizzeria", "Vegetarian", "Organic"],
+    starterMenu: ["Focaccia", "Bruschetta", "Garlic Bread", "Caprese Salad"],
+    mainMenu: ["Pizza", "Pasta", "Risotto"],
+    // openingHours: openingHours,
+
+    // ES6 enhanced object literals
+    openingHours,
+
+    order(starterIndex, mainIndex) {
+        return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+    },
+
+    orderDeliery({ starterIndex, mainIndex, time, address }) {
+        console.log(
+            `Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+        );
+    },
+    orderPasta(img1, ing2, ing3) {
+        console.log(`Here is your delicious pasta wwith ${ing1}, ${ing2}, and ${ing3}`);
+    },
+    orderPizza(mainIngredient, ...otherIngredients) {
+        console.log(mainIngredient);
+        console.log(otherIngredients);
+    },
+};
+console.log(restaurant);
+
+const ordersSet = new Set(["Pasta", "Pizza", "Pizza", "Risotto", "Pasta", "Pizza"]);
+console.log(ordersSet);
+
+console.log(new Set("Jonas"));
+console.log(ordersSet.size);
+console.log(ordersSet.has("Pizza"));
+console.log(ordersSet.has("Bread"));
+ordersSet.add("Garlic Bread");
+ordersSet.add("Garlic Bread");
+ordersSet.delete("Risotto");
+// ordersSet.clear();
+console.log(ordersSet);
+
+for (const order of ordersSet)
+    console.log(order);
+
+/*// Example
+const staff = ["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"];
+const staffUnique = [new Set(staff)];
+console.log(staffUnique);
+console.log(new Set(["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"]).size);
+console.log(new Set("JonasSchmedtmann").size);
+
+if (restaurant.openingHours && restaurant.openingHours.mon)
+    console.log(restaurant.openingHours.mon.open);
+
+// With optional chaining
+
+console.log(restaurant.openingHours.mon?.open);
+console.log(restaurant.openingHours?.mom?.open);
+
+// Example
+const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+for (const day of days) {
+    console.log(day);
+    // restaurant.openingHours[day];
+    const open = restaurant.openingHours[day]?.open ?? "closed";
+    console.log(`On ${day}, we open at ${open}`);
+}
+
+// Methods
+console.log(restaurant.order?.(0, 1) ?? "Method does not exist");
+console.log(restaurant.orderRisotto?.(0, 1) ?? "Method does not exist");
+
+// Arrays
+const users = [{ name: "Jonas", email: "hellojonas@gamil.com" }];
+// const users = [];
+console.log(users[0]?.name ?? "User array empty");
+
+if (users.length > 0) console.log(users[0].name);
+else console.log("User array empty");
+
+// Properrty Names
+const properties = Object.keys(openingHours);
+console.log(properties);
+
+// console.log(`We are open on ${properties.length} days`)
+let openStr = `We are open on ${properties.length} days: `;
+for (const day of properties){
+    openStr += `${day},`;
+}
+console.log(openStr);
+
+// for (const day of Object.keys(openingHours)) {
+//     console.log(day);
+// }
+
+// Property Values
+const values = Object.values(openingHours);
+console.log(values);
+
+// entire object
+const entries = Object.entries(openingHours);
+// console.log(entries);
+
+// [key, value]
+for(const [key, {open,  close}] of entries){
+    console.log(`On ${key} we open at ${open} and close at ${close}`);
+}
+
+const rest = new Map();
+rest.set("name", "Classico Italiano");
+rest.set(1, "Firenze, Italy");
+console.log(rest.set(2, "Lisbon, Portugal"));
+
+rest
+    .set("categories", ["Italian", "Pizzeria", "Vegetarian", "Organic"])
+    .set("open", 11)
+    .set("close", 23)
+    .set(true, "We are open :D")
+    .set(false, "We are closed :(");
+
+console.log(rest.get("name"));
+console.log(rest.get(true));
+console.log(rest.get(1));
+
+const time = 21;
+console.log(rest.get(time > rest.get("open") && time < rest.get("close")));
+
+console.log(rest.has("categories"));
+rest.delete(2);
+// rest.clear();
+const arr = [1, 2];
+// rest.set([1,2], "Test")
+rest.set(arr, "Test");
+rest.set(document.querySelector("h1"), "Heading");
+console.log(rest);
+console.log(rest.size);
+
+// console.log(rest.get([1,2]));
+console.log(rest.get(arr));*/
+
+const question = new Map([
+    ["question", "What is the best programming language in the world?"],
+    [1, "C"],
+    [2, "Java"],
+    [3, "Javascript"],
+    ["correct", 3],
+    [true, "Correct"],
+    [false, "Try again"],
+]);
+console.log(question);
+
+// convert object to map
+console.log(Object.entries(openingHours));
+const hoursMap = new Map(Object.entries(openingHours));
+console.log(hoursMap);
+
+// Quiz app
+console.log(question.get("question"));
+for (const [key, value] of question) {
+    if (typeof key === "number")
+        console.log(`Answer ${key}:${value}`);
+}
+const answer = Number(prompt(`Your answer`));
+console.log(answer);
