@@ -1172,7 +1172,7 @@ printGoals(...game.scored);
 team1 < team2 && console.log("Team 1 is more likely to win");
 team1 > team2 && console.log("Team 2 is more likely to win");*/
 
-const weekdays = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+/*const weekdays = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 const openingHours = {
     [weekdays[3]]: {
         open: 12,
@@ -1215,9 +1215,9 @@ const restaurant = {
         console.log(otherIngredients);
     },
 };
-console.log(restaurant);
+console.log(restaurant);*/
 
-const ordersSet = new Set(["Pasta", "Pizza", "Pizza", "Risotto", "Pasta", "Pizza"]);
+/*const ordersSet = new Set(["Pasta", "Pizza", "Pizza", "Risotto", "Pasta", "Pizza"]);
 console.log(ordersSet);
 
 console.log(new Set("Jonas"));
@@ -1233,7 +1233,7 @@ console.log(ordersSet);
 for (const order of ordersSet)
     console.log(order);
 
-/*// Example
+// Example
 const staff = ["Waiter", "Chef", "Waiter", "Manager", "Chef", "Waiter"];
 const staffUnique = [new Set(staff)];
 console.log(staffUnique);
@@ -1327,7 +1327,7 @@ console.log(rest);
 console.log(rest.size);
 
 // console.log(rest.get([1,2]));
-console.log(rest.get(arr));*/
+console.log(rest.get(arr));
 
 const question = new Map([
     ["question", "What is the best programming language in the world?"],
@@ -1351,5 +1351,248 @@ for (const [key, value] of question) {
     if (typeof key === "number")
         console.log(`Answer ${key}:${value}`);
 }
-const answer = Number(prompt(`Your answer`));
+// const answer = Number(prompt(`Your answer`));
+const answer = 3;
 console.log(answer);
+
+console.log(question.get(question.get("correct") === answer));
+
+// convert map to array
+console.log([...question]);
+console.log([...question.entries()]);
+console.log([...question.keys()]);
+console.log([...question.values()]);
+
+// arrays
+const taskArray = ["code", "eat", "code"];
+console.log(taskArray);
+
+// sets
+const taskSet = new Set(["code", "eat", "code"]);
+console.log(taskSet);
+
+// Objects
+const taskObject = {
+    task: "code",
+    date: "today",
+    repeat: true
+}
+console.log(taskObject);
+
+// Maps
+const taskMaps = new Map([
+    ["task", "code"],
+    ["date", "today"],
+    [false, "Start coding!"]
+]);
+console.log(taskMaps);*/
+
+/*const gameEvents = new Map([
+    [17, "⚽️ GOAL"],
+    [36, "🔁 Substitution"],
+    [47, "⚽️ GOAL"],
+    [61, "🔁 Substitution"],
+    [64, "🔶 Yellow card"],
+    [69, "🔴 Red card"],
+    [70, "🔁 Substitution"],
+    [72, "🔁 Substitution"],
+    [76, "⚽️ GOAL"],
+    [80, "⚽️ GOAL"],
+    [92, "🔶 Yellow card"],
+]);
+
+// console.log(gameEvents.values());
+const events = new Set(gameEvents.values())
+console.log(events);
+
+gameEvents.delete(64);
+console.log(gameEvents);
+
+console.log(`An event happened, on average, every ${90 / gameEvents.size} minutes`);
+
+const time = [...gameEvents.keys()].pop();
+console.log(time);
+console.log(`An event happened, on average, every ${time / gameEvents.size} minutes`)
+
+for (const  [min, event] of gameEvents){
+    const half =min <= 45 ? "FIRST" : "SECOND";
+    console.log(`[${half} HALF] ${min}: ${event}`)
+}
+
+const airline = "TAP Air Portugal";
+const plane = "A320";
+
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+console.log("B737"[0]);
+
+console.log(airline.length);
+console.log("B737".length);
+
+console.log(airline.indexOf("r"));
+console.log(airline.lastIndexOf("r"));
+console.log(airline.indexOf("portugal"));
+
+console.log(airline.slice(4));
+console.log(airline.slice(5));
+console.log(airline.slice(4, 7));
+console.log(airline.slice(4, 10));
+
+console.log(airline.slice(0, airline.indexOf(" ")));//0 - first space
+console.log(airline.slice(airline.lastIndexOf(" ") + 1))//last space + 1 = p..
+
+console.log(airline.slice(-2));
+console.log(airline.slice(1, -1));
+
+const checkMiddleSeat = function (seat) {
+    const s = seat.slice(-1);
+    if (s === "B" || s === "E")
+        console.log("You got the middle seat");
+    else console.log("You got lucky");
+};
+checkMiddleSeat("11B");
+checkMiddleSeat("23C");
+checkMiddleSeat("3E");
+
+console.log(new String("Jonas"));
+console.log(typeof new String ("Jonas").slice(1));
+
+console.log(airline.toLowerCase());
+console.log(airline.toUpperCase());
+
+// Fix capitalization in name
+
+const passenger = "jOnAS";
+const passengerLower = passenger.toLowerCase();
+const passengerCorrect = passengerLower[0].toUpperCase() +passengerLower.slice(1);
+console.log(passengerCorrect);
+
+// comparing emails
+const email = "hello@jonas.io";
+const loginEmail = "Hello@Jonas.Io \n";
+
+const lowerEmail = loginEmail.toLowerCase();
+const trimmedEmail = lowerEmail.trim();
+console.log(trimmedEmail);
+
+const normalizedEmail = loginEmail.toLowerCase().trim();
+console.log(normalizedEmail);
+console.log(email === normalizedEmail);
+
+// replacing
+const priceGB = "288,97£";
+const priceUS = priceGB.replace("£", "$").replace(",", ".");
+console.log(priceUS);
+
+const announcement = "All passengers come to boarding door 23. Boarding door 23!";
+console.log(announcement.replace("door", "gate"));
+console.log(announcement.replace(/door/g, "gate"));
+
+// Boolean
+const plane = "Airbus A320neo";
+console.log(plane.includes("A320"));
+console.log(plane.includes("boolean"));
+console.log(plane.startsWith("Air"));
+console.log(plane.startsWith("bus"));
+console.log(plane.startsWith("A32"));
+
+if (plane.startsWith("Airbus") && plane.endsWith("neo")) {
+    console.log("Part of the NEW Airbus family");
+}
+
+const checkBaggage = function (items) {
+    const baggage = items.toLowerCase();
+    if (baggage.includes("knife") || baggage.includes("gun")) {
+        console.log("You are NOT allowed on board");
+    } else {
+        console.log("Welcome abroad!");
+    }
+};
+checkBaggage("I have a laptop, some Food and a pocket knife");
+checkBaggage("Socks and camera");
+checkBaggage("Got some snacks and a gun for protection");
+
+console.log("a+very+nice+string".split("+"));
+console.log("anu appu".split(" "));
+console.log("abababababa".split("b"));
+
+const [firstOne, secondOne] = "anu appu".split(" ");
+const newName = ["Mr.", firstOne, secondOne.toUpperCase()].join(" ");
+console.log(newName);
+
+const capitalizeName = function (name) {
+    const names = name.split(" ");
+    const namesUpper = [];
+
+    for (const n of names) {
+        // namesUpper.push(n[0].toUpperCase() + n.slice(1));
+        namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
+    }
+    console.log(namesUpper.join(" "));
+}
+
+capitalizeName("jessica ann smith davis");
+capitalizeName("jonas schmedtmann");
+
+// padding
+const message = "Go to gate 23!"
+console.log(message.padStart(25, "+").padEnd(30, "+"));
+console.log("jonas".padStart(20, "+").padEnd(30, "+"));
+
+const maskCreditCard = function(number){
+    const str = number + "";
+    const last = str.slice(-4);
+    return last.padStart(str.length, "*");
+}
+console.log(maskCreditCard(438897436752374627346));
+console.log(maskCreditCard("98347563232840739572436875"));
+
+// Repeat 
+const message2 = "BAd weather... All Departures Delayed...";
+console.log(message2.repeat(5));
+const planesInLine = function(n){
+    console.log(`There are ${n} planes in line ${"🛬".repeat(n)}`);
+};
+planesInLine(5);
+planesInLine(3);
+planesInLine(12);
+
+document.body.append(document.createElement("textarea"));
+document.body.append(document.createElement("button"));
+const text = document.querySelector("textarea").value;
+
+document.querySelector("button").addEventListener("click", function () {
+    const text = document.querySelector("textarea").value;
+    const rows = text.split("\n");
+    console.log(rows);
+    // console.log(text);
+
+    for(const [i, row] of rows.entries()){
+        const [first, second] = row.toLowerCase().trim().split("_");
+        // console.log(row, first, second);
+        const output = `${first}${second.replace(second[0], second[0].toUpperCase())}`;
+        // console.log(output);
+        // console.log(`${output.padEnd(20)}✅`)
+        console.log(`${output.padEnd(20)}${"✅".repeat(i + 1)}`);
+    }
+});
+
+// underscore_case
+// first_name
+// some_variable
+// calculate_AGE
+// delayed_departure*/
+
+const flights =
+    "_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30";
+// console.log(flights.split("+"));
+
+const getCode = str => str.slice(0, 3).toUpperCase();
+
+for (const flight of flights.split("+")) {
+    // console.log(flight.split(","));
+    const [type, from, to, time] = flight.split(";");
+    const output = `${type.startsWith("_Delayed") ? "🔴" : ""}${type.replaceAll("_"," ")} ${getCode(from)} ${getCode(to)} (${time.replace(":", "h")})`.padStart(36);
+    console.log(output);
+}
