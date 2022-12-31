@@ -1,3 +1,6 @@
 # Ignore All files in Any directory Named Temp
 JavaScript/section-17/node_modules
-JavaScript/section-17/package-lock.json
+JavaScript/section-17/package-lock.json8
+JavaScript/section-17/.cache
+JavaScript/section-17/.parcel-cache
+JavaScript/section-17/dist

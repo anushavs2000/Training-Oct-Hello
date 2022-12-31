@@ -1,4 +1,4 @@
-/*// importing module
+// importing module
 // import "./shoppingCart.js";
 // import { addToCart, totalPrice as price, tq } from "./shoppingCart.js";
 // addToCart("bread", 5);
@@ -23,7 +23,7 @@ console.log(cart);
 // console.log(data);
 // console.log("Something");
 
-const getLastPost = async function () {
+/*const getLastPost = async function () {
     const res = await fetch("https://jsonplaceholder.typicode.com/posts");
     const data = await res.json();
     console.log(data);
@@ -79,7 +79,8 @@ export.addToCart = function (product, quantity) {
 // Import
 const { addToCart } = require("./shoppingCart.js");*/
 
-import cloneDeep from "./node_modules/lodash-es/cloneDeep.js"
+import cloneDeep from "./node_modules/lodash-es/cloneDeep.js";
+// import cloneDeep from "lodash-es";
 const state = {
     cart: [
         { product: "bread", quantity: 5 },
@@ -94,3 +95,27 @@ state.user.loggedIn = false;
 console.log(stateClone);
 
 console.log(stateDeepClone);
+
+// if (module.hot) {
+//     module.hot.accept();
+// }
+
+class Person {
+    #greeting = "Hey";
+    constructor(name) {
+        this.name = name;
+        console.log(`${this.#greeting}, ${this.name}`);
+    }
+}
+const jonas = new Person("Jonas");
+console.log("Jonas" ?? null);
+
+console.log(cart.find(el => el.quantity >= 2));
+Promise.resolve("TEST").then(x => console.log(x));
+
+// import ".core-js/stable";
+// import "core-js/stable/find";
+// import "core-js/stable/promise"
+
+// Polifying async functions
+// import "regenerator-runtime/runtime";
